@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef>
+    <defName>ElderThing_Faction</defName>
+    <label>Society of the Elder Things</label>
+    <description>This society was strung together by surviving aliens who lost their world when their slaves revolted. Ever since then, they have taken to space to find new worlds to colonize.\n\n Elder Things thrive on beautiful works of art and spacious interiors. They also enjoy trading goods in exchange for slaves to perform their mundane tasks for them. They rarely need weapons to destroy foes, due to their thick barrel bodies preventing most damage. During ranged exchanges, they are usually fast enough to close in on their enemies and overwhelm their minds with psionic powers.</description>
+    <pawnsPlural>elder things</pawnsPlural>
+    <factionBaseSelectionWeight>0.025</factionBaseSelectionWeight>	
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Society of the Elder Things</fixedName>
+    <factionBaseNameMaker>NamerFactionBasePirate</factionBaseNameMaker>	
+    <backstoryCategory>ElderThing_Backstory</backstoryCategory>	
+    <raidCommonality>0.01</raidCommonality>
+    <canMakeRandomly>true</canMakeRandomly>	
+	<leaderTitle>archechinon</leaderTitle>
+    <expandingIconTexture>World/WorldObjects/Expanding/ElderThingBase</expandingIconTexture>
+	<hairTags>
+		<li>NonExisting</li>
+	</hairTags>
+    <humanlikeFaction>true</humanlikeFaction>
+    <hidden>false</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <techLevel>Spacer</techLevel>
+	<earliestRaidDays>12</earliestRaidDays>
+    <startingGoodwill>
+      <min>10</min>
+      <max>30</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>10</min>
+      <max>30</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+	  <li>
+	   <kindDef>Normal</kindDef>
+        <options>
+		  <ElderThing_Kind>100</ElderThing_Kind>
+		  <ElderThing_Leader>8</ElderThing_Leader>		  
+        </options>
+      </li>	
+	  <li>
+	   <kindDef>FactionBase</kindDef>
+        <options>
+		  <ElderThing_Kind>100</ElderThing_Kind>
+		  <ElderThing_Leader>8</ElderThing_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+		  <ElderThing_Trader>1</ElderThing_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>1</Muffalo>
+          <Dromedary>1</Dromedary>
+        </carriers>
+        <guards>
+		  <ElderThing_Guard>250</ElderThing_Guard>
+		  <ElderThing_Kind>50</ElderThing_Kind>
+        </guards>
+      </li>	  
+    </pawnGroupMakers>
+    <caravanTraderKinds>
+      <li>Caravan_ElderThing_PetDealer</li>
+      <li>Caravan_ElderThing_ArtDealer</li>
+    </caravanTraderKinds>	
+    <visitorTraderKinds>
+      <li>Visitor_ElderThing_Standard</li>
+    </visitorTraderKinds>
+    <factionBaseTraderKinds>
+      <li>FactionBase_ElderThing_Standard</li>
+    </factionBaseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-255</min>
+      <max>255</max>
+    </allowedArrivalTemperatureRange>
+    <homeIconPath>World/WorldObjects/Expanding/ElderThingZoomed</homeIconPath>	
+  </FactionDef>
+  
+  
+    <FactionDef ParentName="PlayerFactionBase">
+    <defName>PlayerElderThings</defName>
+    <label>Elder Thing Survivors</label>
+    <description>Your own community.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>ElderThing_Colonist</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <factionBaseNameMaker>NamerFactionBasePlayerColony</factionBaseNameMaker>
+    <techLevel>Industrial</techLevel>
+    <backstoryCategory>Civil</backstoryCategory>
+    <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>Urban</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+  
+</Defs>

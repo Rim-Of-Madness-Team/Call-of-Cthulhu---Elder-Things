@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ET_BionicWing</defName>
+    <label>bionic leg</label>
+    <spawnThingOnRemoved>ET_Item_BionicWing</spawnThingOnRemoved>
+    <addedPartProps>
+      <isBionic>true</isBionic>
+      <isSolid>true</isSolid>
+      <partEfficiency>1.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+          <capMods>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>0.2</offset>
+            </li>
+          </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+    <!-- ========= BASE ============== -->
+
+  <HediffDef Name="AddedBodyPartBase" Abstract="True">
+    <hediffClass>Hediff_AddedPart</hediffClass>
+    <defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+    <isBad>false</isBad>
+  </HediffDef>
+
+</Defs>

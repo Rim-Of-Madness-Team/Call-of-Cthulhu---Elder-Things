@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================ Childhood ========================== -->
+  
+  <!-- All Elder Thing Backgrounds have disabled
+  Manual dumb labor -->
+  
+  <AlienRace.BackstoryDef Name="ET_BG_Base" Abstract="True">
+      <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+      <workDisables>
+      <li>ManualDumb</li>
+    </workDisables>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+	<disallowedTraits>
+	  <li>
+	    <defName>Nudist</defName>
+	  </li>
+	  <li>
+		<defName>Cannibal</defName>
+	  </li>
+	  <li>
+	    <defName>Gay</defName>
+	  </li>
+	  <li>
+	    <defName>DislikesMen</defName>
+	  </li>
+	  <li>
+	    <defName>DislikesWomen</defName>
+	  </li>
+	</disallowedTraits>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_01</defName>
+    <title>Parasite ridden</title>
+    <baseDescription>As a larvae, NAME lived in an impoverished and isolated Elder Thing community. As a result, they suffered and survived through many parasites and diseases.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-3</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_02</defName>
+    <title>Twin brain</title>
+    <baseDescription>Born with a dual brain totalling 10 lobes, NAME spent much of its youth conversing with itself. Other Elder Things considered it a mad prodigy.</baseDescription>
+    <slot>Childhood</slot>
+      <workDisables>
+      <li>ManualDumb</li>
+	  <li>Social</li>
+    </workDisables>	
+	<forcedTraits>
+	  <li>
+	    <defname>TooSmart</defname>
+	  </li>
+	</forcedTraits>
+    <skillGains>
+      <li>
+        <defName>Research</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_03</defName>
+    <title>Shoggoth rebellion survivor</title>
+    <baseDescription>NAME barely escaped being decapitated by revolting protoplasmic slaves. NAME learned from an early age to survive by any means, and has become wary of overzealous research.</baseDescription>
+    <slot>Childhood</slot>
+    <workDisables>
+      <li>ManualDumb</li>
+	  <li>Intellectual</li>
+    </workDisables>	
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Growing</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_04</defName>
+    <title>Alpha spawn</title>
+    <baseDescription>NAME grew faster and taller than the other spores by the spawning pools of its progenitors. NAME bullied weaker kin into following its orders throughout its youth using its superior strength and hideous insults.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_05</defName>
+    <title>Helpful spawn</title>
+    <baseDescription>NAME spent much of its childhood pruning others of knots and parasites, counselling wilting sprouts, and helping to prepare delicacies for its community.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Growing</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_06</defName>
+    <title>Geometric-abstractor</title>
+    <baseDescription>The Elder Things thrive on the five-pointed geometry that mirrors their forms. For NAME's childhood, they spent many days learning to craft tasteful displays and centerpieces for clientele under the watchful stalks of an experienced master artisan.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_07</defName>
+    <title>Vile creature</title>
+    <baseDescription>Pulling the legs off starfish was one of the least horrible things NAME did during their formative years. NAME joined a commune of similar creatures and thrived on having openly loose morals.</baseDescription>
+    <slot>Childhood</slot>
+	<forcedTraits>
+	  <li>
+	    <defname>Psychopath</defname>
+	  </li>
+	</forcedTraits>	
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>  
+  
+    <!-- ============================ Adulthood ========================== -->
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_01</defName>
+    <title>Hypno-novelist</title>
+    <baseDescription>NAME was renown for using hypnotic techniques on themselves to procure vivid descriptive pieces in their literary works.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Research</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_02</defName>
+    <title>Shoggoth trainer</title>
+    <baseDescription>While the Shoggoth Rebellion had decimated the population of the Elder Things in the past, NAME is one of the last surviving Shoggoth Trainers to continue the fine art of maintaining perfect slave labor.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_03</defName>
+    <title>Retrobiosculptor</title>
+    <baseDescription>Procured through both legal means and black markets, NAME utilizes "discarded" biological materials to create sculptures. The design process is intensive and focused highly on geometric patterns and requires a bit more thought than a purely aesthetic approach. This intensive design process has also left slightly weakened from prolonged exposure to hazardous materials.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Research</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_04</defName>
+    <title>Laser gun operator</title>
+    <baseDescription>NAME was a designated laser gun operator during a grand campaign against the MiGo. After taking heavy casualties, both sides withdrew from the campaign to recover and enlist more troops. NAME continues to serve in the reserve corps until their services are required once again.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_05</defName>
+    <title>Xenomarine-botanist</title>
+    <baseDescription>Having lived their life in an underwater city among the society of the Elder Things, NAME sought to explore the waters of other worlds and formulate maps of their discoveries. Mapping xenosolar oceanic formations was a formidable challenge. Counter to their own expectations, NAME became far more interested in the properties of alien underwater plantlife and discovered a new passion for aquatic research.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Research</defName>
+        <amount>3</amount>
+      </li>      
+	  <li>
+        <defName>Growing</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_06</defName>
+    <title>Bio-threat manager</title>
+    <baseDescription>NAME's purpose is simple. Extermination and containment of primitive biological lifeforms that threaten the Elder Thing collective.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>-3</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+    
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_07</defName>
+    <title>Meatflock tender</title>
+    <baseDescription>Despite their ability to survive without food, Elder Things experience great pleasure from the consumption of meat. However, NAME was tasked with managing the flocks and herds of primitive livestock. Their role was harvesting and preparing the end-product to be used in meals to pleasure rather than satiate their kind.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Growing</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+  
+    
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_08</defName>
+    <title>Retrospective analyst</title>
+    <baseDescription>A higher functioning individual in Elder Thing society, NAME provided the commune with accurate risk assessment data based on previous historical incidents.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Research</defName>
+        <amount>5</amount>
+      </li>      
+    </skillGains>
+  </AlienRace.BackstoryDef>  
+  
+    
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_09</defName>
+    <title>Compliance officer</title>
+    <baseDescription>NAME supervised a labor division that managed Shoggoth slave operations, and they ensured those operations and assets were up to regional government standards. This was, of course, before the great rebellion.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>      
+    </skillGains>
+  </AlienRace.BackstoryDef>    
+  
+    
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_10</defName>
+    <title>Muralist historian</title>
+    <baseDescription>Before escaping into space, NAME worked among a circle of historians tasked to study the classical Elderian artists. NAME took great interest in the avant garde muralists that utilized non-pentamerous radial symmetry in their works.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Research</defName>
+        <amount>4</amount>
+      </li>      
+    </skillGains>
+  </AlienRace.BackstoryDef>    
+ 
+    
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_11</defName>
+    <title>Evolution historian</title>
+    <baseDescription>NAME took up the role of studying, categorizing, recording, and storing evolutionary patterns in their species as well as indigent creatures of interest.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Research</defName>
+        <amount>4</amount>
+      </li>      
+    </skillGains>
+  </AlienRace.BackstoryDef>  
+ 
+    
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_12</defName>
+    <title>Big game taxidermist</title>
+    <baseDescription>NAME used to hallow and combine once decomposable creatures into five-sided household fixtures that better suit the taste of an Elder Thing "family."</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li>      
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>      
+    </skillGains>
+  </AlienRace.BackstoryDef>   
+ 
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_12</defName>
+    <title>Moho geo-architect</title>
+    <baseDescription>NAME designed and constructed grand deepsea life support complexes for Elder Things between the crust and mantle of a planet.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>   
+ 
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_13</defName>
+    <title>Ennui consoler</title>
+    <baseDescription>NAME provided listless Elder Things with meaningful tasks and entertaining activities to perpetuate positive communes.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>   
+ 
+  
+  <AlienRace.BackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_14</defName>
+    <title>Torturous doctor</title>
+    <baseDescription>NAME maintained their position through great skill despite the patient's pain threshold often being unreasonably exceeded.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>	  
+    </skillGains>
+  </AlienRace.BackstoryDef> 
+  
+</Defs>

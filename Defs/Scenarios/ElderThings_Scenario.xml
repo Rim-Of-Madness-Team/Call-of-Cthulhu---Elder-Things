@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenarioDef>
+    <defName>ElderThings_Scenario</defName>
+    <label>Elder Things</label>
+    <description>After the rebelling shoggoth slaves began decapitating their overlords, the elder things had few options left for survival. Using their wings like solar sails, they entered a protected hibernation state to survive the depths and dangers of space. Not all survived the trip, but those that did safely entered the atmosphere of a world on the rim. Their dependance on slaves for survival forced them to trade some precious technology in exchange for a single human slave to perform menial labor.</description>
+    <scenario>
+      <summary>Three surviving elder things and a human slave -- similar to the classic RimWorld settings.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerElderThings</factionDef>
+      </playerFaction>
+      <parts>
+        <!-- Config pages -->
+
+		<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+        </li>
+		
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+
+        <!-- Player pawns modifiers -->
+        <li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>0.5</chance>
+          <hediff>CryptosleepSickness</hediff>
+          <hideOffMap>true</hideOffMap>
+          <severityRange>
+            <min>1</min>
+            <max>1</max>
+          </severityRange>
+        </li>
+        
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>800</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Medicine</thingDef>
+          <count>24</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Component</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ElderThing_LaserGun</thingDef>
+        </li>
+		
+		<li Class="AlienRace.ScenPart_StartingHumanlikes">
+			<def>StartingHumanlikes</def>
+			<PawnCount>1</PawnCount>
+			<kindDef>Slave</kindDef>
+		</li>
+		
+        <!-- Scatter some things near player start -->
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>450</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>300</count>
+        </li>      
+
+        <!-- Scatter some things anywhere -->
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ShipChunk</thingDef>
+          <count>3</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>Steel</thingDef>
+          <count>720</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>7</count>
+        </li>
+        
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>ElderThingStartDialog</textKey>
+          <closeSound>ElderThings_CallStart</closeSound>
+        </li>
+        
+      </parts>
+    </scenario>
+  </ScenarioDef>
+  
+  
+  <ScenPartDef>
+    <defName>StartingSlave</defName>
+    <label>start with slave(s)</label>
+    <scenPartClass>ElderThingFaction.ScenPart_StartingSlave</scenPartClass>
+    <category>StartingImportant</category>
+    <selectionWeight>1.0</selectionWeight>
+    <summaryPriority>10</summaryPriority>
+  </ScenPartDef>
+  
+</Defs>

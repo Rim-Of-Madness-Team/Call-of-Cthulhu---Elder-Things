@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>ElderThing_Head</defName>
+    <label>head tentacles</label>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>ElderThing_Maw</defName>
+    <label>maw</label>
+  </BodyPartGroupDef>  
+  
+  <BodyPartGroupDef>
+    <defName>ElderThing_Wings</defName>
+    <label>wings</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>ElderThing_Arms</defName>
+    <label>tentacle arms</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>ElderThing_Legs</defName>
+    <label>tentacle legs</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>ElderThing_Mind</defName>
+    <label>strong mind</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartDef>
+    <defName>ElderThing_EatingTube</defName>
+    <label>eating tube</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>true</skinCovered>
+    <activities>
+      <li>Eating_source</li>
+      <li>Talking_source</li>	  
+    </activities>
+  </BodyPartDef>  
+
+  <BodyPartDef>
+    <defName>ElderThing_Maw</defName>
+    <label>maw</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>true</skinCovered>
+    <activities>
+      <li>Eating_source</li>
+    </activities>
+  </BodyPartDef>    
+  
+  <BodyPartDef>
+    <defName>ElderThing_Eye</defName>
+    <label>eye</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <useDestroyedOutLabel>true</useDestroyedOutLabel>
+    <beautyRelated>true</beautyRelated>
+    <activities>
+      <li>Sight_source</li>
+    </activities>
+    <hitChanceFactors>
+      <li>
+        <key>Blunt</key>
+        <value>0</value>
+      </li>
+    </hitChanceFactors>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>ElderThing_HeartLung</defName>
+    <label>respiration cell cluster</label>
+    <hitPoints>20</hitPoints>
+    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <skinCovered>false</skinCovered>
+    <activities>
+      <li>Breathing_main</li>
+      <li>Breathing_way</li>	  
+      <li>Metabolism</li>
+      <li>BloodPumping</li>
+    </activities>
+    <spawnThingOnRemoved>ET_Item_HeartLung</spawnThingOnRemoved>
+    <dontSuggestAmputation>true</dontSuggestAmputation>	
+  </BodyPartDef>  
+
+  
+  <BodyPartDef>
+    <defName>ElderThing_PsionicLobe</defName>
+    <label>psionic cortex</label>
+    <hitPoints>20</hitPoints>
+    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+	<activities>
+      <li>Consciousness_brain</li>
+      <li>Talking_source</li>
+	  <li>Hearing_source</li>
+      <li>Sight_source</li>	  
+	</activities>
+    <spawnThingOnRemoved>ET_Item_PsionicLobe</spawnThingOnRemoved>
+    <dontSuggestAmputation>true</dontSuggestAmputation>		
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>ElderThing_FrontalLobe</defName>
+    <label>frontal lobe</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <dontSuggestAmputation>true</dontSuggestAmputation>
+	<activities>
+      <li>Consciousness_brain</li>	
+	  <li>Talking_brain</li>
+      <li>Moving_brain</li>	
+	</activities>
+  </BodyPartDef>
+ 
+  <BodyPartDef>
+    <defName>ElderThing_ParietalLobe</defName>
+    <label>parietal lobe</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <dontSuggestAmputation>true</dontSuggestAmputation>
+	<activities>
+      <li>Manipulation_brain</li>	
+      <li>Moving_brain</li>		
+    </activities>	  
+  </BodyPartDef>
+ 
+  <BodyPartDef>
+    <defName>ElderThing_OccipitalLobe</defName>
+    <label>occipital lobe</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <activities>
+      <li>Sight_brain</li>	
+    </activities>
+    <dontSuggestAmputation>true</dontSuggestAmputation>
+  </BodyPartDef>
+ 
+  <BodyPartDef>
+    <defName>ElderThing_TemporalLobe</defName>
+    <label>temporal lobe</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <activities>
+      <li>Consciousness_brain</li>	
+      <li>Talking_brain</li>
+      <li>Hearing_brain</li>	
+    </activities>
+    <dontSuggestAmputation>true</dontSuggestAmputation>
+  </BodyPartDef>
+ 
+  <BodyPartDef>
+    <defName>ElderThing_BrainStem</defName>
+    <label>brain stem</label>
+    <hitPoints>30</hitPoints>
+    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <activities>
+      <li>Consciousness_brain</li>	  
+      <li>Moving_brain</li>
+      <li>Manipulation_brain</li>
+    </activities>
+    <dontSuggestAmputation>true</dontSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>ElderThing_HeadTentacles</defName>
+    <label>head tentacle</label>
+    <hitPoints>8</hitPoints>
+    <frostbiteVulnerability>8</frostbiteVulnerability>
+    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <skinCovered>true</skinCovered>
+    <beautyRelated>true</beautyRelated>
+    <activities>
+      <li>Sight_source</li>
+	  <li>Hearing_source</li>	
+      <li>Eating_source</li>
+      <li>Talking_source</li>
+      <li>Manipulation_tool</li>	  
+    </activities>
+  </BodyPartDef>  
+  
+  <BodyPartDef>
+    <defName>ElderThing_TopRing</defName>
+    <label>top ring</label>
+    <hitPoints>30</hitPoints>
+    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <bleedingRateMultiplier>4</bleedingRateMultiplier>
+    <skinCovered>true</skinCovered>
+    <activities>
+      <li>Breathing_way</li>
+      <li>Eating_way</li>
+      <li>Talking_way</li>
+    </activities>
+    <dontSuggestAmputation>true</dontSuggestAmputation>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>ElderThing_Wing</defName>
+    <label>wing</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <skinCovered>true</skinCovered>
+    <activities>
+      <li>Moving_tool</li>
+    </activities>
+  </BodyPartDef>  
+  
+  <BodyPartDef>
+    <defName>ElderThing_TentacleArm</defName>
+    <label>tentacle arm</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>8</frostbiteVulnerability>
+    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <skinCovered>true</skinCovered>
+    <activities>
+      <li>Manipulation_tool</li>
+    </activities>	
+  </BodyPartDef>  
+  
+  <BodyPartDef>
+    <defName>ElderThing_TentacleGrasper</defName>
+    <label>tentacle grasper</label>
+    <hitPoints>30</hitPoints>
+    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <skinCovered>true</skinCovered>
+    <activities>
+      <li>Manipulation_tool</li>
+    </activities>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>ElderThing_BottomRing</defName>
+    <label>bottom ring</label>
+    <hitPoints>30</hitPoints>
+    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <bleedingRateMultiplier>4</bleedingRateMultiplier>
+    <skinCovered>true</skinCovered>
+    <activities>
+      <li>Breathing_way</li>
+      <li>Eating_way</li>
+    </activities>
+    <dontSuggestAmputation>true</dontSuggestAmputation>
+  </BodyPartDef>  
+  
+  <BodyPartDef>
+    <defName>ElderThing_TentacleLeg</defName>
+    <label>tentacle leg</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>8</frostbiteVulnerability>
+    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <skinCovered>true</skinCovered>
+    <activities>
+      <li>Manipulation_tool</li>
+	  <li>Moving_tool</li>
+    </activities>
+  </BodyPartDef>
+    
+  
+  <BodyPartDef>
+    <defName>ElderThing_Xylem</defName>
+    <label>xylem tubes</label>
+    <hitPoints>20</hitPoints>
+    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <skinCovered>false</skinCovered>
+    <activities>
+      <li>Eating_way</li>
+      <li>Eating_digestion</li>	  
+      <li>BloodPumping</li>
+      <li>BloodFiltration_kidney</li>
+    </activities>
+    <spawnThingOnRemoved>ET_Item_Xylem</spawnThingOnRemoved>
+    <dontSuggestAmputation>true</dontSuggestAmputation>		
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>ElderThing_Phloem</defName>
+    <label>phloem tubes</label>
+    <hitPoints>20</hitPoints>
+    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <skinCovered>false</skinCovered>
+    <activities>
+      <li>Eating_way</li>	
+      <li>Eating_digestion</li>
+      <li>BloodPumping</li>
+      <li>BloodFiltration_liver</li>
+    </activities>
+    <spawnThingOnRemoved>ET_Item_Phloem</spawnThingOnRemoved>
+    <dontSuggestAmputation>true</dontSuggestAmputation>		
+  </BodyPartDef>  
+  
+</Defs>

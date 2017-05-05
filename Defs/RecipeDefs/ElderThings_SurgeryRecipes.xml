@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef Abstract="True" Name="SurgeryFlesh">
+    <effectWorking>Surgery</effectWorking>
+    <soundWorking>Recipe_Surgery</soundWorking>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <workSkill>Medicine</workSkill>
+    <workSkillLearnFactor>16</workSkillLearnFactor>
+  </RecipeDef>
+
+  
+  <!-- natural -->
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>ET_InstallNaturalHeartLung</defName>
+    <label>install respiration cell cluster</label>
+    <description>Installs respiration cell cluster.</description>
+    <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+    <jobString>Installing respiration cell cluster.</jobString>
+    <workAmount>2000</workAmount>
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ET_Item_HeartLung</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+			<thingDefs>
+				<li>ET_Item_HeartLung</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ElderThing_HeartLung</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>ET_InstallNaturalXylem</defName>
+    <label>install xylem tubes</label>
+    <description>Installs xylem tubes.</description>
+    <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+    <jobString>Installing xylem tubes.</jobString>
+    <workAmount>2000</workAmount>
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ET_Item_Xylem</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+			<thingDefs>
+				<li>ET_Item_Xylem</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ElderThing_Xylem</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>ET_InstallNaturalPhloem</defName>
+    <label>install phloem tubes</label>
+    <description>Installs phloem tubes.</description>
+    <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+    <jobString>Installing phloem tubes.</jobString>
+    <workAmount>2000</workAmount>
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ET_Item_Phloem</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+			<thingDefs>
+				<li>ET_Item_Phloem</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ElderThing_Phloem</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+  <RecipeDef ParentName="SurgeryFlesh">
+		<defName>ET_InstallBionicWing</defName>
+		<label>install bionic wing</label>
+		<description>Installs bionic wing.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic wing.</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+			<thingDefs>
+				<li>BionicArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ElderThing_Wing</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ET_BionicWing</addsHediff>
+	</RecipeDef>	
+	
+	
+  <RecipeDef ParentName="SurgeryFlesh">
+		<defName>ET_InstallBionicArm</defName>
+		<label>install bionic arm</label>
+		<description>Installs bionic arm.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic arm.</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+			<thingDefs>
+				<li>BionicArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ElderThing_TentacleArm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicArm</addsHediff>
+	</RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+		<defName>ET_InstallPowerClaw</defName>
+		<label>install power claw</label>
+		<description>Installs power claw.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing power claw.</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PowerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+			<thingDefs>
+				<li>PowerClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ElderThing_TentacleGrasper</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PowerClaw</addsHediff>
+	</RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+		<defName>ET_InstallScytherBlade</defName>
+		<label>install scyther blade</label>
+		<description>Installs scyther blade.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing scyther blade.</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+          <categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ScytherBlade</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+				<li>ScytherBlade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ElderThing_TentacleGrasper</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ScytherBlade</addsHediff>
+	</RecipeDef>	
+	
+  <RecipeDef ParentName="SurgeryFlesh">
+		<defName>ET_InstallPegLeg</defName>
+		<label>install peg leg</label>
+		<description>Installs peg leg.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing peg leg.</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+          <categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ElderThing_TentacleLeg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PegLeg</addsHediff>
+	</RecipeDef>
+	
+  <RecipeDef ParentName="SurgeryFlesh">
+		<defName>ET_InstallBionicLeg</defName>
+		<label>install bionic leg</label>
+		<description>Installs bionic leg.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic leg.</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+          <categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+				<li>BionicLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ElderThing_TentacleLeg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicLeg</addsHediff>
+	</RecipeDef>
+
+  
+</RecipeDefs>

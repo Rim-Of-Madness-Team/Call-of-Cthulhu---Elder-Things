@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef Name="LocalInjuryBase" Abstract="True">
+    <workerClass>DamageWorker_AddInjury</workerClass>
+  </DamageDef>
+
+  <DamageDef ParentName="LocalInjuryBase">
+    <defName>ElderThing_Psychic</defName>
+    <label>pscychic attack</label>
+    <externalViolence>true</externalViolence>	
+    <makesBlood>false</makesBlood>
+    <harmsHealth>false</harmsHealth>	
+    <deathMessage>{0} has died from psychic shock.</deathMessage>
+    <hediff>ElderThing_Psionic</hediff>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Electric</armorCategory>
+	<additionalHediffs>
+      <li>
+        <hediff>ElderThing_IntracranialPressureBuildup</hediff>
+        <severityPerDamageDealt>0.009</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>	
+  </DamageDef>
+
+  
+  
+</Defs>

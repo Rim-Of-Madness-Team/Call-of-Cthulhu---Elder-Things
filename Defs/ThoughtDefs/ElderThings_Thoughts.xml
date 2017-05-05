@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThoughtDefs>
+
+	<ThoughtDef>
+	<defName>ET_AteElderThingMeatDirect</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1.0</durationDays>
+	<stackedEffectMultiplier>0.25</stackedEffectMultiplier>
+	<stackLimit>3</stackLimit>
+	<nullifyingTraits>
+	  <li>Cannibal</li>
+	</nullifyingTraits>
+	<stages>
+	  <li>
+		<label>raw cannibalism</label>
+		<description>I ate the meat of another our kind, raw, like an animal. This is a nightmare.</description>
+		<baseMoodEffect>-15</baseMoodEffect>
+	  </li>
+	</stages>
+	</ThoughtDef>
+	
+	  <ThoughtDef>
+    <defName>ET_AteElderThingMeatAsIngredient</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1.0</durationDays>
+    <stackedEffectMultiplier>0.25</stackedEffectMultiplier>
+    <stackLimit>3</stackLimit>
+    <nullifyingTraits>
+      <li>Cannibal</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>cooked cannibalism</label>
+        <description>I ate a meal made from the meat of another one of our kind. This is horrible.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+    <!-- ================ BUTCHER THOUGHTS ============ -->
+
+	<ThoughtDef>
+		<defName>ET_ButcheredElderThingCorpse</defName>
+		<durationDays>6.0</durationDays>
+		<stackLimit>4</stackLimit>
+		<stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>I butchered my own kind</label>
+				<description>I butchered them like livestock.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>ET_KnowButcheredElderThingCorpse</defName>
+		<durationDays>6.0</durationDays>
+		<stackLimit>1</stackLimit>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>We butchered alien</label>
+				<description>We butchered a primitive, yet, intelligent creature like an animal.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Ate Corpse -->
+	
+	  <ThoughtDef>
+    <defName>ET_AteCorpse</defName>
+    <showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1.0</durationDays>
+    <stackLimit>3</stackLimit>
+		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>ate corpse</label>
+        <description>Eating a corpse without even butchering or cooking it it, how unappetizing!</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+</ThoughtDefs>

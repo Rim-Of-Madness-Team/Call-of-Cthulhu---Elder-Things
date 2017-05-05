@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+  
+  
+  
+  <!-- ========================= PRODUCTION ==================== -->
+  
+  <!-- 
+    <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>ET_Console</defName>
+    <thingClass>Building</thingClass>	
+    <label>console (elder things)</label>
+    <graphicData>
+      <texPath>Production/ElderThingsConsole</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5.0,5.0)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <rotatable>false</rotatable>	
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>170</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>7</Beauty>
+      <Comfort>0.70</Comfort>
+    </statBases>
+    <description>A comfortable space for a technician to manage a production area. This is race restricted for Elder Things.</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<size>(2,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <pathCost>30</pathCost>
+    <designationHotKey>Misc7</designationHotKey>
+    <designationCategory>Production</designationCategory>	
+    <fillPercent>0.50</fillPercent>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+    <placeWorkers>
+      <li>ElderThingFaction.PlaceWorker_NextToConsoleAccepter</li>
+    </placeWorkers>	
+    <researchPrerequisites>
+      <li>ElderThingBiogenesis</li>
+    </researchPrerequisites>
+	 <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Facility">
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+      </li>
+    </comps>
+  </ThingDef>
+
+  
+    <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>ET_BiogenesisVat</defName>
+    <thingClass>ElderThingFaction.Building_BiogenesisVat</thingClass>	
+    <label>Biogenesis vat (elder things)</label>
+    <graphicData>
+      <texPath>Production/ElderThingsShoggothVat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4.5,4.5)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <rotatable>true</rotatable>	
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>170</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>7</Beauty>
+      <Comfort>0.70</Comfort>
+    </statBases>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>	
+    <surfaceType>Item</surfaceType>	
+    <Passability>Standable</Passability>	
+    <description>This is the production space where new lifeforms can form through biogenesis. This is race restricted for Elder Things.</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<size>(4,4)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <pathCost>30</pathCost>
+    <designationHotKey>Misc7</designationHotKey>
+    <designationCategory>Production</designationCategory>	
+    <fillPercent>0.80</fillPercent>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ET_Console</li>
+        </linkableFacilities>
+      </li>
+    </comps>	
+	<placeWorkers>
+		<li>PlaceWorker_ShowFacilitiesConnections</li>
+	</placeWorkers>	
+    <researchPrerequisites>
+      <li>ElderThingBiogenesis</li>
+    </researchPrerequisites>	
+  </ThingDef>
+  -->
+  
+  <!-- ========================= FURNITURE ==================== -->
+<!--
+  
+    <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>ET_ChairPentagonal</defName>
+    <thingClass>Building</thingClass>	
+    <label>elder thing chair (pentagonal)</label>
+    <graphicData>
+      <texPath>Furniture/ChairTwo/ET_ChairTwo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3.5,3.5)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Furniture/UI/ET_ChairTwo</uiIconPath>	
+    <rotatable>false</rotatable>	
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>6500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>8</Beauty>
+      <Comfort>0.65</Comfort>
+    </statBases>
+    <description>This is not a chair. Rather, it is a raised five-sided surface that allows creatures with multiple appendages to rest their weary limbs. Without any high backs, this surface allows better viewing for creatures with more than just two eyes.</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<size>(1,1)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+	  <li>Stony</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <pathCost>30</pathCost>
+    <designationHotKey>Misc7</designationHotKey>
+    <fillPercent>0.35</fillPercent>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+  </ThingDef>
+  -->
+  
+    <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>ET_Chair</defName>
+    <thingClass>ElderThingFaction.Building_ElderThingChair</thingClass>	
+    <label>elder thing chair</label>
+    <graphicData>
+      <texPath>Furniture/Chair/ET_Chair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,3.5)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Furniture/UI/ET_Chair</uiIconPath>	
+    <rotatable>true</rotatable>	
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>170</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>7</Beauty>
+      <Comfort>0.65</Comfort>
+    </statBases>
+    <description>A comfortable and attractive chair for sitting at a table.</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<size>(1,1)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <pathCost>30</pathCost>
+    <designationHotKey>Misc7</designationHotKey>
+    <fillPercent>0.35</fillPercent>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>ET_Bed</defName>
+    <label>elder thing bed</label>
+    <Description>A hallow cyllinder to allow for solitude equipped with hooks to rest weary appendages.</Description>
+    <thingClass>ElderThingFaction.Building_ElderThingBed</thingClass>	
+    <graphicData>
+      <texPath>Furniture/Bed/ET_Bed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(6,6)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>8</Beauty>
+      <WorkToBuild>870</WorkToBuild>
+      <Mass>50</Mass>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.75</Comfort>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+    </statBases>
+    <Size>(2,3)</Size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+    <uiIconPath>Furniture/UI/ET_Bed</uiIconPath>	
+    <building>
+      <Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+      <bed_healPerDay>7</bed_healPerDay>
+    </building>
+    <tickerType>Normal</tickerType>	
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_RoomIdentifier">
+		<roomStat>Impressiveness</roomStat>
+	  </li>
+      <li Class="ElderThingFaction.CompProperties_SecondLayer">
+	    <graphicData>
+			<texPath>Furniture/Bed/ET_BedDoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5,5)</drawSize>
+	    </graphicData>
+	    <altitudeLayer>MoteOverhead</altitudeLayer>
+      </li>
+    </comps>	
+	<rotatable>false</rotatable>
+    <fillPercent>0.4</fillPercent>
+    <PathCost>60</PathCost>
+    <StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+    <CastEdgeShadows>True</CastEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <Passability>PassThroughOnly</Passability>
+    <DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+  
+  <ThingDef ParentName="TableBase">
+    <defName>ET_Table</defName>
+    <label>table (pentagonal)</label>
+    <graphicData>
+      <texPath>Furniture/Table/ET_Table</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(1.6,0.5,1.25)</volume>
+        <offset>(0,0,-0.13)</offset>
+      </shadowData>	  
+      <drawSize>(2.5,2.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>8</Beauty>
+    </statBases>
+    <fillPercent>0.75</fillPercent>	
+    <uiIconPath>Furniture/UI/ET_Table</uiIconPath>		
+    <size>(3,2)</size>
+    <costStuffCount>50</costStuffCount>
+    <rotatable>true</rotatable>
+  </ThingDef>
+
+    <!-- Bases -->
+	
+  <ThingDef Name="ArtableFurnitureBase" ParentName="FurnitureBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_Furniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>	
+  
+    <ThingDef Name="FurnitureBase" ParentName="BuildingBase" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <DesignationCategory>Furniture</DesignationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  <ThingDef Abstract="True" ParentName="ArtableFurnitureBase" Name="TableBase">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <description>People eat off tables when chairs are placed facing them.</description>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <surfaceType>Eat</surfaceType>
+    <comps>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+    </comps>
+  </ThingDef>
+
+</Buildings>
