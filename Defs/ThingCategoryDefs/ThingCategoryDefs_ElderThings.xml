@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+  
+  
+    <ThingCategoryDef>
+      <defName>ET_BiogenesisFormula</defName>
+      <label>biogenesis formulae</label>
+      <parent>Manufactured</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>UI/Icons/ThingCategories/Medicine</iconPath>
+    </ThingCategoryDef>
+
+
+</ThingCategoryDefs>

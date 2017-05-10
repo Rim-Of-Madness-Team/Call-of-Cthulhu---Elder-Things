@@ -66,7 +66,7 @@
 	</forcedTraits>
     <skillGains>
       <li>
-        <defName>Research</defName>
+        <defName>Intellectual</defName>
         <amount>4</amount>
       </li>
     </skillGains>
@@ -78,7 +78,7 @@
   <AlienRace.BackstoryDef ParentName="ET_BG_Base">
     <defName>ET_BG_C_03</defName>
     <title>Shoggoth rebellion survivor</title>
-    <baseDescription>NAME barely escaped being decapitated by revolting protoplasmic slaves. NAME learned from an early age to survive by any means, and has become wary of overzealous research.</baseDescription>
+    <baseDescription>NAME barely escaped being decapitated by revolting protoplasmic slaves. NAME learned from an early age to survive by any means, and has become wary of overzealous Intellectual.</baseDescription>
     <slot>Childhood</slot>
     <workDisables>
       <li>ManualDumb</li>
@@ -210,7 +210,7 @@
         <amount>4</amount>
       </li>
       <li>
-        <defName>Research</defName>
+        <defName>Intellectual</defName>
         <amount>2</amount>
       </li>
       <li>
@@ -252,7 +252,7 @@
         <amount>3</amount>
       </li>
       <li>
-        <defName>Research</defName>
+        <defName>Intellectual</defName>
         <amount>3</amount>
       </li>
       <li>
@@ -286,11 +286,11 @@
   <AlienRace.BackstoryDef ParentName="ET_BG_Base">
     <defName>ET_BG_A_05</defName>
     <title>Xenomarine-botanist</title>
-    <baseDescription>Having lived their life in an underwater city among the society of the Elder Things, NAME sought to explore the waters of other worlds and formulate maps of their discoveries. Mapping xenosolar oceanic formations was a formidable challenge. Counter to their own expectations, NAME became far more interested in the properties of alien underwater plantlife and discovered a new passion for aquatic research.</baseDescription>
+    <baseDescription>Having lived their life in an underwater city among the society of the Elder Things, NAME sought to explore the waters of other worlds and formulate maps of their discoveries. Mapping xenosolar oceanic formations was a formidable challenge. Counter to their own expectations, NAME became far more interested in the properties of alien underwater plantlife and discovered a new passion for aquatic Intellectual.</baseDescription>
     <slot>Adulthood</slot>
     <skillGains>
       <li>
-        <defName>Research</defName>
+        <defName>Intellectual</defName>
         <amount>3</amount>
       </li>      
 	  <li>
@@ -355,7 +355,7 @@
     <slot>Adulthood</slot>
     <skillGains>
       <li>
-        <defName>Research</defName>
+        <defName>Intellectual</defName>
         <amount>5</amount>
       </li>      
     </skillGains>
@@ -391,7 +391,7 @@
         <amount>2</amount>
       </li>
       <li>
-        <defName>Research</defName>
+        <defName>Intellectual</defName>
         <amount>4</amount>
       </li>      
     </skillGains>
@@ -409,7 +409,7 @@
         <amount>2</amount>
       </li>
       <li>
-        <defName>Research</defName>
+        <defName>Intellectual</defName>
         <amount>4</amount>
       </li>      
     </skillGains>

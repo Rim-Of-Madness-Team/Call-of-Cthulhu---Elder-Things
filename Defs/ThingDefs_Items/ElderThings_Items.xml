@@ -2,9 +2,9 @@
 <Defs>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>ET_Formula_Human</defName>
-    <label>biogenesis formula (human)</label>
-    <description>Contains a carefully calculated series of elements, that under the proper lab-controlled circumstances, can create human life.</description>
+    <defName>ET_Formula</defName>
+    <label>biogenesis formula</label>
+    <description>Contains a carefully calculated series of elements, that under the proper lab-controlled circumstances, can create life.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Neutroamine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -22,15 +22,6 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
-    <recipeMaker>
-      <researchPrerequisite>ElderThingBiogenesis</researchPrerequisite>
-      <recipeUsers>
-        <li>DrugLab</li>
-      </recipeUsers>
-    </recipeMaker>
-    <costList>
-      <Human_Corpse>3</Human_Corpse>
-    </costList>	
   </ThingDef>
   
   <!--================== Bases ==================-->

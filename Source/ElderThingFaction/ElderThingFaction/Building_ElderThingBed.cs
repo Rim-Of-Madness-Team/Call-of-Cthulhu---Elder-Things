@@ -11,9 +11,9 @@ namespace ElderThingFaction
     {
         private CompSecondLayer bedDoor;
 
-        public override void SpawnSetup(Map map)
+        public override void SpawnSetup(Map map, bool blabla)
         {
-            base.SpawnSetup(map);
+            base.SpawnSetup(map, blabla);
             this.bedDoor = base.GetComp<CompSecondLayer>();
         }
 

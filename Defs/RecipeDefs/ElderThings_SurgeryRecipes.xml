@@ -46,7 +46,11 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>ElderThing_HeartLung</li>
+			<li>ElderThing_HeartLungFirst</li>
+			<li>ElderThing_HeartLungSecond</li>
+			<li>ElderThing_HeartLungThird</li>
+			<li>ElderThing_HeartLungFourth</li>
+			<li>ElderThing_HeartLungFifth</li>
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
 	
@@ -160,7 +164,11 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>ElderThing_Wing</li>
+			<li>ElderThing_WingFirst</li>
+			<li>ElderThing_WingSecond</li>
+			<li>ElderThing_WingThird</li>
+			<li>ElderThing_WingFourth</li>
+			<li>ElderThing_WingFifth</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ET_BionicWing</addsHediff>
 	</RecipeDef>	
@@ -200,7 +208,11 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>ElderThing_TentacleArm</li>
+			<li>ElderThing_TentacleArmFirst</li>
+			<li>ElderThing_TentacleArmSecond</li>
+			<li>ElderThing_TentacleArmThird</li>
+			<li>ElderThing_TentacleArmFourth</li>
+			<li>ElderThing_TentacleArmFifth</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicArm</addsHediff>
 	</RecipeDef>
@@ -239,7 +251,11 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>ElderThing_TentacleGrasper</li>
+			<li>ElderThing_TentacleGrasperFirst</li>
+			<li>ElderThing_TentacleGrasperSecond</li>
+			<li>ElderThing_TentacleGrasperThird</li>
+			<li>ElderThing_TentacleGrasperFourth</li>
+			<li>ElderThing_TentacleGrasperFifth</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PowerClaw</addsHediff>
 	</RecipeDef>
@@ -278,7 +294,11 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>ElderThing_TentacleGrasper</li>
+			<li>ElderThing_TentacleGrasperFirst</li>
+			<li>ElderThing_TentacleGrasperSecond</li>
+			<li>ElderThing_TentacleGrasperThird</li>
+			<li>ElderThing_TentacleGrasperFourth</li>
+			<li>ElderThing_TentacleGrasperFifth</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ScytherBlade</addsHediff>
 	</RecipeDef>	
@@ -317,7 +337,11 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>ElderThing_TentacleLeg</li>
+			<li>ElderThing_TentacleLegFirst</li>
+			<li>ElderThing_TentacleLegSecond</li>
+			<li>ElderThing_TentacleLegThird</li>
+			<li>ElderThing_TentacleLegFourth</li>
+			<li>ElderThing_TentacleLegFifth</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PegLeg</addsHediff>
 	</RecipeDef>
@@ -356,7 +380,11 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>ElderThing_TentacleLeg</li>
+			<li>ElderThing_TentacleLegFirst</li>
+			<li>ElderThing_TentacleLegSecond</li>
+			<li>ElderThing_TentacleLegThird</li>
+			<li>ElderThing_TentacleLegFourth</li>
+			<li>ElderThing_TentacleLegFifth</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicLeg</addsHediff>
 	</RecipeDef>

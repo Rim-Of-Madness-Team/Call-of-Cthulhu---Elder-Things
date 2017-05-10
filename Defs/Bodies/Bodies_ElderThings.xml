@@ -31,7 +31,7 @@
 				  </groups>
 			    </li>
 				<li>
-				  <def>ElderThing_HeadTentacles</def>
+				  <def>ElderThing_HeadTentaclesFirst</def>
 				  <coverage>0.12</coverage>	  
 				  <groups>
 					<li>ElderThing_Head</li>
@@ -48,7 +48,7 @@
 				  </parts>
 				</li>
 				<li>
-				  <def>ElderThing_HeadTentacles</def>
+				  <def>ElderThing_HeadTentaclesSecond</def>
 				  <coverage>0.12</coverage>	  
 				  <groups>
 					<li>ElderThing_Head</li>
@@ -65,7 +65,7 @@
 				  </parts>
 				</li>
 				<li>
-				  <def>ElderThing_HeadTentacles</def>
+				  <def>ElderThing_HeadTentaclesThird</def>
 				  <coverage>0.12</coverage>	  
 				  <groups>
 					<li>ElderThing_Head</li>
@@ -82,7 +82,7 @@
 				  </parts>
 				</li>
 				<li>
-				  <def>ElderThing_HeadTentacles</def>
+				  <def>ElderThing_HeadTentaclesFourth</def>
 				  <coverage>0.12</coverage>	  
 				  <groups>
 					<li>ElderThing_Head</li>
@@ -99,7 +99,7 @@
 				  </parts>
 				</li>
 				<li>
-				  <def>ElderThing_HeadTentacles</def>
+				  <def>ElderThing_HeadTentaclesFifth</def>
 				  <coverage>0.12</coverage>	  
 				  <groups>
 					<li>ElderThing_Head</li>
@@ -187,7 +187,7 @@
 		 </parts>
 		</li>
         <li>
-          <def>ElderThing_HeartLung</def>
+          <def>ElderThing_HeartLungFirst</def>
           <coverage>0.03</coverage>
           <depth>Inside</depth>
           <groups>
@@ -195,7 +195,7 @@
           </groups>
         </li>
         <li>
-          <def>ElderThing_HeartLung</def>
+          <def>ElderThing_HeartLungSecond</def>
           <coverage>0.03</coverage>
           <depth>Inside</depth>
           <groups>
@@ -203,7 +203,7 @@
           </groups>
         </li>
         <li>
-          <def>ElderThing_HeartLung</def>
+          <def>ElderThing_HeartLungThird</def>
           <coverage>0.03</coverage>
           <depth>Inside</depth>
           <groups>
@@ -211,7 +211,15 @@
           </groups>
         </li>
         <li>
-          <def>ElderThing_HeartLung</def>
+          <def>ElderThing_HeartLungFourth</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>ElderThing_HeartLungFifth</def>
           <coverage>0.03</coverage>
           <depth>Inside</depth>
           <groups>
@@ -235,46 +243,46 @@
           </groups>
         </li>
         <li>
-          <def>ElderThing_Wing</def>
+          <def>ElderThing_WingFirst</def>
           <coverage>0.03</coverage>
           <groups>
             <li>ElderThing_Wings</li>
           </groups>
 		</li>
         <li>
-          <def>ElderThing_Wing</def>
+          <def>ElderThing_WingSecond</def>
           <coverage>0.03</coverage>
           <groups>
             <li>ElderThing_Wings</li>
           </groups>
 		</li>
         <li>
-          <def>ElderThing_Wing</def>
+          <def>ElderThing_WingThird</def>
           <coverage>0.03</coverage>
           <groups>
             <li>ElderThing_Wings</li>
           </groups>
 		</li>
         <li>
-          <def>ElderThing_Wing</def>
+          <def>ElderThing_WingFourth</def>
           <coverage>0.03</coverage>
           <groups>
             <li>ElderThing_Wings</li>
           </groups>
 		</li>
         <li>
-          <def>ElderThing_Wing</def>
+          <def>ElderThing_WingFifth</def>
           <coverage>0.03</coverage>
           <groups>
             <li>ElderThing_Wings</li>
           </groups>
 		</li>
 		<li>
-		  <def>ElderThing_TentacleArm</def>
+		  <def>ElderThing_TentacleArmFirst</def>
 		  <coverage>0.03</coverage>
 		  <parts>
 		    <li>
-			  <def>ElderThing_TentacleGrasper</def>
+			  <def>ElderThing_TentacleGrasperFirst</def>
 			  <coverage>0.0015</coverage>
 			</li>
 		  </parts>
@@ -283,11 +291,11 @@
 		  </groups>
 		</li>
 		<li>
-		  <def>ElderThing_TentacleArm</def>
+		  <def>ElderThing_TentacleArmSecond</def>
 		  <coverage>0.03</coverage>
 		  <parts>
 		    <li>
-			  <def>ElderThing_TentacleGrasper</def>
+			  <def>ElderThing_TentacleGrasperSecond</def>
 			  <coverage>0.0015</coverage>
 			</li>
 		  </parts>
@@ -296,11 +304,11 @@
 		  </groups>
 		</li>
 		<li>
-		  <def>ElderThing_TentacleArm</def>
+		  <def>ElderThing_TentacleArmThird</def>
 		  <coverage>0.03</coverage>
 		  <parts>
 		    <li>
-			  <def>ElderThing_TentacleGrasper</def>
+			  <def>ElderThing_TentacleGrasperThird</def>
 			  <coverage>0.0015</coverage>
 			</li>
 		  </parts>
@@ -309,11 +317,11 @@
 		  </groups>
 		</li>
 		<li>
-		  <def>ElderThing_TentacleArm</def>
+		  <def>ElderThing_TentacleArmFourth</def>
 		  <coverage>0.03</coverage>
 		  <parts>
 		    <li>
-			  <def>ElderThing_TentacleGrasper</def>
+			  <def>ElderThing_TentacleGrasperFourth</def>
 			  <coverage>0.0015</coverage>
 			</li>
 		  </parts>
@@ -322,11 +330,11 @@
 		  </groups>
 		</li>
 		<li>
-		  <def>ElderThing_TentacleArm</def>
+		  <def>ElderThing_TentacleArmFifth</def>
 		  <coverage>0.03</coverage>
 		  <parts>
 		    <li>
-			  <def>ElderThing_TentacleGrasper</def>
+			  <def>ElderThing_TentacleGrasperFifth</def>
 			  <coverage>0.0015</coverage>
 			</li>
 		  </parts>
@@ -339,35 +347,35 @@
 		  <coverage>0.2</coverage>
 		  <parts>
 		    <li>
-			  <def>ElderThing_TentacleLeg</def>
+			  <def>ElderThing_TentacleLegFirst</def>
 			  <coverage>0.04</coverage>
 			  <groups>
 			    <li>ElderThing_Legs</li>
 			  </groups>
 			</li>
 		    <li>
-			  <def>ElderThing_TentacleLeg</def>
+			  <def>ElderThing_TentacleLegSecond</def>
 			  <coverage>0.04</coverage>
 			  <groups>
 			    <li>ElderThing_Legs</li>
 			  </groups>
 			</li>
 		    <li>
-			  <def>ElderThing_TentacleLeg</def>
+			  <def>ElderThing_TentacleLegThird</def>
 			  <coverage>0.04</coverage>
 			  <groups>
 			    <li>ElderThing_Legs</li>
 			  </groups>
 			</li>
 		    <li>
-			  <def>ElderThing_TentacleLeg</def>
+			  <def>ElderThing_TentacleLegFourth</def>
 			  <coverage>0.04</coverage>
 			  <groups>
 			    <li>ElderThing_Legs</li>
 			  </groups>
 			</li>
 		    <li>
-			  <def>ElderThing_TentacleLeg</def>
+			  <def>ElderThing_TentacleLegFifth</def>
 			  <coverage>0.04</coverage>
 			  <groups>
 			    <li>ElderThing_Legs</li>

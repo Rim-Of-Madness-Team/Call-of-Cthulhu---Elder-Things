@@ -5,7 +5,6 @@
   
   <!-- ========================= PRODUCTION ==================== -->
   
-  <!-- 
     <ThingDef ParentName="ArtableFurnitureBase">
     <defName>ET_Console</defName>
     <thingClass>Building</thingClass>	
@@ -36,6 +35,9 @@
     </stuffCategories>
     <costStuffCount>60</costStuffCount>
     <pathCost>30</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,0)</interactionCellOffset>	
+	<surfaceType>Item</surfaceType>
     <designationHotKey>Misc7</designationHotKey>
     <designationCategory>Production</designationCategory>	
     <fillPercent>0.50</fillPercent>
@@ -85,6 +87,9 @@
       <Beauty>7</Beauty>
       <Comfort>0.70</Comfort>
     </statBases>
+    <recipes>
+      <li>ET_BiogenesisRecipe</li>
+    </recipes>	
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>	
@@ -95,6 +100,7 @@
 	<size>(4,4)</size>
     <stuffCategories>
       <li>Metallic</li>
+	  <li>Stony</li>
     </stuffCategories>
     <costStuffCount>60</costStuffCount>
     <pathCost>30</pathCost>
@@ -118,7 +124,6 @@
       <li>ElderThingBiogenesis</li>
     </researchPrerequisites>	
   </ThingDef>
-  -->
   
   <!-- ========================= FURNITURE ==================== -->
 <!--

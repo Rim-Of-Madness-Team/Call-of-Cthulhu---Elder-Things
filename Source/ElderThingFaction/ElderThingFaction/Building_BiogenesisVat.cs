@@ -9,7 +9,7 @@ using Verse.Sound;
 
 namespace ElderThingFaction
 {
-    public class Building_BiogenesisVat : Building_WorkTable
+    public class Building_BiogenesisVat : Building_WorkTable, IBillGiver, IBillGiverWithTickAction
     {
         public CompPowerTrader powerComp;
 
@@ -20,6 +20,12 @@ namespace ElderThingFaction
         private List<IntVec3> cachedAdjCellsCardinal;
 
         private ThingDef consoleDef;
+
+        public Building_BiogenesisVat()
+        {
+            this.billStack = new BillStack(this);
+        }
+        
 
         public override IntVec3 InteractionCell
         {
@@ -52,22 +58,14 @@ namespace ElderThingFaction
             base.ExposeData();
         }
 
-        public override void SpawnSetup(Map map)
+        public override void SpawnSetup(Map map, bool blabla)
         {
-            base.SpawnSetup(map);
+            base.SpawnSetup(map, blabla);
             this.powerComp = base.GetComp<CompPowerTrader>();
             this.refuelableComp = base.GetComp<CompRefuelable>();
             this.breakdownableComp = base.GetComp<CompBreakdownable>();
             this.powerComp = base.GetComp<CompPowerTrader>();
             this.consoleDef = DefDatabase<ThingDef>.GetNamed("ET_Console");
-        }
-
-        public bool CanSpawnNow
-        {
-            get
-            {
-                return this.powerComp.PowerOn;
-            }
         }
 
         private List<IntVec3> AdjCellsCardinalInBounds

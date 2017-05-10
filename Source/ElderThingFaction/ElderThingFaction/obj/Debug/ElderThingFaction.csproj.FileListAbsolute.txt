@@ -4,3 +4,6 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[Unreleased] Call of
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Elder Things Faction 1.0 A16\Assemblies\ElderThingFaction.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Elder Things Faction 1.0 A16\Source\ElderThingFaction\ElderThingFaction\obj\Debug\ElderThingFaction.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Elder Things Faction 1.0 A16\Source\ElderThingFaction\ElderThingFaction\obj\Debug\ElderThingFaction.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\Call-of-Cthulhu---Elder Things\Source\ElderThingFaction\ElderThingFaction\obj\Debug\ElderThingFaction.csprojResolveAssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\Call-of-Cthulhu---Elder Things\Source\ElderThingFaction\ElderThingFaction\obj\Debug\ElderThingFaction.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\Call-of-Cthulhu---Elder Things\Assemblies\ElderThingFaction.dll

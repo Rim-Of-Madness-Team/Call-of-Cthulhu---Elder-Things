@@ -18,7 +18,7 @@ namespace ElderThingFaction
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.LookValue<int>(ref this.count, "count", 0, false);
+            Scribe_Values.Look<int>(ref this.count, "count", 0, false);
         }
 
         public override void DoEditInterface(Listing_ScenEdit listing)
@@ -82,7 +82,7 @@ namespace ElderThingFaction
         // Verse.StartingSlaveUtility
         public static Pawn NewGeneratedStartingSlave()
         {
-            PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDefOf.Slave, Faction.OfPlayer, PawnGenerationContext.PlayerStarter, null, true, false, false, false, true, false, 26f, false, true, true, (Pawn X) => !X.story.WorkTagIsDisabled(WorkTags.Hauling), null, null, null, null, null);
+            PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDefOf.Slave, Faction.OfPlayer, PawnGenerationContext.PlayerStarter, -1, true, false, false, false, true, false, 26f, false, true, true, false, false, (Pawn X) => !X.story.WorkTagIsDisabled(WorkTags.Hauling));
             Pawn pawn = null;
             try
             {

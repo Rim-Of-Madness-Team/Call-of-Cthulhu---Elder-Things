@@ -23,22 +23,29 @@ namespace ElderThingFaction
 
         public static bool RandomFactionBaseTileFor_PreFix(ref int __result, Faction faction)
         {
-            if (faction.def.defName == "ElderThing_Faction")
+            if (faction != null)
             {
-                __result = RandomFactionBaseTileFor_ElderThings(faction);
-                return false;
+                if (faction.def != null)
+                {
+                    if (faction.def.defName == "ElderThing_Faction")
+                    {
+                        __result = RandomFactionBaseTileFor_ElderThings(faction);
+                        return false;
+                    }
+                }
             }
             return true;
         }
 
-        public static int RandomFactionBaseTileFor_ElderThings(Faction faction)
+        public static int RandomFactionBaseTileFor_ElderThings(Faction faction, bool mustBeAutoChoosable = false)
         {
-            for (int i = 0; i < 150; i++)
+            for (int i = 0; i < 500; i++)
             {
                 int num;
-                if (Find.WorldGrid.TileIndices.TryRandomElementByWeight(delegate (int x)
-                {
-                    Tile tile = Find.WorldGrid[x];
+                if ((from _ in Enumerable.Range(0, 100)
+                     select Rand.Range(0, Find.WorldGrid.TilesCount)).TryRandomElementByWeight(delegate (int x)
+                     {
+                         Tile tile = Find.WorldGrid[x];
                     if (!tile.biome.canBuildBase || tile.hilliness == Hilliness.Impassable)
                     {
                         return 0f;
@@ -46,17 +53,21 @@ namespace ElderThingFaction
                     List<int> neighbors = new List<int>();
                     Find.WorldGrid.GetTileNeighbors(x, neighbors);
                     //Log.Message("Neighbors " + neighbors.Count.ToString());
-                    foreach (int y in neighbors)
-                    {
-                        Tile tile2 = Find.WorldGrid[y];
-                        if (tile2.hilliness == Hilliness.Mountainous &&
-                            tile2.biome == BiomeDefOf.IceSheet)
-                            return 1000f;
-                    }
+                    if (neighbors != null && neighbors.Count > 0)
+                         {
+                             foreach (int y in neighbors)
+                             {
+                                 Tile tile2 = Find.WorldGrid[y];
+                                 if (tile2.hilliness == Hilliness.Mountainous &&
+                                     tile2.biome == BiomeDefOf.IceSheet)
+                                     return 1000f;
+                             }
+                         }
+                    
                     return tile.biome.factionBaseSelectionWeight;
                 }, out num))
                 {
-                    if (Find.FactionManager.FactionAtTile(num) == null)
+                    if (TileFinder.IsValidTileForNewSettlement(num, null))
                     {
                         return num;
                     }

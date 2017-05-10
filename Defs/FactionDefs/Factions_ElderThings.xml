@@ -6,10 +6,10 @@
     <label>Society of the Elder Things</label>
     <description>This society was strung together by surviving aliens who lost their world when their slaves revolted. Ever since then, they have taken to space to find new worlds to colonize.\n\n Elder Things thrive on beautiful works of art and spacious interiors. They also enjoy trading goods in exchange for slaves to perform their mundane tasks for them. They rarely need weapons to destroy foes, due to their thick barrel bodies preventing most damage. During ranged exchanges, they are usually fast enough to close in on their enemies and overwhelm their minds with psionic powers.</description>
     <pawnsPlural>elder things</pawnsPlural>
-    <factionBaseSelectionWeight>0.025</factionBaseSelectionWeight>	
+    <baseSelectionWeight>0.025</baseSelectionWeight>	
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Society of the Elder Things</fixedName>
-    <factionBaseNameMaker>NamerFactionBasePirate</factionBaseNameMaker>	
+    <baseNameMaker>NamerFactionBasePirate</baseNameMaker>	
     <backstoryCategory>ElderThing_Backstory</backstoryCategory>	
     <raidCommonality>0.01</raidCommonality>
     <canMakeRandomly>true</canMakeRandomly>	
@@ -69,9 +69,9 @@
     <visitorTraderKinds>
       <li>Visitor_ElderThing_Standard</li>
     </visitorTraderKinds>
-    <factionBaseTraderKinds>
+    <baseTraderKinds>
       <li>FactionBase_ElderThing_Standard</li>
-    </factionBaseTraderKinds>
+    </baseTraderKinds>
     <allowedArrivalTemperatureRange>
       <min>-255</min>
       <max>255</max>
@@ -87,7 +87,7 @@
     <isPlayer>true</isPlayer>
     <basicMemberKind>ElderThing_Colonist</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
-    <factionBaseNameMaker>NamerFactionBasePlayerColony</factionBaseNameMaker>
+    <baseNameMaker>NamerFactionBasePlayerColony</baseNameMaker>
     <techLevel>Industrial</techLevel>
     <backstoryCategory>Civil</backstoryCategory>
     <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
