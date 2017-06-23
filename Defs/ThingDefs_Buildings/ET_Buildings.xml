@@ -95,6 +95,8 @@
     </inspectorTabs>	
     <surfaceType>Item</surfaceType>	
     <Passability>Standable</Passability>	
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,0)</interactionCellOffset>		
     <description>This is the production space where new lifeforms can form through biogenesis. This is race restricted for Elder Things.</description>
     <socialPropernessMatters>true</socialPropernessMatters>
 	<size>(4,4)</size>

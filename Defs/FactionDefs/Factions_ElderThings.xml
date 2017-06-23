@@ -9,8 +9,8 @@
     <baseSelectionWeight>0.025</baseSelectionWeight>	
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Society of the Elder Things</fixedName>
-    <baseNameMaker>NamerFactionBasePirate</baseNameMaker>	
-    <backstoryCategory>ElderThing_Backstory</backstoryCategory>	
+    <backstoryCategory>ElderThing_Backstory</backstoryCategory>
+    <baseNameMaker>NamerFactionBasePirate</baseNameMaker>		
     <raidCommonality>0.01</raidCommonality>
     <canMakeRandomly>true</canMakeRandomly>	
 	<leaderTitle>archechinon</leaderTitle>
@@ -87,9 +87,9 @@
     <isPlayer>true</isPlayer>
     <basicMemberKind>ElderThing_Colonist</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
+	<backstoryCategory>Civil</backstoryCategory>
     <baseNameMaker>NamerFactionBasePlayerColony</baseNameMaker>
     <techLevel>Industrial</techLevel>
-    <backstoryCategory>Civil</backstoryCategory>
     <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
     <startingResearchTags>
       <li>ClassicStart</li>
