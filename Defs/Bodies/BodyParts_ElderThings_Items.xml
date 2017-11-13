@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
   <!-- natural -->
 
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="ElderThingBodyPartNaturalBase">
     <defName>ET_Item_PsionicLobe</defName>
     <label>psionic cortex (elder thing)</label>
     <description>The fifth lobe of the Elder Thing brain is the psionic cortex. It is capable of using psionic attacks in close quarters. Ready to find a new owner.</description>
@@ -17,7 +17,7 @@
     </statBases>
   </ThingDef>
   
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="ElderThingBodyPartNaturalBase">
     <defName>ET_Item_HeartLung</defName>
     <label>respiration cell cluster</label>
     <description>The respiration cell cluster of an elder thing provide the organism with blood and carbon dioxide to all parts of the body. Ready to find a new owner.</description>
@@ -31,7 +31,7 @@
     </statBases>
   </ThingDef>
   
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="ElderThingBodyPartNaturalBase">
     <defName>ET_Item_Xylem</defName>
     <label>xylem tubes</label>
     <description>Xylem tubes carry nutrients from the digestive system of an elder thing across the organism. Ready to find a new owner.</description>
@@ -45,7 +45,7 @@
     </statBases>
   </ThingDef>  
   
-  <ThingDef ParentName="BodyPartNaturalBase">
+  <ThingDef ParentName="ElderThingBodyPartNaturalBase">
     <defName>ET_Item_Phloem</defName>
     <label>phloem tubes</label>
     <description>Phloem tubes carry metabolic products from the external shell and circulate them around the body. Ready to find a new owner.</description>
@@ -61,7 +61,7 @@
   
   <!-- artificial -->
   
-  <ThingDef ParentName="BodyPartArtificialBase">
+  <ThingDef ParentName="ElderThingBodyPartArtificialBase">
     <defName>ET_Item_BionicWing</defName>
     <label>bionic wing (elder thing)</label>
     <description>Bionic wing uses cutting-edge technology to give its owner extreme comfort and speed. This object is limited to the skeletal structure of the race of Elder Things.</description>
@@ -80,7 +80,7 @@
 
   
   <!-- Bases -->
-   <ThingDef Name="BodyPartBase" Abstract="True">
+   <ThingDef Name="ElderThingBodyPartBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
     <useHitPoints>true</useHitPoints>
@@ -103,7 +103,7 @@
     <pathCost>10</pathCost>
   </ThingDef>
 
-  <ThingDef ParentName="BodyPartBase" Name="BodyPartNaturalBase" Abstract="True">
+  <ThingDef ParentName="BodyPartBase" Name="ElderThingBodyPartNaturalBase" Abstract="True">
     <thingCategories>
       <li>BodyPartsNatural</li>
     </thingCategories>
@@ -112,7 +112,7 @@
 		</statBases>
   </ThingDef>
 
-  <ThingDef ParentName="BodyPartBase" Name="BodyPartArtificialBase" Abstract="True">
+  <ThingDef ParentName="BodyPartBase" Name="ElderThingBodyPartArtificialBase" Abstract="True">
     <thingCategories>
       <li>BodyPartsArtificial</li>
     </thingCategories>
@@ -123,4 +123,4 @@
  
   
   
-</ThingDefs>
+</Defs>

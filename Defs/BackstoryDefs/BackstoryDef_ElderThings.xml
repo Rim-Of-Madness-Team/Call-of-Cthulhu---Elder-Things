@@ -16,19 +16,19 @@
     </spawnCategories>
 	<disallowedTraits>
 	  <li>
-	    <defName>Nudist</defName>
+	    <defname>Nudist</defname>
 	  </li>
 	  <li>
-		<defName>Cannibal</defName>
+		<defname>Cannibal</defname>
 	  </li>
 	  <li>
-	    <defName>Gay</defName>
+	    <defname>Gay</defname>
 	  </li>
 	  <li>
-	    <defName>DislikesMen</defName>
+	    <defname>DislikesMen</defname>
 	  </li>
 	  <li>
-	    <defName>DislikesWomen</defName>
+	    <defname>DislikesWomen</defname>
 	  </li>
 	</disallowedTraits>
   </AlienRace.BackstoryDef>

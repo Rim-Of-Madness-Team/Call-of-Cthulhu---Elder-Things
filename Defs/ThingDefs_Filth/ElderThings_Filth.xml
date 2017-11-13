@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
-
-  <ThingDef Name="BaseFilth" Abstract="True">
-    <thingClass>Filth</thingClass>
-    <category>Filth</category>
-    <altitudeLayer>Filth</altitudeLayer>
-    <useHitPoints>false</useHitPoints>
-    <drawerType>MapMeshOnly</drawerType>
-    <graphicData>
-      <shaderType>Transparent</shaderType>
-      <graphicClass>Graphic_Cluster</graphicClass>
-    </graphicData>
-    <statBases>
-      <Beauty>-15</Beauty>
-      <Cleanliness>-5</Cleanliness>
-    </statBases>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseFilth">
+  <ThingDef ParentName="BaseElderThingFilth">
     <defName>FilthBloodElderThing</defName>
     <label>vile liquid</label>
     <statBases>
@@ -36,4 +19,25 @@
     </filth>
   </ThingDef>   
   
-</ThingDefs>
+  <!-- BASES -->
+  
+
+   <ThingDef Name="BaseElderThingFilth" Abstract="True">
+    <thingClass>Filth</thingClass>
+    <category>Filth</category>
+    <altitudeLayer>Filth</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <drawerType>MapMeshOnly</drawerType>
+    <graphicData>
+			<graphicClass>Graphic_Cluster</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+    <statBases>
+      <Beauty>-15</Beauty>
+      <Cleanliness>-5</Cleanliness>
+    </statBases>
+  </ThingDef>
+
+
+  
+</Defs>

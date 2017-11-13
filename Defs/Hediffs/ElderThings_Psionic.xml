@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<HediffDefs>
+<Defs>
 
   <HediffDef ParentName="InjuryBase">
     <defName>ElderThing_Psionic</defName>
@@ -40,8 +40,7 @@
     </comps>
     <stages>
       <li>
-        <label>initial-hidden</label>
-        <everVisible>false</everVisible>
+        <label>initial</label>
       </li>
       <li>
         <label>initial</label>
@@ -109,4 +108,4 @@
   </HediffDef>
 
 
-</HediffDefs>
+</Defs>

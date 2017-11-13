@@ -6,13 +6,12 @@
     <label>Society of the Elder Things</label>
     <description>This society was strung together by surviving aliens who lost their world when their slaves revolted. Ever since then, they have taken to space to find new worlds to colonize.\n\n Elder Things thrive on beautiful works of art and spacious interiors. They also enjoy trading goods in exchange for slaves to perform their mundane tasks for them. They rarely need weapons to destroy foes, due to their thick barrel bodies preventing most damage. During ranged exchanges, they are usually fast enough to close in on their enemies and overwhelm their minds with psionic powers.</description>
     <pawnsPlural>elder things</pawnsPlural>
-    <baseSelectionWeight>0.025</baseSelectionWeight>	
+    <baseSelectionWeight>0.025</baseSelectionWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Society of the Elder Things</fixedName>
     <backstoryCategory>ElderThing_Backstory</backstoryCategory>
-    <baseNameMaker>NamerFactionBasePirate</baseNameMaker>		
-    <raidCommonality>0.01</raidCommonality>
-    <canMakeRandomly>true</canMakeRandomly>	
+    <baseNameMaker>NamerFactionBasePirate</baseNameMaker>
+    <canMakeRandomly>true</canMakeRandomly>
 	<leaderTitle>archechinon</leaderTitle>
     <expandingIconTexture>World/WorldObjects/Expanding/ElderThingBase</expandingIconTexture>
 	<hairTags>
@@ -37,9 +36,9 @@
 	   <kindDef>Normal</kindDef>
         <options>
 		  <ElderThing_Kind>100</ElderThing_Kind>
-		  <ElderThing_Leader>8</ElderThing_Leader>		  
+		  <ElderThing_Leader>8</ElderThing_Leader>
         </options>
-      </li>	
+      </li>
 	  <li>
 	   <kindDef>FactionBase</kindDef>
         <options>
@@ -60,12 +59,12 @@
 		  <ElderThing_Guard>250</ElderThing_Guard>
 		  <ElderThing_Kind>50</ElderThing_Kind>
         </guards>
-      </li>	  
+      </li>
     </pawnGroupMakers>
     <caravanTraderKinds>
       <li>Caravan_ElderThing_PetDealer</li>
       <li>Caravan_ElderThing_ArtDealer</li>
-    </caravanTraderKinds>	
+    </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_ElderThing_Standard</li>
     </visitorTraderKinds>
@@ -76,10 +75,10 @@
       <min>-255</min>
       <max>255</max>
     </allowedArrivalTemperatureRange>
-    <homeIconPath>World/WorldObjects/Expanding/ElderThingZoomed</homeIconPath>	
+    <homeIconPath>World/WorldObjects/Expanding/ElderThingZoomed</homeIconPath>
   </FactionDef>
-  
-  
+
+
     <FactionDef ParentName="PlayerFactionBase">
     <defName>PlayerElderThings</defName>
     <label>Elder Thing Survivors</label>
@@ -88,7 +87,9 @@
     <basicMemberKind>ElderThing_Colonist</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
 	<backstoryCategory>Civil</backstoryCategory>
-    <baseNameMaker>NamerFactionBasePlayerColony</baseNameMaker>
+	<baseNameMaker>NamerFactionBasePlayerColony</baseNameMaker>
+	<baseNameMakerPlayer>NamerFactionPlayerColonyRandomized</baseNameMakerPlayer>
+	<factionNameMakerPlayer>NamerFactionBasePlayerColonyRandomized</factionNameMakerPlayer>
     <techLevel>Industrial</techLevel>
     <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
     <startingResearchTags>
@@ -103,5 +104,5 @@
       </thingDefs>
     </apparelStuffFilter>
   </FactionDef>
-  
+
 </Defs>

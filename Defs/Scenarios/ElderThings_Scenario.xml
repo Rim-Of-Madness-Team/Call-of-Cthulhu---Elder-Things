@@ -68,7 +68,7 @@
 		
 		<li Class="AlienRace.ScenPart_StartingHumanlikes">
 			<def>StartingHumanlikes</def>
-			<PawnCount>1</PawnCount>
+			<pawnCount>1</pawnCount>
 			<kindDef>Slave</kindDef>
 		</li>
 		

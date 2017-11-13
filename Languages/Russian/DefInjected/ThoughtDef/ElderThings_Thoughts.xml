@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ET_AteElderThingMeatDirect.stages.0.label>каннибализм(сырое)</ET_AteElderThingMeatDirect.stages.0.label>
+  <ET_AteElderThingMeatDirect.stages.0.description>Я съел мясо одного из своих собратьев, как животное. Сырым! Это просто кошмарно.</ET_AteElderThingMeatDirect.stages.0.description>
+
+  <ET_AteElderThingMeatAsIngredient.stages.0.label>каннибализм(приготовленное)</ET_AteElderThingMeatAsIngredient.stages.0.label>
+  <ET_AteElderThingMeatAsIngredient.stages.0.description>Я съел блюдо из мяса одного из своих собратьев! Это просто ужасно.</ET_AteElderThingMeatAsIngredient.stages.0.description>
+
+
+  <!-- BUTCHER THOUGHTS -->
+
+  <ET_ButcheredElderThingCorpse.stages.0.label>Я разделал одного из своих.</ET_ButcheredElderThingCorpse.stages.0.label>
+  <ET_ButcheredElderThingCorpse.stages.0.description>Я забил их как скот на скотобойне.</ET_ButcheredElderThingCorpse.stages.0.description>
+
+  <ET_KnowButcheredElderThingCorpse.stages.0.label>Мы разделали пришельца.</ET_KnowButcheredElderThingCorpse.stages.0.label>
+  <ET_KnowButcheredElderThingCorpse.stages.0.description>Мы разделали представителя примитивной, но все же разумной формы жизни.</ET_KnowButcheredElderThingCorpse.stages.0.description>
+
+
+  <!-- Ate Corpse -->
+
+  <ET_AteCorpse.stages.0.label>Съел труп</ET_AteCorpse.stages.0.label>
+  <ET_AteCorpse.stages.0.description>Съесть труп, даже не приготовив его. Какая мерзость!</ET_AteCorpse.stages.0.description>
+
+
+</LanguageData>

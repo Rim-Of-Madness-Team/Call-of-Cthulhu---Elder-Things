@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
+
 
 	<!-- ===================== Laser Gun ========================= -->
 
-	<ThingDef Class="ElderThingFaction.ThingDef_LaserProjectile" ParentName="BaseBullet">
+	<ThingDef Class="ElderThingFaction.ThingDef_LaserProjectile" ParentName="BaseElderThingBullet">
 		<defName>Bullet_ElderThingLaserGun</defName>
 		<label>laser</label>
 		<graphicData>
@@ -25,7 +26,7 @@
 		<StartFireChance>0.000</StartFireChance>				
 		<thingClass>ElderThingFaction.Projectile_Laser</thingClass>
 	</ThingDef>
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseElderThingWeapon">
 		<defName>ElderThing_LaserGun</defName>
 		<label>laser gun (elder things)</label>
 		<description>A builky laser weapon designed for beings with at least five arms to support it. This is a race restricted weapon for The Elder Things.</description>
@@ -43,6 +44,7 @@
 			<AccuracyMedium>0.86</AccuracyMedium>
 			<AccuracyLong>0.9</AccuracyLong>
 			<RangedWeapon_Cooldown>3.16</RangedWeapon_Cooldown>
+			<Weapon_Bulk>1.0</Weapon_Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>ElderThingLaserGun</researchPrerequisite>
@@ -60,7 +62,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<projectileDef>Bullet_ElderThingLaserGun</projectileDef>
+				<defaultProjectile>Bullet_ElderThingLaserGun</defaultProjectile>
 				<warmupTime>1.0</warmupTime>
 				<range>23</range>
 				<soundCast>ElderThings_LaserFire</soundCast>
@@ -68,6 +70,25 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+		  <li>
+			<label>pentagonal grip</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>1.6</cooldownTime>
+		  </li>
+		  <li>
+			<label>blast chamber</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Poke</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>1.6</cooldownTime>
+		  </li>
+		</tools>
 		<comps>
 		  <li>
 		    <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
@@ -80,7 +101,7 @@
 	
 	<!-- =============== VANILLA BASES ================ -->
 	
-		<ThingDef Abstract="True" Name="BaseWeapon">
+		<ThingDef Abstract="True" Name="BaseElderThingWeapon">
 		<thingClass>ThingWithComps</thingClass>
 		<category>Item</category>
 		<drawGUIOverlay>true</drawGUIOverlay>
@@ -109,7 +130,7 @@
 		</graphicData>
 	</ThingDef>
 
-  <ThingDef Name="BaseGun" Abstract="True" ParentName="BaseWeapon">
+  <ThingDef Name="BaseElderThingGun" Abstract="True" ParentName="BaseElderThingWeapon">
 		<techLevel>Industrial</techLevel>
 		<smeltable>true</smeltable>
 		<thingCategories>
@@ -130,7 +151,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Name="BaseMakeableGun" ParentName="BaseGun" Abstract="True">
+  <ThingDef Name="BaseElderThingMakeableGun" ParentName="BaseElderThingGun" Abstract="True">
     <recipeMaker>
       <workSpeedStat>SmithingSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
@@ -142,5 +163,21 @@
       <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
+  
+  
+
+  <ThingDef Name="BaseElderThingBullet" Abstract="True">
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Bullet</thingClass>
+    <label>bullet</label>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef>
+
 	
-</ThingDefs>
+</Defs>

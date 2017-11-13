@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <WorkGivers>
 
+<!--
   <WorkGiverDef>
     <defName>ET_DoBillsMakeFormula</defName>
     <label>make formula</label>
@@ -17,5 +18,6 @@
     </requiredCapacities>
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
+-->
 
 </WorkGivers>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!--
   <RecipeDef>
     <defName>ET_BiogenesisRecipe</defName>
     <label>make biogenesis formula</label>
@@ -9,7 +10,7 @@
     <workAmount>2000</workAmount>
     <workSkill>Cooking</workSkill>
     <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
-	<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>	
+	<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
     <effectWorking>ButcherFlesh</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
@@ -32,7 +33,7 @@
       </categories>
 	  <exceptedCategories>
 		<li>CorpsesMechanoid</li>
-	  </exceptedCategories>	      
+	  </exceptedCategories>
 	  <specialFiltersToDisallow>
         <li>AllowRotten</li>
       </specialFiltersToDisallow>
@@ -43,5 +44,6 @@
 		</categories>
 	</defaultIngredientFilter>
   </RecipeDef>
+-->
 
 </Defs>

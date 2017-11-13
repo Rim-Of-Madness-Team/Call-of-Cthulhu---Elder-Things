@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ThingDefs>
+<Defs>
 
   
   <!-- ============================ Base Pawn Elder Thing ========================== -->
@@ -47,10 +47,10 @@
 	<alienRace>
 		<!-- General -->
 		<generalSettings>
-		  <ImmuneToAge>true</ImmuneToAge>
-		  <PawnsSpecificBackstories>true</PawnsSpecificBackstories>
-		  <CanLayDown>false</CanLayDown>
-		  <ForcedRaceTraitEntries>
+		  <immuneToAge>true</immuneToAge>
+		  <pawnsSpecificBackstories>true</pawnsSpecificBackstories>
+		  <canLayDown>false</canLayDown>
+		  <forcedRaceTraitEntries>
             <li>
               <defname>Gay</defname>
               <chance>0</chance>
@@ -67,10 +67,10 @@
               <defname>DislikesWomen</defname>
               <chance>0</chance>
             </li>
-		  </ForcedRaceTraitEntries>
+		  </forcedRaceTraitEntries>
 		  <alienPartGenerator>
 			<customDrawSize>(1.5,1.5)</customDrawSize>
-			<UseGenderedHeads>false</UseGenderedHeads>
+			<useGenderedHeads>false</useGenderedHeads>
 			<alienbodytypes>
 			  <li>Hulk</li>
 			</alienbodytypes>
@@ -131,7 +131,7 @@
 		  </li>
 		</graphicPaths>
 		<hairSettings>
-		  <HasHair>false</HasHair>
+		  <hasHair>false</hasHair>
 		</hairSettings>
 		<!-- Pawn Kinds -->
 		<pawnKindSettings>
@@ -292,12 +292,12 @@
 		  <apparelList>
 			<li>Apparel_CowboyHat</li>
 		  </apparelList>-->
-		  <onlyUseRacerestrictedApparel>true</onlyUseRacerestrictedApparel>
+		  <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 		  <!-- Weapons -->
 		  <weaponList>
 		    <li>ElderThing_LaserGun</li>
 		  </weaponList>
-		  <onlyUseRacerestrictedWeapons>true</onlyUseRacerestrictedWeapons>
+		  <onlyUseRaceRestrictedWeapons>true</onlyUseRaceRestrictedWeapons>
 		  <!-- Buildings -->
 		  <buildingList>
 			<li>ET_Chair</li>
@@ -399,10 +399,10 @@
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-      <specialshadowData>
+      <specialShadowData>
         <volume>(0.3, 0.8, 0.4)</volume>
         <offset>(0,0,-0.3)</offset>
-      </specialshadowData>
+      </specialShadowData>
       <ageGenerationCurve>
         <points>
           <li>(14,0)</li>
@@ -501,4 +501,4 @@
   </PawnKindDef>
   
   
-</ThingDefs>
+</Defs>

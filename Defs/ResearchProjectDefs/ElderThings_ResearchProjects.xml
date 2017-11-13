@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ResearchProjectDefs>
+<Defs>
 
 	<ResearchProjectDef>
 		<defName>ElderThingLaserGun</defName>
@@ -11,8 +11,8 @@
 		<researchViewX>7</researchViewX>
 		<researchViewY>4</researchViewY>
 	</ResearchProjectDef>
-	
-	
+
+	<!--
 	<ResearchProjectDef>
 		<defName>ElderThingBiogenesis</defName>
 		<label>biogenesis (elder things)</label>
@@ -29,5 +29,6 @@
 		<researchViewX>9</researchViewX>
 		<researchViewY>4</researchViewY>
 	</ResearchProjectDef>
-	
-</ResearchProjectDefs>	
+-->
+
+</Defs>
