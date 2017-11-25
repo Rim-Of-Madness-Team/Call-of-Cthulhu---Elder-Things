@@ -25,6 +25,7 @@
       <li>ITab_Pawn_Guest</li>
       <li>ITab_Pawn_Prisoner</li>
       <li>ITab_Pawn_Social</li>
+      <li>ITab_Pawn_Combat</li>
     </inspectorTabs>
     <comps>
       <li>
@@ -331,21 +332,26 @@
       <ComfyTemperatureMax>52</ComfyTemperatureMax>
 	  <EatingSpeed>1.15</EatingSpeed>
     </statBases>
-    <verbs>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1.40</defaultCooldownTime>
-        <meleeDamageBaseAmount>7</meleeDamageBaseAmount>
-        <meleeDamageDef>Blunt</meleeDamageDef>
+    <tools>
+	  <li>
+        <label>arms</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.4</cooldownTime>
         <linkedBodyPartsGroup>ElderThing_Arms</linkedBodyPartsGroup>
       </li>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>0.40</defaultCooldownTime>
-        <meleeDamageBaseAmount>3</meleeDamageBaseAmount>
-        <meleeDamageDef>ElderThing_Psychic</meleeDamageDef>
+	  <li>
+        <label>overwhelming mind</label>
+        <capacities>
+          <li>ElderThing_Psychic</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>0.4</cooldownTime>
+        <linkedBodyPartsGroup>ElderThing_Mind</linkedBodyPartsGroup>
       </li>
-    </verbs>
+    </tools>
 	<race>
 	  <nameGenerator>NamerElderThings</nameGenerator>
 	  <hasGenders>false</hasGenders>
@@ -415,6 +421,9 @@
           <li>(2750,0)</li>
         </points>
       </ageGenerationCurve>
+	  <hediffGiverSets>
+        <li>ET_ElderThingStandard</li>
+      </hediffGiverSets>
     </race>
     <recipes>
       <li>InstallJoywire</li>

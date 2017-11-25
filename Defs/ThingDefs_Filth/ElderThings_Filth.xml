@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="BaseElderThingFilth">
     <defName>FilthBloodElderThing</defName>
-    <label>vile liquid</label>
+    <label>elder thing blood</label>
     <statBases>
       <Beauty>-100</Beauty>
       <Cleanliness>-20</Cleanliness>
