@@ -46,7 +46,7 @@ namespace ElderThingFaction
             {
                 if (AdjacentConsole() == null)
                 {
-                    Messages.Message("Cannot control the biogenesis process without a console.", MessageSound.RejectInput);
+                    Messages.Message("Cannot control the biogenesis process without a console.", MessageTypeDefOf.RejectInput); //MessageSound.RejectInput);
                     return false;
                 }
                 return base.UsableNow;

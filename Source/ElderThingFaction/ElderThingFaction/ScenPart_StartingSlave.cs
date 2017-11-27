@@ -82,7 +82,9 @@ namespace ElderThingFaction
         // Verse.StartingSlaveUtility
         public static Pawn NewGeneratedStartingSlave()
         {
-            PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDefOf.Slave, Faction.OfPlayer, PawnGenerationContext.PlayerStarter, -1, true, false, false, false, true, false, 26f, false, true, true, false, false, (Pawn X) => !X.story.WorkTagIsDisabled(WorkTags.Hauling));
+            PawnGenerationRequest request = new PawnGenerationRequest(
+                PawnKindDefOf.Slave, Faction.OfPlayer, PawnGenerationContext.PlayerStarter, -1, true, false, false, false, true,
+                false, 26f, false, true, true, false, false, false, false, (Pawn X) => !X.story.WorkTagIsDisabled(WorkTags.Hauling));
             Pawn pawn = null;
             try
             {

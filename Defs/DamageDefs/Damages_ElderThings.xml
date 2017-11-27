@@ -12,7 +12,6 @@
     <makesBlood>false</makesBlood>
     <harmsHealth>false</harmsHealth>	
     <deathMessage>{0} has died from psychic shock.</deathMessage>
-	<tendable>true</tendable>
     <hediff>ElderThing_Psionic</hediff>
     <impactSoundType>Electric</impactSoundType>
     <armorCategory>Electric</armorCategory>
