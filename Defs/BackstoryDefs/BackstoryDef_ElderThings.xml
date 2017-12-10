@@ -16,19 +16,19 @@
     </spawnCategories>
 	<disallowedTraits>
 	  <li>
-	    <defname>Nudist</defname>
+	    <defName>Nudist</defName>
 	  </li>
 	  <li>
-		<defname>Cannibal</defname>
+		<defName>Cannibal</defName>
 	  </li>
 	  <li>
-	    <defname>Gay</defname>
+	    <defName>Gay</defName>
 	  </li>
 	  <li>
-	    <defname>DislikesMen</defname>
+	    <defName>DislikesMen</defName>
 	  </li>
 	  <li>
-	    <defname>DislikesWomen</defname>
+	    <defName>DislikesWomen</defName>
 	  </li>
 	</disallowedTraits>
   </AlienRace.BackstoryDef>
@@ -61,7 +61,7 @@
     </workDisables>	
 	<forcedTraits>
 	  <li>
-	    <defname>TooSmart</defname>
+	    <defName>TooSmart</defName>
 	  </li>
 	</forcedTraits>
     <skillGains>
@@ -179,7 +179,7 @@
     <slot>Childhood</slot>
 	<forcedTraits>
 	  <li>
-	    <defname>Psychopath</defname>
+	    <defName>Psychopath</defName>
 	  </li>
 	</forcedTraits>	
     <skillGains>

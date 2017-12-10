@@ -53,19 +53,19 @@
 		  <canLayDown>false</canLayDown>
 		  <forcedRaceTraitEntries>
             <li>
-              <defname>Gay</defname>
+              <defName>Gay</defName>
               <chance>0</chance>
             </li> 
 			<li>
-              <defname>Nudist</defname>
+              <defName>Nudist</defName>
               <chance>0</chance>
             </li>            
 			<li>
-              <defname>DislikesMen</defname>
+              <defName>DislikesMen</defName>
               <chance>0</chance>
             </li>            
 			<li>
-              <defname>DislikesWomen</defname>
+              <defName>DislikesWomen</defName>
               <chance>0</chance>
             </li>
 		  </forcedRaceTraitEntries>
