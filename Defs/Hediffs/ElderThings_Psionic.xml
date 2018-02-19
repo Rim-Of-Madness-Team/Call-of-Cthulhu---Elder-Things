@@ -2,10 +2,16 @@
 
 <Defs>
 
-  <HediffDef ParentName="InjuryBase">
+
+  <HediffDef Name="ROME_InjuryBase" Abstract="True">
+    <hediffClass>Hediff_Injury</hediffClass>
+    <tendable>true</tendable>
+    <displayWound>true</displayWound>
+  </HediffDef>
+
+  <HediffDef ParentName="ROME_InjuryBase">
     <defName>ElderThing_Psionic</defName>
     <label>psionic</label>
-    <displayWound>false</displayWound>
     <comps>
       <li Class="HediffCompProperties_TendDuration">
         <labelTendedWell>bandaged</labelTendedWell>

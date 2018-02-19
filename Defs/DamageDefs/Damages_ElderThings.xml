@@ -8,13 +8,21 @@
   <DamageDef ParentName="ElderThingLocalInjuryBase">
     <defName>ElderThing_Psychic</defName>
     <label>pscychic attack</label>
-    <externalViolence>true</externalViolence>	
+	<workerClass>DamageWorker_AddInjury</workerClass>
+    <hasForcefulImpact>true</hasForcefulImpact>
     <makesBlood>false</makesBlood>
-    <harmsHealth>false</harmsHealth>	
-    <deathMessage>{0} has died from psychic shock.</deathMessage>
-    <hediff>ElderThing_Psionic</hediff>
-    <impactSoundType>Electric</impactSoundType>
-    <armorCategory>Electric</armorCategory>
+    <canInterruptJobs>true</canInterruptJobs>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has died from psychic shock.</deathMessage>	
+    <hediff>ElderThing_Psionic</hediff>	
+	<armorCategory>Electric</armorCategory>
+	<spreadOut>true</spreadOut>
+    <explosionDamage>10</explosionDamage>
+    <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastFlame</explosionCellMote>
+    <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+    <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+    <soundExplosion>Explosion_Flame</soundExplosion>
 	<additionalHediffs>
       <li>
         <hediff>ElderThing_IntracranialPressureBuildup</hediff>

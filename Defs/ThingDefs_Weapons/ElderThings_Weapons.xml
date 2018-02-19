@@ -4,7 +4,7 @@
 
 	<!-- ===================== Laser Gun ========================= -->
 
-	<ThingDef Class="ElderThingFaction.ThingDef_LaserProjectile" ParentName="BaseElderThingBullet">
+	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseElderThingBullet">
 		<defName>Bullet_ElderThingLaserGun</defName>
 		<label>laser</label>
 		<graphicData>
@@ -24,7 +24,7 @@
 		<preFiringDuration>2</preFiringDuration>
 		<postFiringDuration>63</postFiringDuration>
 		<StartFireChance>0.000</StartFireChance>				
-		<thingClass>ElderThingFaction.Projectile_Laser</thingClass>
+		<thingClass>JecsTools.Projectile_Laser</thingClass>
 	</ThingDef>
 	<ThingDef ParentName="BaseElderThingWeapon">
 		<defName>ElderThing_LaserGun</defName>
