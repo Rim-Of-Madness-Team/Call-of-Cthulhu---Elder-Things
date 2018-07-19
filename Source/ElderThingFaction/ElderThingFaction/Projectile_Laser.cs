@@ -386,7 +386,6 @@ namespace ElderThingFaction
         /// <param name="hitTarget"></param>
         public virtual void PostImpactEffects(Pawn launcher, Pawn hitTarget)
         {
-
         }
 
         /// <summary>
