@@ -70,7 +70,7 @@
             </li>
 		  </forcedRaceTraitEntries>
 		  <alienPartGenerator>
-			<customDrawSize>(1.5,1.5)</customDrawSize>
+			<customDrawSize>(1.501,1.501)</customDrawSize>
 			<useGenderedHeads>false</useGenderedHeads>
 			<alienbodytypes>
 			  <li>Hulk</li>
