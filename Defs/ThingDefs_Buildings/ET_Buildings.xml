@@ -132,7 +132,7 @@
 
   <!-- ========================= FURNITURE ==================== -->
 
-    <ThingDef ParentName="ArtableFurnitureBase">
+    <ThingDef ParentName="ElderThingArtableFurnitureBase">
     <defName>ET_ChairPentagonal</defName>
     <thingClass>Building</thingClass>
     <label>elder thing chair (pentagonal)</label>
@@ -172,7 +172,7 @@
     </building>
   </ThingDef>
 
-    <ThingDef ParentName="ArtableFurnitureBase">
+    <ThingDef ParentName="ElderThingArtableFurnitureBase">
     <defName>ET_Chair</defName>
     <thingClass>ElderThingFaction.Building_ElderThingChair</thingClass>
     <label>elder thing chair</label>
@@ -212,7 +212,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="ArtableFurnitureBase">
+  <ThingDef ParentName="ElderThingArtableFurnitureBase">
     <defName>ET_Bed</defName>
     <label>elder thing bed</label>
     <description>A hallow cyllinder to allow for solitude equipped with hooks to rest weary appendages.</description>
@@ -282,7 +282,7 @@
 		</placeWorkers>
   </ThingDef>
 
-  <ThingDef ParentName="TableBase">
+  <ThingDef ParentName="ElderThingTableBase">
     <defName>ET_Table</defName>
     <label>table (pentagonal)</label>
     <graphicData>
@@ -301,12 +301,80 @@
       <Flammability>1.0</Flammability>
       <Beauty>8</Beauty>
     </statBases>
-	<staticSunShadowHeight>0</staticSunShadowHeight>
     <fillPercent>0.75</fillPercent>
     <uiIconPath>Furniture/UI/ET_Table</uiIconPath>
     <size>(3,2)</size>
     <costStuffCount>50</costStuffCount>
     <rotatable>true</rotatable>
+  </ThingDef>
+
+    <!-- Bases -->
+  
+  <ThingDef Abstract="True" ParentName="ElderThingArtableFurnitureBase" Name="ElderThingTableBase">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <description>People eat off tables when chairs are placed facing them.</description>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <surfaceType>Eat</surfaceType>
+    <comps>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+    </comps>
+  </ThingDef>
+  
+  	
+  <ThingDef Name="ElderThingArtableFurnitureBase" ParentName="ElderThingFurnitureBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_Furniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef Name="ElderThingFurnitureBase" ParentName="ElderThingBuildingBase" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <designationCategory>Furniture</designationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef Name="ElderThingBuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+		<statBases>
+			<SellPriceFactor>0.70</SellPriceFactor>
+		</statBases>
   </ThingDef>
 
 </Defs>

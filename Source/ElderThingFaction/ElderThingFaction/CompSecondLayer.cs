@@ -1,5 +1,4 @@
 ﻿using System;
-using RimWorld;
 using Verse;
 
 namespace ElderThingFaction
@@ -52,7 +51,7 @@ namespace ElderThingFaction
         {
             base.PostDraw();
             if (ShowNow)
-                this.Graphic.Draw(GenThing.TrueCenter(this.parent.Position, this.parent.Rotation, this.parent.def.size, this.Props.Altitude), this.parent.Rotation, this.parent);
+                this.Graphic.Draw(Gen.TrueCenter(this.parent.Position, this.parent.Rotation, this.parent.def.size, this.Props.Altitude), this.parent.Rotation, this.parent);
         }
     }
 }

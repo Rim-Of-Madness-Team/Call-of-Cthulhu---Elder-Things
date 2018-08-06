@@ -8,7 +8,7 @@
     <label>psionic cortex (elder thing)</label>
     <description>The fifth lobe of the Elder Thing brain is the psionic cortex. It is capable of using psionic attacks in close quarters. Ready to find a new owner.</description>
     <graphicData>
-      <texPath>Things/Item/Health/HealthItemNatural</texPath>
+      <texPath>Things/Item/BodyPart/Organ</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -22,7 +22,7 @@
     <label>respiration cell cluster</label>
     <description>The respiration cell cluster of an elder thing provide the organism with blood and carbon dioxide to all parts of the body. Ready to find a new owner.</description>
     <graphicData>
-      <texPath>Things/Item/Health/HealthItemNatural</texPath>
+      <texPath>Things/Item/BodyPart/Organ</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -36,7 +36,7 @@
     <label>xylem tubes</label>
     <description>Xylem tubes carry nutrients from the digestive system of an elder thing across the organism. Ready to find a new owner.</description>
     <graphicData>
-      <texPath>Things/Item/Health/HealthItemNatural</texPath>
+      <texPath>Things/Item/BodyPart/Organ</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -50,7 +50,7 @@
     <label>phloem tubes</label>
     <description>Phloem tubes carry metabolic products from the external shell and circulate them around the body. Ready to find a new owner.</description>
     <graphicData>
-      <texPath>Things/Item/Health/HealthItemNatural</texPath>
+      <texPath>Things/Item/BodyPart/Organ</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -66,7 +66,7 @@
     <label>bionic wing (elder thing)</label>
     <description>Bionic wing uses cutting-edge technology to give its owner extreme comfort and speed. This object is limited to the skeletal structure of the race of Elder Things.</description>
     <graphicData>
-      <texPath>Things/Item/Health/HealthItemBionic</texPath>
+      <texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -93,6 +93,7 @@
     <altitudeLayer>Item</altitudeLayer>
     <tickerType>Never</tickerType>
     <alwaysHaulable>true</alwaysHaulable>
+    <isBodyPartOrImplant>true</isBodyPartOrImplant>
     <tradeTags>
       <li>BodyPartOrImplant</li>
     </tradeTags>

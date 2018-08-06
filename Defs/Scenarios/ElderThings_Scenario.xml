@@ -53,12 +53,12 @@
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>MedicineIndustrial</thingDef>
+          <thingDef>Medicine</thingDef>
           <count>24</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>ComponentIndustrial</thingDef>
+          <thingDef>Component</thingDef>
           <count>30</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">

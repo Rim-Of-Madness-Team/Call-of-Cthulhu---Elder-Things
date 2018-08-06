@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Elder-Things\Assemblies" t="ExcludeRecursive" />
-    <e p="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Elder-Things\Source\ElderThingFaction" t="IncludeFlat">
+    <e p="C:\Users\mattw\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_ElderThingFaction.71252822.00" t="ExcludeRecursive" />
+    <e p="D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Elder-Things\Assemblies" t="ExcludeRecursive" />
+    <e p="D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Elder-Things\Source\ElderThingFaction" t="IncludeFlat">
       <e p="ElderThingFaction" t="IncludeRecursive">
-        <e p="AbilityEffect_ShortFlight.cs" t="Include" />
         <e p="Building_BiogenesisVat.cs" t="Include" />
         <e p="Building_ElderThingBed.cs" t="Include" />
         <e p="Building_ElderThingChair.cs" t="Include" />
-        <e p="CompElderThing.cs" t="Include" />
         <e p="CompProperties_SecondLayer.cs" t="Include" />
         <e p="CompSecondLayer.cs" t="Include" />
-        <e p="DamagerWorker_PsionicBlast.cs" t="Include" />
-        <e p="ElderThingData.cs" t="Include" />
         <e p="ElderThingFaction.csproj" t="IncludeRecursive" />
-        <e p="ElderThingUtility.cs" t="Include" />
         <e p="HarmonyElderThings.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="PlaceWorker_NextToConsoleAccepter.cs" t="Include" />
@@ -29,6 +25,5 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Solution Items" t="Include" />
     </e>
-    <e p="C:\Users\mattw\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_ElderThingFaction.-51781552.00" t="ExcludeRecursive" />
   </component>
 </project>

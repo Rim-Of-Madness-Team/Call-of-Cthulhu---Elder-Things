@@ -73,7 +73,7 @@ namespace ElderThingFaction
             for (int i = 0; i < this.count; i++)
             {
                 Pawn newSlave = ElderThingFaction.ScenPart_StartingSlave.NewGeneratedStartingSlave();
-                Find.GameInitData.startingAndOptionalPawns.Add(newSlave);
+                Find.GameInitData.startingPawns.Add(newSlave);
                 yield return newSlave;
             }
             yield break;
