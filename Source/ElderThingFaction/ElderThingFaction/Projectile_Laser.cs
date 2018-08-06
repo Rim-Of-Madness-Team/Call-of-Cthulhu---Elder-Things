@@ -13,10 +13,12 @@ namespace ElderThingFaction
     {
         // Variables.
         public int tickCounter = 0;
+
         public Thing hitThing = null;
 
         // Draw variables.
         public Material preFiringTexture;
+
         public Material postFiringTexture;
         public Matrix4x4 drawingMatrix = default(Matrix4x4);
         public Vector3 drawingScale;
@@ -26,6 +28,7 @@ namespace ElderThingFaction
 
         // Custom XML variables.
         public float preFiringInitialIntensity = 0f;
+
         public float preFiringFinalIntensity = 0f;
         public float postFiringInitialIntensity = 0f;
         public float postFiringFinalIntensity = 0f;
@@ -83,7 +86,6 @@ namespace ElderThingFaction
             //((ThingWithComponents)this).Tick(); // Does not work...
             try
             {
-
                 if (tickCounter == 0)
                 {
                     GetParametersFromXml();
@@ -127,7 +129,6 @@ namespace ElderThingFaction
             {
                 this.Destroy(DestroyMode.Vanish);
             }
-
         }
 
         /// <summary>
@@ -137,8 +138,10 @@ namespace ElderThingFaction
         {
             DetermineImpactExactPosition();
             Vector3 cannonMouthOffset = ((this.destination - this.origin).normalized * 0.9f);
-            drawingScale = new Vector3(1f, 1f, (this.destination - this.origin).magnitude - cannonMouthOffset.magnitude);
-            drawingPosition = this.origin + (cannonMouthOffset / 2) + ((this.destination - this.origin) / 2) + Vector3.up * this.def.Altitude;
+            drawingScale = new Vector3(1f, 1f,
+                (this.destination - this.origin).magnitude - cannonMouthOffset.magnitude);
+            drawingPosition = this.origin + (cannonMouthOffset / 2) + ((this.destination - this.origin) / 2) +
+                              Vector3.up * this.def.Altitude;
             drawingMatrix.SetTRS(drawingPosition, this.ExactRotation, drawingScale);
         }
 
@@ -149,7 +152,8 @@ namespace ElderThingFaction
         {
             if (preFiringDuration != 0)
             {
-                drawingIntensity = preFiringInitialIntensity + (preFiringFinalIntensity - preFiringInitialIntensity) * (float)tickCounter / (float)preFiringDuration;
+                drawingIntensity = preFiringInitialIntensity + (preFiringFinalIntensity - preFiringInitialIntensity) *
+                                   (float) tickCounter / (float) preFiringDuration;
             }
         }
 
@@ -160,7 +164,9 @@ namespace ElderThingFaction
         {
             if (postFiringDuration != 0)
             {
-                drawingIntensity = postFiringInitialIntensity + (postFiringFinalIntensity - postFiringInitialIntensity) * (((float)tickCounter - (float)preFiringDuration) / (float)postFiringDuration);
+                drawingIntensity = postFiringInitialIntensity +
+                                   (postFiringFinalIntensity - postFiringInitialIntensity) *
+                                   (((float) tickCounter - (float) preFiringDuration) / (float) postFiringDuration);
             }
         }
 
@@ -171,10 +177,11 @@ namespace ElderThingFaction
         {
             // We split the trajectory into small segments of approximatively 1 cell size.
             Vector3 trajectory = (this.destination - this.origin);
-            int numberOfSegments = (int)trajectory.magnitude;
+            int numberOfSegments = (int) trajectory.magnitude;
             Vector3 trajectorySegment = (trajectory / trajectory.magnitude);
 
-            Vector3 temporaryDestination = this.origin; // Last valid tested position in case of an out of boundaries shot.
+            Vector3
+                temporaryDestination = this.origin; // Last valid tested position in case of an out of boundaries shot.
             Vector3 exactTestedPosition = this.origin;
             IntVec3 testedPosition = exactTestedPosition.ToIntVec3();
 
@@ -199,7 +206,8 @@ namespace ElderThingFaction
                         // Check impact on a wall.
                         if (current.def.Fillage == FillCategory.Full)
                         {
-                            this.destination = testedPosition.ToVector3Shifted() + new Vector3(Rand.Range(-0.3f, 0.3f), 0f, Rand.Range(-0.3f, 0.3f));
+                            this.destination = testedPosition.ToVector3Shifted() +
+                                               new Vector3(Rand.Range(-0.3f, 0.3f), 0f, Rand.Range(-0.3f, 0.3f));
                             this.hitThing = current;
                             break;
                         }
@@ -236,8 +244,9 @@ namespace ElderThingFaction
 
                             if (Rand.Value < chanceToHitCollateralTarget)
                             {
-                                this.destination = testedPosition.ToVector3Shifted() + new Vector3(Rand.Range(-0.3f, 0.3f), 0f, Rand.Range(-0.3f, 0.3f));
-                                this.hitThing = (Thing)pawn;
+                                this.destination = testedPosition.ToVector3Shifted() +
+                                                   new Vector3(Rand.Range(-0.3f, 0.3f), 0f, Rand.Range(-0.3f, 0.3f));
+                                this.hitThing = (Thing) pawn;
                                 break;
                             }
                         }
@@ -283,22 +292,23 @@ namespace ElderThingFaction
                 RoofDef roofDef = this.Map.roofGrid.RoofAt(this.DestinationCell);
                 if (roofDef != null && roofDef.isThickRoof)
                 {
-                    SoundInfo info = SoundInfo.InMap(new TargetInfo(this.DestinationCell, this.Map, false), MaintenanceType.None);
+                    SoundInfo info = SoundInfo.InMap(new TargetInfo(this.DestinationCell, this.Map, false),
+                        MaintenanceType.None);
                     this.def.projectile.soundHitThickRoof.PlayOneShot(info);
                     return;
                 }
             }
 
             // Impact the initial targeted pawn.
-            if (this.assignedTarget != null)
+            if (this.usedTarget != null)
             {
-                Pawn pawn = this.assignedTarget as Pawn;
+                Pawn pawn = this.usedTarget.Thing as Pawn;
                 if (pawn != null && pawn.Downed && (this.origin - this.destination).magnitude > 5f && Rand.Value < 0.2f)
                 {
                     this.Impact(null);
                     return;
                 }
-                this.Impact(this.assignedTarget);
+                this.Impact(this.usedTarget.Thing);
                 return;
             }
             else
@@ -332,29 +342,31 @@ namespace ElderThingFaction
             if (hitThing != null)
             {
                 Map map = base.Map;
-                BattleLogEntry_RangedImpact battleLogEntry_RangedImpact = new BattleLogEntry_RangedImpact(this.launcher, hitThing, this.intendedTarget, this.equipmentDef, this.def);
+                BattleLogEntry_RangedImpact battleLogEntry_RangedImpact = new BattleLogEntry_RangedImpact(this.launcher,
+                    hitThing, this.intendedTarget.Thing, this.equipmentDef, this.def, this.targetCoverDef);
                 Find.BattleLog.Add(battleLogEntry_RangedImpact);
                 if (hitThing != null)
                 {
-                    int damageAmountBase = this.def.projectile.damageAmountBase;
+                    int damageAmountBase = this.def.projectile.GetDamageAmount(this.launcher);
                     DamageDef damageDef = this.def.projectile.damageDef;
                     int amount = damageAmountBase;
                     float y = this.ExactRotation.eulerAngles.y;
                     Thing launcher = this.launcher;
                     ThingDef equipmentDef = this.equipmentDef;
-                    DamageInfo dinfo = new DamageInfo(damageDef, amount, y, launcher, null, equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown);
-                    hitThing.TakeDamage(dinfo).InsertIntoLog(battleLogEntry_RangedImpact);
+                    DamageInfo dinfo = new DamageInfo(damageDef, amount, this.ArmorPenetration, y, launcher, null, equipmentDef,
+                        DamageInfo.SourceCategory.ThingOrUnknown);
+                    hitThing.TakeDamage(dinfo).AssociateWithLog(battleLogEntry_RangedImpact);
                 }
-                else
-                {
-                    SoundDefOf.BulletImpactGround.PlayOneShot(new TargetInfo(base.Position, map, false));
-                    MoteMaker.MakeStaticMote(this.ExactPosition, map, ThingDefOf.Mote_ShotHit_Dirt, 1f);
-                    if (base.Position.GetTerrain(map).takeSplashes)
-                    {
-                        MoteMaker.MakeWaterSplash(this.ExactPosition, map, Mathf.Sqrt((float)this.def.projectile.damageAmountBase) * 1f, 4f);
-                    }
-                }
-                //int damageAmountBase = this.def.projectile.damageAmountBase;
+//                else
+//                {
+//                    SoundDefOf.BulletImpact_Ground.PlayOneShot(new TargetInfo(base.Position, map, false));
+//                    MoteMaker.MakeStaticMote(this.ExactPosition, map, ThingDefOf.Mote_ShotHit_Dirt, 1f);
+//                    if (base.Position.GetTerrain(map).takeSplashes)
+//                    {
+//                        MoteMaker.MakeWaterSplash(this.ExactPosition, map, Mathf.Sqrt((float)this.def.projectile.GetDamageAmount(this.launcher) * 1f, 4f);
+//                    }
+//                }
+                //int damageAmountBase = this.def.projectile.DamageAmount;
                 //DamageInfo dinfo = new DamageInfo(this.def.projectile.damageDef, damageAmountBase, this.ExactRotation.eulerAngles.y, this.launcher, null, equipmentDef);
                 //hitThing.TakeDamage(dinfo);
                 //hitThing.TakeDamage(dinfo);
@@ -373,7 +385,7 @@ namespace ElderThingFaction
             else
             {
                 SoundInfo info = SoundInfo.InMap(new TargetInfo(base.Position, this.Map, false), MaintenanceType.None);
-                SoundDefOf.BulletImpactGround.PlayOneShot(info);
+                SoundDefOf.BulletImpact_Ground.PlayOneShot(info);
                 MoteMaker.MakeStaticMote(this.ExactPosition, this.Map, ThingDefOf.Mote_ShotHit_Dirt, 1f);
                 MoteMaker.ThrowMicroSparks(this.ExactPosition, this.Map);
             }
@@ -386,7 +398,6 @@ namespace ElderThingFaction
         /// <param name="hitTarget"></param>
         public virtual void PostImpactEffects(Pawn launcher, Pawn hitTarget)
         {
-
         }
 
         /// <summary>
@@ -395,7 +406,8 @@ namespace ElderThingFaction
         public override void Draw()
         {
             this.Comps_PostDraw();
-            UnityEngine.Graphics.DrawMesh(MeshPool.plane10, drawingMatrix, FadedMaterialPool.FadedVersionOf(drawingTexture, drawingIntensity), 0);
+            UnityEngine.Graphics.DrawMesh(MeshPool.plane10, drawingMatrix,
+                FadedMaterialPool.FadedVersionOf(drawingTexture, drawingIntensity), 0);
         }
     }
 }

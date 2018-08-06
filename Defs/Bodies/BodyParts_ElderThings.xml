@@ -35,7 +35,7 @@
     <defName>ElderThing_EatingTube</defName>
     <label>eating tube</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>EatingSource</li>
@@ -47,7 +47,7 @@
     <defName>ElderThing_Maw</defName>
     <label>maw</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>EatingSource</li>
@@ -58,9 +58,8 @@
     <defName>ElderThing_Eye</defName>
     <label>eye</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
-    <useDestroyedOutLabel>true</useDestroyedOutLabel>
     <beautyRelated>true</beautyRelated>
     <tags>
       <li>SightSource</li>
@@ -77,8 +76,8 @@
     <defName>ElderThing_HeartLungFirst</defName>
     <label>respiration cell cluster (first)</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>1.3</bleedRate>
     <skinCovered>false</skinCovered>
     <tags>
       <li>BreathingSource</li>
@@ -87,14 +86,14 @@
       <li>BloodPumpingSource</li>
     </tags>
     <spawnThingOnRemoved>ET_Item_HeartLung</spawnThingOnRemoved>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
   <BodyPartDef>
     <defName>ElderThing_HeartLungSecond</defName>
     <label>respiration cell cluster (second)</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>1.3</bleedRate>
     <skinCovered>false</skinCovered>
     <tags>
       <li>BreathingSource</li>
@@ -103,14 +102,14 @@
       <li>BloodPumpingSource</li>
     </tags>
     <spawnThingOnRemoved>ET_Item_HeartLung</spawnThingOnRemoved>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
   <BodyPartDef>
     <defName>ElderThing_HeartLungThird</defName>
     <label>respiration cell cluster (third)</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>1.3</bleedRate>
     <skinCovered>false</skinCovered>
     <tags>
       <li>BreathingSource</li>
@@ -119,14 +118,14 @@
       <li>BloodPumpingSource</li>
     </tags>
     <spawnThingOnRemoved>ET_Item_HeartLung</spawnThingOnRemoved>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
   <BodyPartDef>
     <defName>ElderThing_HeartLungFourth</defName>
     <label>respiration cell cluster (fourth)</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>1.3</bleedRate>
     <skinCovered>false</skinCovered>
     <tags>
       <li>BreathingSource</li>
@@ -135,14 +134,14 @@
       <li>BloodPumpingSource</li>
     </tags>
     <spawnThingOnRemoved>ET_Item_HeartLung</spawnThingOnRemoved>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
   <BodyPartDef>
     <defName>ElderThing_HeartLungFifth</defName>
     <label>respiration cell cluster (fifth)</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>1.3</bleedRate>
     <skinCovered>false</skinCovered>
     <tags>
       <li>BreathingSource</li>
@@ -151,7 +150,7 @@
       <li>BloodPumpingSource</li>
     </tags>
     <spawnThingOnRemoved>ET_Item_HeartLung</spawnThingOnRemoved>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
 
@@ -159,7 +158,7 @@
     <defName>ElderThing_PsionicLobe</defName>
     <label>psionic cortex</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
 	<tags>
       <li>ConsciousnessSource</li>
@@ -168,16 +167,16 @@
       <li>SightSource</li>
 	</tags>
     <spawnThingOnRemoved>ET_Item_PsionicLobe</spawnThingOnRemoved>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
   <BodyPartDef>
     <defName>ElderThing_FrontalLobe</defName>
     <label>frontal lobe</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
 	<tags>
       <li>ConsciousnessSource</li>
 	</tags>
@@ -187,9 +186,9 @@
     <defName>ElderThing_ParietalLobe</defName>
     <label>parietal lobe</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
 	<tags>
       <li>ConsciousnessSource</li>
     </tags>
@@ -199,36 +198,36 @@
     <defName>ElderThing_OccipitalLobe</defName>
     <label>occipital lobe</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <tags>
       <li>ConsciousnessSource</li>
     </tags>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
   <BodyPartDef>
     <defName>ElderThing_TemporalLobe</defName>
     <label>temporal lobe</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <tags>
       <li>ConsciousnessSource</li>
     </tags>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
   <BodyPartDef>
     <defName>ElderThing_BrainStem</defName>
     <label>brain stem</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <tags>
       <li>ConsciousnessSource</li>
     </tags>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
   <BodyPartDef>
@@ -236,7 +235,7 @@
     <label>head tentacle (first)</label>
     <hitPoints>8</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <beautyRelated>true</beautyRelated>
     <tags>
@@ -252,7 +251,7 @@
     <label>head tentacle (second)</label>
     <hitPoints>8</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <beautyRelated>true</beautyRelated>
     <tags>
@@ -268,7 +267,7 @@
     <label>head tentacle (third)</label>
     <hitPoints>8</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <beautyRelated>true</beautyRelated>
     <tags>
@@ -284,7 +283,7 @@
     <label>head tentacle (fourth)</label>
     <hitPoints>8</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <beautyRelated>true</beautyRelated>
     <tags>
@@ -300,7 +299,7 @@
     <label>head tentacle (fifth)</label>
     <hitPoints>8</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <beautyRelated>true</beautyRelated>
     <tags>
@@ -316,22 +315,22 @@
     <defName>ElderThing_TopRing</defName>
     <label>top ring</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>4</bleedingRateMultiplier>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>4</bleedRate>
     <skinCovered>true</skinCovered>
     <tags>
       <li>BreathingPathway</li>
       <li>EatingPathway</li>
       <li>TalkingPathway</li>
     </tags>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
   <BodyPartDef>
     <defName>ElderThing_WingFirst</defName>
     <label>wing (first)</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbCore</li>
@@ -341,7 +340,7 @@
     <defName>ElderThing_WingSecond</defName>
     <label>wing (second)</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbCore</li>
@@ -351,7 +350,7 @@
     <defName>ElderThing_WingThird</defName>
     <label>wing (third)</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbCore</li>
@@ -361,7 +360,7 @@
     <defName>ElderThing_WingFourth</defName>
     <label>wing (fourth)</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbCore</li>
@@ -371,7 +370,7 @@
     <defName>ElderThing_WingFifth</defName>
     <label>wing (fifth)</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbCore</li>
@@ -383,7 +382,7 @@
     <label>tentacle arm (first)</label>
     <hitPoints>7</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbCore</li>
@@ -396,7 +395,7 @@
     <label>tentacle arm (second)</label>
     <hitPoints>7</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbCore</li>
@@ -409,7 +408,7 @@
     <label>tentacle arm (third)</label>
     <hitPoints>7</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbCore</li>
@@ -422,7 +421,7 @@
     <label>tentacle arm (fourth)</label>
     <hitPoints>7</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbCore</li>
@@ -435,7 +434,7 @@
     <label>tentacle arm (fifth)</label>
     <hitPoints>7</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbCore</li>
@@ -448,7 +447,7 @@
     <defName>ElderThing_TentacleGrasperFirst</defName>
     <label>tentacle grasper (first)</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbSegment</li>
@@ -460,7 +459,7 @@
     <defName>ElderThing_TentacleGrasperSecond</defName>
     <label>tentacle grasper (second)</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbSegment</li>
@@ -472,7 +471,7 @@
     <defName>ElderThing_TentacleGrasperThird</defName>
     <label>tentacle grasper (third)</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbSegment</li>
@@ -484,7 +483,7 @@
     <defName>ElderThing_TentacleGrasperFourth</defName>
     <label>tentacle grasper (fourth)</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbSegment</li>
@@ -496,7 +495,7 @@
     <defName>ElderThing_TentacleGrasperFifth</defName>
     <label>tentacle grasper (fifth)</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbSegment</li>
@@ -508,14 +507,14 @@
     <defName>ElderThing_BottomRing</defName>
     <label>bottom ring</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>4</bleedingRateMultiplier>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>4</bleedRate>
     <skinCovered>true</skinCovered>
     <tags>
       <li>BreathingPathway</li>
       <li>EatingPathway</li>
     </tags>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
   <BodyPartDef>
@@ -523,7 +522,7 @@
     <label>tentacle leg (first)</label>
     <hitPoints>10</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbDigit</li>
@@ -535,7 +534,7 @@
     <label>tentacle leg (second)</label>
     <hitPoints>10</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbDigit</li>
@@ -547,7 +546,7 @@
     <label>tentacle leg (third)</label>
     <hitPoints>10</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbDigit</li>
@@ -559,7 +558,7 @@
     <label>tentacle leg (fourth)</label>
     <hitPoints>10</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbDigit</li>
@@ -571,7 +570,7 @@
     <label>tentacle leg (fifth)</label>
     <hitPoints>10</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbDigit</li>
@@ -584,8 +583,8 @@
     <defName>ElderThing_Xylem</defName>
     <label>xylem tubes</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>1.3</bleedRate>
     <skinCovered>false</skinCovered>
     <tags>
       <li>EatingPathway</li>
@@ -594,15 +593,15 @@
       <li>BloodFiltrationKidney</li>
     </tags>
     <spawnThingOnRemoved>ET_Item_Xylem</spawnThingOnRemoved>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
   <BodyPartDef>
     <defName>ElderThing_Phloem</defName>
     <label>phloem tubes</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>1.3</bleedRate>
     <skinCovered>false</skinCovered>
     <tags>
       <li>EatingPathway</li>
@@ -611,7 +610,7 @@
       <li>BloodFiltrationLiver</li>
     </tags>
     <spawnThingOnRemoved>ET_Item_Phloem</spawnThingOnRemoved>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
 </Defs>

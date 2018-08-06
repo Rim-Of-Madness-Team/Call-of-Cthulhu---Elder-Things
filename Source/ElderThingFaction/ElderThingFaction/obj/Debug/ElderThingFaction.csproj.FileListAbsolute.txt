@@ -13,3 +13,7 @@ D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Elder 
 D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Elder-Things\Assemblies\ElderThingFaction.dll
 D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Elder-Things\Source\ElderThingFaction\ElderThingFaction\obj\Debug\ElderThingFaction.csprojResolveAssemblyReference.cache
 D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Elder-Things\Source\ElderThingFaction\ElderThingFaction\obj\Debug\ElderThingFaction.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Elder-Things\Assemblies\ElderThingFaction.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Elder-Things\Source\ElderThingFaction\ElderThingFaction\obj\Debug\ElderThingFaction.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Elder-Things\Source\ElderThingFaction\ElderThingFaction\obj\Debug\ElderThingFaction.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Elder-Things\Source\ElderThingFaction\ElderThingFaction\obj\Debug\ElderThingFaction.csproj.CoreCompileInputs.cache

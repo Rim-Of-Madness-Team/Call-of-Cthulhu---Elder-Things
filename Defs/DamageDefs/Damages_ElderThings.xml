@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <DamageDef Name="ElderThingLocalInjuryBase" Abstract="True">
-    <workerClass>DamageWorker_AddInjury</workerClass>
-  </DamageDef>
-
-  <DamageDef ParentName="ElderThingLocalInjuryBase">
+  <DamageDef ParentName="BluntBase">
     <defName>ElderThing_Psychic</defName>
     <label>pscychic attack</label>
 	<workerClass>DamageWorker_AddInjury</workerClass>
@@ -15,9 +11,8 @@
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has died from psychic shock.</deathMessage>	
     <hediff>ElderThing_Psionic</hediff>	
-	<armorCategory>Electric</armorCategory>
-	<spreadOut>true</spreadOut>
-    <explosionDamage>10</explosionDamage>
+	<armorCategory>Heat</armorCategory>
+	 
     <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
     <explosionCellMote>Mote_BlastFlame</explosionCellMote>
     <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
@@ -42,10 +37,13 @@
     <defName>ElderThing_Psychic</defName>
     <requiredCapacity>ElderThing_Psychic</requiredCapacity>
     <verb>
-      <verbClass>Verb_MeleeAttack</verbClass>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
       <meleeDamageDef>ElderThing_Psychic</meleeDamageDef>
     </verb>
-    <combatLogRules>ElderThing_Maneuver_Psychic_Damage</combatLogRules>
+    <combatLogRulesHit>ElderThing_Maneuver_Psychic_Damage</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Scratch_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Scratch_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Scratch_MeleeDodge</combatLogRulesDodge>
   </ManeuverDef>
   
   
@@ -205,13 +203,13 @@
     <rulePack>
       <rulesStrings>
         <li>woundname->wound</li>
-		<li>flavortextsituation(p=3)->while [ROMgazingwithinhumaneyes]</li>
-		<li>flavortextsituation(p=3)->while [ROMcarryinganexpressionofmadness]</li>
-        <li>flavortextsituation(p=2,recipient_flesh!=Mechanoid)->with [ROMbloodoozing] from the [woundname]</li>
-        <li>flavortextsituation(p=2,recipient_flesh!=Mechanoid)->with [ROMgore] [ROMexposed] from the [woundname]</li>
-        <li>flavortextconsequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] [ROMtheflesh] [ROMunderneath]</li>
-        <li>flavortextconsequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] a [ROMhorrible] [woundname]</li>
-        <li>flavortextconsequence(p=2,recipient_flesh==Mechanoid)->and exposing the machinery underneath</li>
+		<li>flavortext_situation(p=3)->while [ROMgazingwithinhumaneyes]</li>
+		<li>flavortext_situation(p=3)->while [ROMcarryinganexpressionofmadness]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)->with [ROMbloodoozing] from the [woundname]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)->with [ROMgore] [ROMexposed] from the [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] [ROMtheflesh] [ROMunderneath]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] a [ROMhorrible] [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh==Mechanoid)->and exposing the machinery underneath</li>
         <li>destroyed_suffix(p=2,recipient_flesh!=Mechanoid)->[to] messy [ROMstrips]</li>
         <li>destroyed_suffix(p=4)->[to] [ROMstrips]</li>
         <li>destroyed_suffix->[to] pieces</li>

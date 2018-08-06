@@ -1,45 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  
-  <!-- ============================ Base Pawn Elder Thing ========================== -->
- 
-  <ThingDef Name="BaseElderThingRaceInit" Abstract="True">
-    <thingClass>Pawn</thingClass>
-    <category>Pawn</category>
-    <selectable>true</selectable>
-    <tickerType>Normal</tickerType>
-    <altitudeLayer>Pawn</altitudeLayer>
-    <useHitPoints>false</useHitPoints>
-    <hasTooltip>true</hasTooltip>
-    <soundImpactDefault>BulletImpactFlesh</soundImpactDefault>
-	<statBases>
-      <Mass>250</Mass>	
-	</statBases>
-    <inspectorTabs>
-      <li>ITab_Pawn_Health</li>
-      <li>ITab_Pawn_Needs</li>
-      <li>ITab_Pawn_Character</li>
-      <li>ITab_Pawn_Training</li>
-      <li>ITab_Pawn_Gear</li>
-      <li>ITab_Pawn_Guest</li>
-      <li>ITab_Pawn_Prisoner</li>
-      <li>ITab_Pawn_Social</li>
-      <li>ITab_Pawn_Combat</li>
-    </inspectorTabs>
-    <comps>
-      <li>
-        <compClass>CompAttachBase</compClass>
-      </li>
-    </comps>
-    <drawGUIOverlay>true</drawGUIOverlay>
-  </ThingDef>
- 
   
   <!-- ============================ Elder Thing Base ========================== -->
   
  
-  <AlienRace.ThingDef_AlienRace ParentName="BaseElderThingRaceInit" Name="ElderThing_RaceBase">
+  <AlienRace.RaceSettings>
+    <defName>ElderThing_Settings</defName>
+
+		<pawnKindSettings>
+		  <startingColonists>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>ElderThing_Colonist</li>
+						</kindDefs>
+						<chance>10.0</chance>
+					</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerColony</li> 
+				</factionDefs>
+			</li>
+		  </startingColonists>
+		  <alienrefugeekinds>
+			<li>
+			  <kindDefs>
+				<li>ElderThing_Refugee</li>
+			  </kindDefs>
+			  <chance>0.2</chance>
+			</li>
+		  </alienrefugeekinds>
+		</pawnKindSettings>
+  </AlienRace.RaceSettings>
+ 
+  <AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="ElderThing_RaceBase">
 	<defName>Alien_ElderThing_Race_Standard</defName>  
 	<label>Elder Thing</label>
     <description>Sharing biological features similar to fungus, amphibians, and plantlike organisms, the five-sided barrel-shaped entities known simply as the Elder Things are hardy creatures that can survive in most temperatures, enter trance-like sleep nearly indefinitely, survive deep space flight, and aside from suffering violent trauma, are effectively immortal.\n\nFurther information: Elder Things are genderless creatures that reproduce asexually through spores that are raised by families of likeminded individuals rather than blood-relations. Their society is focused on large open spaces adorned by artwork and cylindrical furniture in pentagonal and other strange geometric structures. Due to advanced genetic engineering technology, they are responsible for the creation of the sentient slave protoplasmic race known as the Shoggoths, which turned against the Elder Things in centuries past and nearly destroyed their civilization. Even so, the Elder Things still rely on slave labor to maintain their decadent lifestyles and refuse to do labor that is beneath them.</description>
@@ -135,31 +130,6 @@
 		  <hasHair>false</hasHair>
 		</hairSettings>
 		<!-- Pawn Kinds -->
-		<pawnKindSettings>
-		  <startingColonists>
-			<li>
-				<pawnKindEntries>
-					<li>
-						<kindDefs>
-							<li>ElderThing_Colonist</li>
-						</kindDefs>
-						<chance>10.0</chance>
-					</li>
-				</pawnKindEntries>
-				<factionDefs>
-					<li>PlayerColony</li> 
-				</factionDefs>
-			</li>
-		  </startingColonists>
-		  <alienrefugeekinds>
-			<li>
-			  <kindDefs>
-				<li>ElderThing_Refugee</li>
-			  </kindDefs>
-			  <chance>0.2</chance>
-			</li>
-		  </alienrefugeekinds>
-		</pawnKindSettings>
 		<!-- Thoughts -->
 		<thoughtSettings>
 		  <butcherThoughtSpecific>
@@ -321,6 +291,7 @@
 	</alienRace>
 	<statBases>
       <MarketValue>2000</MarketValue>
+	  <Mass>250</Mass>
       <MoveSpeed>4.20</MoveSpeed>
       <Flammability>0.15</Flammability>
       <PsychicSensitivity>0.25</PsychicSensitivity>
@@ -331,6 +302,8 @@
       <ComfyTemperatureMin>-52</ComfyTemperatureMin>
       <ComfyTemperatureMax>52</ComfyTemperatureMax>
 	  <EatingSpeed>1.15</EatingSpeed>
+      <LeatherAmount>50</LeatherAmount>
+	  <MeatAmount>100</MeatAmount>
     </statBases>
     <tools>
 	  <li>
@@ -358,10 +331,12 @@
       <thinkTreeMain>Humanlike</thinkTreeMain>
 	  <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
-	  <bloodDef>FilthBloodElderThing</bloodDef>
+	  <bloodDef>Filth_BloodElderThing</bloodDef>
+      <meatLabel>compound-organism meat</meatLabel>
+      <meatMarketValue>1.2</meatMarketValue>
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>2750</lifeExpectancy>
-      <leatherCommonalityFactor>0</leatherCommonalityFactor>
+      <leatherDef>Leather_Lizard</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
       <body>ElderThingsBody</body>
       <baseBodySize>1</baseBodySize>
@@ -430,7 +405,6 @@
       <li>InstallPainstopper</li>	
 	  <li>ET_InstallPegLeg</li>
       <li>ET_InstallPowerClaw</li>
-      <li>ET_InstallScytherBlade</li>
       <li>ET_InstallBionicWing</li>
       <li>ET_InstallBionicArm</li>
       <li>ET_InstallBionicLeg</li>
@@ -453,7 +427,7 @@
     <backstoryCategory>ElderThing_Backstory</backstoryCategory>
 	<chemicalAddictionChance>0.001</chemicalAddictionChance>
     <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
-    <apparelAllowHeadwearChance>0</apparelAllowHeadwearChance>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
   </PawnKindDef>
   
   <PawnKindDef Name="ElderThing_KindBase" ParentName="ElderThing_KindBaseInit" Abstract="True">
@@ -506,7 +480,6 @@
 
   <PawnKindDef ParentName="ElderThing_KindBase">
 	<defName>ElderThing_Refugee</defName>
-    <defaultFactionType>Spacer</defaultFactionType>
   </PawnKindDef>
   
   

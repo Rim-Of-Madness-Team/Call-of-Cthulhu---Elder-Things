@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BaseElderThingFilth">
-    <defName>FilthBloodElderThing</defName>
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_BloodElderThing</defName>
     <label>elder thing blood</label>
     <statBases>
       <Beauty>-100</Beauty>
@@ -18,26 +18,6 @@
       <canFilthAttach>true</canFilthAttach>
     </filth>
   </ThingDef>   
-  
-  <!-- BASES -->
-  
-
-   <ThingDef Name="BaseElderThingFilth" Abstract="True">
-    <thingClass>Filth</thingClass>
-    <category>Filth</category>
-    <altitudeLayer>Filth</altitudeLayer>
-    <useHitPoints>false</useHitPoints>
-    <drawerType>MapMeshOnly</drawerType>
-    <graphicData>
-			<graphicClass>Graphic_Cluster</graphicClass>
-			<shaderType>Transparent</shaderType>
-		</graphicData>
-    <statBases>
-      <Beauty>-15</Beauty>
-      <Cleanliness>-5</Cleanliness>
-    </statBases>
-  </ThingDef>
-
 
   
 </Defs>

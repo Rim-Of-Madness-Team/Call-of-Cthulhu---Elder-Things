@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <RecipeDef Abstract="True" Name="ElderThingSurgeryFlesh">
-    <effectWorking>Surgery</effectWorking>
-    <soundWorking>Recipe_Surgery</soundWorking>
-    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
-    <workSkill>Medicine</workSkill>
-    <workSkillLearnFactor>16</workSkillLearnFactor>
-  </RecipeDef>
-
-  
   <!-- natural -->
 
-  <RecipeDef ParentName="ElderThingSurgeryFlesh">
+  <RecipeDef ParentName="SurgeryFlesh">
     <defName>ET_InstallNaturalHeartLung</defName>
     <label>install respiration cell cluster</label>
     <description>Installs respiration cell cluster.</description>
@@ -54,7 +45,7 @@
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
 	
-	  <RecipeDef ParentName="ElderThingSurgeryFlesh">
+	  <RecipeDef ParentName="SurgeryFlesh">
     <defName>ET_InstallNaturalXylem</defName>
     <label>install xylem tubes</label>
     <description>Installs xylem tubes.</description>
@@ -92,7 +83,7 @@
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
 	
-	  <RecipeDef ParentName="ElderThingSurgeryFlesh">
+	  <RecipeDef ParentName="SurgeryFlesh">
     <defName>ET_InstallNaturalPhloem</defName>
     <label>install phloem tubes</label>
     <description>Installs phloem tubes.</description>
@@ -130,7 +121,7 @@
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
 	
-  <RecipeDef ParentName="ElderThingSurgeryFlesh">
+  <RecipeDef ParentName="SurgeryFlesh">
 		<defName>ET_InstallBionicWing</defName>
 		<label>install bionic wing</label>
 		<description>Installs bionic wing.</description>
@@ -174,7 +165,7 @@
 	</RecipeDef>	
 	
 	
-  <RecipeDef ParentName="ElderThingSurgeryFlesh">
+  <RecipeDef ParentName="SurgeryFlesh">
 		<defName>ET_InstallBionicArm</defName>
 		<label>install bionic arm</label>
 		<description>Installs bionic arm.</description>
@@ -217,7 +208,7 @@
 		<addsHediff>BionicArm</addsHediff>
 	</RecipeDef>
 
-  <RecipeDef ParentName="ElderThingSurgeryFlesh">
+  <RecipeDef ParentName="SurgeryFlesh">
 		<defName>ET_InstallPowerClaw</defName>
 		<label>install power claw</label>
 		<description>Installs power claw.</description>
@@ -260,50 +251,7 @@
 		<addsHediff>PowerClaw</addsHediff>
 	</RecipeDef>
 
-  <RecipeDef ParentName="ElderThingSurgeryFlesh">
-		<defName>ET_InstallScytherBlade</defName>
-		<label>install scyther blade</label>
-		<description>Installs scyther blade.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Installing scyther blade.</jobString>
-		<workAmount>2000</workAmount>
-		<ingredients>
-			<li>
-				<filter>
-          <categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ScytherBlade</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-      <categories>
-        <li>Medicine</li>
-      </categories>
-      <thingDefs>
-				<li>ScytherBlade</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>ElderThing_TentacleGrasperFirst</li>
-			<li>ElderThing_TentacleGrasperSecond</li>
-			<li>ElderThing_TentacleGrasperThird</li>
-			<li>ElderThing_TentacleGrasperFourth</li>
-			<li>ElderThing_TentacleGrasperFifth</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>ScytherBlade</addsHediff>
-	</RecipeDef>	
-	
-  <RecipeDef ParentName="ElderThingSurgeryFlesh">
+  <RecipeDef ParentName="SurgeryFlesh">
 		<defName>ET_InstallPegLeg</defName>
 		<label>install peg leg</label>
 		<description>Installs peg leg.</description>
@@ -346,7 +294,7 @@
 		<addsHediff>PegLeg</addsHediff>
 	</RecipeDef>
 	
-  <RecipeDef ParentName="ElderThingSurgeryFlesh">
+  <RecipeDef ParentName="SurgeryFlesh">
 		<defName>ET_InstallBionicLeg</defName>
 		<label>install bionic leg</label>
 		<description>Installs bionic leg.</description>

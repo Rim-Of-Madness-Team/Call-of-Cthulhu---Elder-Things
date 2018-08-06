@@ -40,16 +40,14 @@ namespace ElderThingFaction
             }
         }
 
-        public override bool UsableNow
+        public override void Tick()
         {
-            get
+            base.Tick();
+            if (AdjacentConsole() == null)
             {
-                if (AdjacentConsole() == null)
-                {
-                    Messages.Message("Cannot control the biogenesis process without a console.", MessageTypeDefOf.RejectInput); //MessageSound.RejectInput);
-                    return false;
-                }
-                return base.UsableNow;
+                //Messages.Message("Cannot control the biogenesis process without a console.", MessageTypeDefOf.RejectInput); //MessageSound.RejectInput);
+                this.SetForbidden(true, false);
+                return;
             }
         }
 

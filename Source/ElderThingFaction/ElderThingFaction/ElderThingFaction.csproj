@@ -36,6 +36,10 @@
       <HintPath>..\..\..\..\..\Harmony1091\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="AbilityUser, Version=1.18.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\JecsTools\Assemblies\AbilityUser.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -52,11 +56,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbilityEffect_ShortFlight.cs" />
     <Compile Include="Building_BiogenesisVat.cs" />
     <Compile Include="Building_ElderThingBed.cs" />
     <Compile Include="Building_ElderThingChair.cs" />
+    <Compile Include="CompElderThing.cs" />
     <Compile Include="CompProperties_SecondLayer.cs" />
     <Compile Include="CompSecondLayer.cs" />
+    <Compile Include="DamagerWorker_PsionicBlast.cs" />
+    <Compile Include="ElderThingData.cs" />
+    <Compile Include="ElderThingUtility.cs" />
     <Compile Include="HarmonyElderThings.cs" />
     <Compile Include="PlaceWorker_NextToConsoleAccepter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

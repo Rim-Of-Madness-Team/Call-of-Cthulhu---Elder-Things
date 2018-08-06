@@ -2,14 +2,7 @@
 
 <Defs>
 
-
-  <HediffDef Name="ROME_InjuryBase" Abstract="True">
-    <hediffClass>Hediff_Injury</hediffClass>
-    <tendable>true</tendable>
-    <displayWound>true</displayWound>
-  </HediffDef>
-
-  <HediffDef ParentName="ROME_InjuryBase">
+  <HediffDef ParentName="InjuryBase">
     <defName>ElderThing_Psionic</defName>
     <label>psionic</label>
     <comps>
@@ -24,7 +17,7 @@
     </comps>
     <injuryProps>
       <painPerSeverity>0.0125</painPerSeverity>
-      <averagePainPerSeverityOld>0.00625</averagePainPerSeverityOld>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
       <bleedRate>0</bleedRate>
       <canMerge>true</canMerge>
       <destroyedLabel>imploded</destroyedLabel>
