@@ -44,7 +44,7 @@
 		<!-- General -->
 		<generalSettings>
 		  <immuneToAge>true</immuneToAge>
-		  <pawnsSpecificBackstories>true</pawnsSpecificBackstories>
+		  <allowHumanBios>false</allowHumanBios>
 		  <canLayDown>false</canLayDown>
 		  <forcedRaceTraitEntries>
             <li>
@@ -424,7 +424,7 @@
   <PawnKindDef Name="ElderThing_KindBaseInit" Abstract="True">
     <defaultFactionType>ElderThing_Faction</defaultFactionType>
     <race>Alien_ElderThing_Race_Standard</race>
-    <backstoryCategory>ElderThing_Backstory</backstoryCategory>
+    <backstoryCategories><li>ElderThing_Backstory</li></backstoryCategories>
 	<chemicalAddictionChance>0.001</chemicalAddictionChance>
     <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>

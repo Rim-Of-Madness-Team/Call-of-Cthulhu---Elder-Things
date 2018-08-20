@@ -9,7 +9,7 @@
     <settlementGenerationWeight>0.025</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Society of the Elder Things</fixedName>
-    <backstoryCategory>ElderThing_Backstory</backstoryCategory>
+    <backstoryCategories><li>ElderThing_Backstory</li></backstoryCategories>
     <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
     <canMakeRandomly>true</canMakeRandomly>
 	<leaderTitle>archechinon</leaderTitle>
@@ -102,7 +102,7 @@
     <isPlayer>true</isPlayer>
     <basicMemberKind>ElderThing_Colonist</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
-	<backstoryCategory>Civil</backstoryCategory>
+	<backstoryCategories><li>Civil</li></backstoryCategories>
 	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 	<playerInitialSettlementNameMaker>NamerSettlementOutlander</playerInitialSettlementNameMaker>
 	<factionNameMaker>NamerSettlementOutlander</factionNameMaker>
