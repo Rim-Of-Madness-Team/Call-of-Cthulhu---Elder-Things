@@ -102,7 +102,7 @@
     <isPlayer>true</isPlayer>
     <basicMemberKind>ElderThing_Colonist</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
-	<backstoryCategories><li>Civil</li></backstoryCategories>
+	<backstoryCategories><li>ElderThing_Backstory</li></backstoryCategories>
 	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 	<playerInitialSettlementNameMaker>NamerSettlementOutlander</playerInitialSettlementNameMaker>
 	<factionNameMaker>NamerSettlementOutlander</factionNameMaker>
