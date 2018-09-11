@@ -19,7 +19,7 @@ namespace ElderThingFaction
                 
         public void ExposeData()
         {
-            Scribe_References.Look<Pawn>(ref this.pawn, "forceDataPawn");
+            Scribe_References.Look<Pawn>(ref this.pawn, "elderThingDataPawn");
             Scribe_Values.Look<bool>(ref elderThingPowersInitialized, "elderThingPowersInitialized", false);
         }
     }

@@ -45,7 +45,10 @@
 		<generalSettings>
 		  <immuneToAge>true</immuneToAge>
 		  <allowHumanBios>false</allowHumanBios>
-		  <canLayDown>false</canLayDown>
+		  <canLayDown>true</canLayDown>
+		  <validBeds>
+		    <li>ET_Bed</li>
+		  </validBeds>
 		  <forcedRaceTraitEntries>
             <li>
               <defName>Gay</defName>
