@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using AbilityUser;
+﻿using AbilityUser;
 using Verse;
 
 namespace ElderThingFaction

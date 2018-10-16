@@ -1,11 +1,7 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
 using Verse;
 using Verse.AI;
-using Verse.Sound;
 
 namespace ElderThingFaction
 {
@@ -70,13 +66,23 @@ namespace ElderThingFaction
         {
             get
             {
+                List<IntVec3> result = null;
                 if (this.cachedAdjCellsCardinal == null)
                 {
-                    this.cachedAdjCellsCardinal = (from c in GenAdj.CellsAdjacentCardinal(this)
-                                                   where c.InBounds(base.Map)
-                                                   select c).ToList<IntVec3>();
+                    var cellsAdjacentCardinal = new List<IntVec3>(GenAdj.CellsAdjacentCardinal(this));
+                    if (cellsAdjacentCardinal?.Count > 0)
+                    {
+                        result = new List<IntVec3>();
+                        foreach (var cell in cellsAdjacentCardinal)
+                        {
+                            if (cell.InBounds(base.Map))
+                                result.Add(cell);
+                        }
+
+                        cachedAdjCellsCardinal = result;
+                    }
                 }
-                return this.cachedAdjCellsCardinal;
+                return cachedAdjCellsCardinal;
             }
         }
 

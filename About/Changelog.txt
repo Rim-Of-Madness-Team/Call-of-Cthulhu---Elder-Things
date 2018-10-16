@@ -1,0 +1,4 @@
+1.19.0.2 (10-17-2018)
+========================
+Fixes error when generating elder things on a character select screen.
+

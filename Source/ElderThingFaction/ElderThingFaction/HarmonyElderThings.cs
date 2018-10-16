@@ -1,12 +1,11 @@
 ﻿using Harmony;
-using RimWorld;
-using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using UnityEngine;
+using RimWorld;
+using RimWorld.Planet;
 using Verse;
+using System.Linq;
 
 namespace ElderThingFaction
 {
@@ -25,6 +24,22 @@ namespace ElderThingFaction
                 AccessTools.Method(typeof(PawnApparelGenerator),
                     nameof(PawnApparelGenerator.GenerateStartingApparelFor)),
                 new HarmonyMethod(typeof(HarmonyElderThings).GetMethod("GenerateStartingApparelFor_PreFix")), null);
+            
+            harmony.Patch(
+                AccessTools.Method(typeof(PawnHairChooser),
+                    nameof(PawnHairChooser.RandomHairDefFor)),
+                new HarmonyMethod(typeof(HarmonyElderThings).GetMethod(nameof(RandomHairDefFor))), null);
+        }
+
+
+        public static bool RandomHairDefFor(Pawn pawn, FactionDef factionType, ref HairDef __result)
+        {
+            if (ElderThingUtility.IsElderThing(pawn))
+            {
+                __result = DefDatabase<HairDef>.GetNamedSilentFail("Shaved");
+                return false;   
+            }
+            return true;
         }
 
         //PawnApparelGenerator.

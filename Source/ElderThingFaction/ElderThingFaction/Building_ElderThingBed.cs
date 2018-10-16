@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Verse;
+﻿using Verse;
 using RimWorld;
 
 namespace ElderThingFaction
@@ -19,7 +15,7 @@ namespace ElderThingFaction
 
         public bool IsPawnSleeping()
         {
-            if (CurOccupants.Count<Pawn>() != 0) return true;
+            if (CurOccupants?.RandomElement() != null) return true;
             return false;
         }
 

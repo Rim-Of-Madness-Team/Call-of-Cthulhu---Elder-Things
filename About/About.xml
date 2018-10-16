@@ -1,14 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <ModMetaData>
-	<name>Call of Cthulhu - Elder Things</name>
-	<author>Jecrell</author>
-	<targetVersion>0.19.0</targetVersion>
-    <url>...</url>
-	<description>
-	V1.18.0.1
+  <name>Call of Cthulhu - Elder Things</name>
+  <author>Jecrell</author>
+  <targetVersion>0.19.0</targetVersion>
+  <url>...</url>
+  <description>1.19.0.2 (10-17-2018)
+
 Adds a new playable race: The Elder Things.
 
 Sharing biological features similar to fungus, amphibians, and plantlike organisms, the five-sided barrel-shaped entities known simply as the Elder Things are hardy creatures that can survive in most temperatures, enter trance-like sleep nearly indefinitely, survive deep space flight, and aside from suffering violent trauma, are effectively immortal.\n\nFurther information: Elder Things are genderless creatures that reproduce asexually through spores that are raised by the community. Their society is focused on large open spaces adorned by artwork and cylindrical furniture in pentagonal and other strange geometric structures. Due to advanced genetic engineering technology, they are responsible for the creation of the sentient slave protoplasmic race known as the Shoggoths, which turned against the Elder Things in centuries past and nearly destroyed their civilization. Even so, the Elder Things still rely on slave labor to maintain their decadent lifestyles and refuse to do labor that is beneath them.
-	</description>
+
+Thank you to my Patrons for supporting me in my efforts. Without you, none of this would be possible.
+
+These are the most excellent rim dwellers who support me: 
+Lumberjack, Shibby Says, TheJagermeister, Cory Bonifay, Kiya Nicoll, Matt Harris, Paul Fenwick, Grendalloffen, Martin K. Bonde, Bentley Alsup, Eric Idema, MasterScootie, GoSu, Josh McCabe, spook, Clifford Campbell, J, CrankyPeanut, E_T, Finwej, Jonathan, Audrin Navarro, Михаил Юрченко, John Kanady, Luis Figueroa, Midgeman, Nate Haug, Nemuri Hime, Richard Paul, SilentWeirdo, Calum, Calhoun Cattell, Keith Thoma, Tim Stillson, Dick Jones, Patrick, Nathan Getman, Populous25, Sharp Spook, Steven James, Marcus Sireanu, Mark, Emily Shaw, Drachken, Zalson, Baron Xot, Nicholas Bateman, Christopher, Justin Andres, Luis Salvatierra, TinyFloatingTurtle, George Chong Chuang Ming, John Boehr, Oliver White, roxxploxx, Robin Hager, Brachiaraidos, That Guy, Toc Anastar, Karol Rybak, Allic, Austin Harbert, Yewty, Evan Hwang, Ryan Brock, Jonathan Holzinger, MC, Alexander, Kevin Reagan, Alex Mederer, Toss Antilles, Chelsea Archambeau, Aron Glasser, Dan Winn, Fredric Sundberg, Sarah Banks, ted stevens
+
+========================
+Changelog
+========================
+1.19.0.2 (10-17-2018)
+========================
+Fixes error when generating elder things on a character select screen.
+
+</description>
 </ModMetaData>
