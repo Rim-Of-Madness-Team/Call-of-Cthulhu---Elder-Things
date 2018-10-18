@@ -1,3 +1,7 @@
+1.20.0.0 (10-18-2018)
+========================
+Initial release for RimWorld 1.0 for The Elder Things.
+
 1.19.0.2 (10-17-2018)
 ========================
 Fixes error when generating elder things on a character select screen.
