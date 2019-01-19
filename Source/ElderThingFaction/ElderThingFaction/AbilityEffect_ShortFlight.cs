@@ -6,12 +6,15 @@ namespace ElderThingFaction
 {
     public class AbilityEffect_ShortFlight : AbilityUser.Verb_UseAbility
     {
-        public virtual void Effect()
+        protected override bool TryCastShot()
         {
+
+            base.TryCastShot();
+            this.Ability.CooldownTicksLeft = this.Ability.MaxCastingTicks;
             if (TargetsAoE[0] is LocalTargetInfo t && t.Cell != default(IntVec3))
             {
                 Pawn caster = CasterPawn;
-                LongEventHandler.QueueLongEvent(delegate()
+                LongEventHandler.QueueLongEvent(delegate ()
                 {
                     FlyingObject flyingObject =
                         GenSpawn.Spawn(ThingDef.Named("ElderThing_PFlyingObject"), CasterPawn.Position,
@@ -19,17 +22,9 @@ namespace ElderThingFaction
                     flyingObject.Launch(CasterPawn, t.Cell, CasterPawn);
                 }, "LaunchingFlyer", false, null);
             }
-        }
 
-        public override void PostCastShot(bool inResult, out bool outResult)
-        {
-            if (inResult)
-            {
-                Effect();
-                outResult = true;
-            }
-
-            outResult = inResult;
+            return true;
         }
+        
     }
 }

@@ -140,7 +140,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>BionicArm</li>
+						<li>ET_Item_BionicWing</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -151,7 +151,7 @@
         <li>Medicine</li>
       </categories>
 			<thingDefs>
-				<li>BionicArm</li>
+				<li>ET_Item_BionicWing</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
@@ -292,6 +292,50 @@
 			<li>ElderThing_TentacleLegFifth</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PegLeg</addsHediff>
+	</RecipeDef>
+	
+
+  <RecipeDef ParentName="SurgeryFlesh">
+		<defName>ET_InstallWoodenWing</defName>
+		<label>install wooden wing</label>
+		<description>Installs a wooden wing.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing fake wing.</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+          <categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ElderThing_WingFirst</li>
+			<li>ElderThing_WingSecond</li>
+			<li>ElderThing_WingThird</li>
+			<li>ElderThing_WingFourth</li>
+			<li>ElderThing_WingFifth</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ET_Hediff_WoodenWing</addsHediff>
 	</RecipeDef>
 	
   <RecipeDef ParentName="SurgeryFlesh">

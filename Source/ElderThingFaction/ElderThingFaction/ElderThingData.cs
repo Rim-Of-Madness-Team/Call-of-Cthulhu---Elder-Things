@@ -2,7 +2,7 @@
 
 namespace ElderThingFaction
 {
-    public class ElderThingData : IExposable
+    public class ElderThingData : AbilityUser.AbilityData
     {
         private Pawn pawn;
         public bool elderThingPowersInitialized = false;
@@ -11,6 +11,7 @@ namespace ElderThingFaction
         {
 
         }
+        
 
         public ElderThingData(CompElderThing newUser)
         {

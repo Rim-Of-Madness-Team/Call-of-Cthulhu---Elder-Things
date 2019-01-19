@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <Defs>
-
 
 <SoundDef>
   <defName>ElderThing_AbilityCastSound_Flight</defName>
@@ -81,7 +79,7 @@
   </DamageDef>
   
  
-  <ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+  <ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability" Name="ElderThing_PPsionicBlast">
    <defName>ElderThing_PPsionicBlast</defName>
    <thingClass>AbilityUser.Projectile_Ability</thingClass>
    <label>psionic blast</label>
@@ -97,7 +95,6 @@
    </projectile>
    <HealFailChance>0.1</HealFailChance>
  </ThingDef>
-
  
 <ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
  <defName>ElderThing_AbilityProjectile</defName>
@@ -114,7 +111,6 @@
   <speed>9999</speed>
  </projectile>
 </ThingDef>
-
 
    <AbilityUser.AbilityDef ParentName="BaseAbility">
     <defName>ElderThing_PsionicBlast</defName>
@@ -133,7 +129,7 @@
         <defaultProjectile>ElderThing_PPsionicBlast</defaultProjectile>
 		<isViolent>false</isViolent>
         <warmupTime>1</warmupTime>
-        <SecondsToRecharge>180.0</SecondsToRecharge>
+        <SecondsToRecharge>50.0</SecondsToRecharge>
         <range>24</range>
         <burstShotCount>1</burstShotCount>
         <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
@@ -181,7 +177,5 @@
       <tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
     </MainVerb>
   </AbilityUser.AbilityDef>
-  
-  
   
 </Defs>

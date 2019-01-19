@@ -3,10 +3,9 @@
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>ET_BionicWing</defName>
-    <label>bionic leg</label>
+    <label>bionic wing</label>
     <spawnThingOnRemoved>ET_Item_BionicWing</spawnThingOnRemoved>
     <addedPartProps>
-       
       <solid>true</solid>
       <partEfficiency>1.0</partEfficiency>
     </addedPartProps>
@@ -21,5 +20,19 @@
       </li>
     </stages>
   </HediffDef>
+
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ET_Hediff_WoodenWing</defName>
+    <label>wooden wing</label>
+    <labelNoun>a wooden wing</labelNoun>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.60</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
+    </addedPartProps>
+    <spawnThingOnRemoved>WoodLog</spawnThingOnRemoved>
+  </HediffDef>
+
 
 </Defs>

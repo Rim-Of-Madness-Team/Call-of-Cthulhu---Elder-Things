@@ -1,3 +1,7 @@
+1.20.0.1 (01-18-2019)
+========================
+Fixes the cooldown on the Elder Things
+
 1.20.0.0 (10-18-2018)
 ========================
 Initial release for RimWorld 1.0 for The Elder Things.

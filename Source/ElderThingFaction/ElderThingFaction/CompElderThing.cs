@@ -5,6 +5,9 @@ namespace ElderThingFaction
 {
     public class CompElderThing : CompAbilityUser
     {
+        private bool elderThingPowersInitialized = false;
+
+
         private ElderThingData elderThingData = null;
 
         public bool IsElderThing => ElderThingUtility.IsElderThing(this.Pawn);
@@ -26,25 +29,26 @@ namespace ElderThingFaction
 
         public override void CompTick()
         {
-            //if (IsElderThing)
-            //{
-
             if (AbilityUser != null)
             {
                 if (AbilityUser.Spawned)
                 {
                     if (Find.TickManager.TicksGame > 200)
                     {
-                        if (ElderThingData?.elderThingPowersInitialized == false)
+                        if (elderThingPowersInitialized == false)
                         {
                             PostInitializeTick();
                         }
-                    }   
+                            foreach (var power in this.AbilityData.AllPowers)
+                            {
+                                if (power.CooldownTicksLeft > -1)
+                                {
+                                    power.CooldownTicksLeft--;
+                                }
+                            }
+                    }
                 }
             }
-
-
-            //}
         }
 
         public void PostInitializeTick()
@@ -55,7 +59,7 @@ namespace ElderThingFaction
                 {
                     if (this.AbilityUser.story != null)
                     {
-                        this.ElderThingData.elderThingPowersInitialized = true;
+                        elderThingPowersInitialized = true;
                         this.Initialize();
                         // if (ForceData.Alignment == 0.0f) ForceData.Alignment = 0.5f;
                         this.ResolvePowers();
@@ -66,7 +70,6 @@ namespace ElderThingFaction
 
         private void ResolvePowers()
         {
-            Log.Message("Powers resolved");
             AddPawnAbility(DefDatabase<AbilityDef>.GetNamed("ElderThing_ShortFlight"));
             AddPawnAbility(DefDatabase<AbilityDef>.GetNamed("ElderThing_PsionicBlast"));
         }
@@ -74,7 +77,8 @@ namespace ElderThingFaction
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Deep.Look<ElderThingData>(ref this.elderThingData, "elderThingData", new object[] {this});
+            Scribe_Values.Look(ref this.elderThingPowersInitialized, "elderThingPowersInitialized", false);
+            Scribe_Deep.Look<ElderThingData>(ref this.elderThingData, "elderThingData", new object[] { this });
         }
     }
 }
