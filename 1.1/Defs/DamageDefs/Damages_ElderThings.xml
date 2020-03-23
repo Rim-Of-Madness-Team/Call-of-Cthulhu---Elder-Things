@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef ParentName="BluntBase">
+    <defName>ElderThing_Psychic</defName>
+    <label>pscychic attack</label>
+	<workerClass>DamageWorker_AddInjury</workerClass>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <canInterruptJobs>true</canInterruptJobs>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has died from psychic shock.</deathMessage>	
+    <hediff>ElderThing_Psionic</hediff>	
+	<armorCategory>Heat</armorCategory>
+	 
+    <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastFlame</explosionCellMote>
+    <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+    <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+    <soundExplosion>Explosion_Flame</soundExplosion>
+	<additionalHediffs>
+      <li>
+        <hediff>ElderThing_IntracranialPressureBuildup</hediff>
+        <severityPerDamageDealt>0.009</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>	
+  </DamageDef>
+  
+  
+  <ToolCapacityDef>
+    <defName>ElderThing_Psychic</defName>
+    <label>psionic</label>
+  </ToolCapacityDef>
+
+  
+  <ManeuverDef>
+    <defName>ElderThing_Psychic</defName>
+    <requiredCapacity>ElderThing_Psychic</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>ElderThing_Psychic</meleeDamageDef>
+    </verb>
+    <combatLogRulesHit>ElderThing_Maneuver_Psychic_Damage</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Scratch_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Scratch_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Scratch_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  
+    <RulePackDef>
+    <defName>ROMET_ColorfulVocabulary</defName>
+    <rulePack>
+      <rulesStrings>
+
+		<li>ROMhorrible->horrible</li>
+		<li>ROMhorrible->hideous</li>
+		<li>ROMhorrible->heinous</li>
+		<li>ROMhorrible->horrendous</li>
+		<li>ROMhorrible->horrifying</li>
+		<li>ROMhorrible->repulsive</li>
+		<li>ROMhorrible->vile</li>
+		
+		<li>ROMexposed->exposed</li>
+		<li>ROMexposed->revealed</li>
+		<li>ROMexposed->divulged</li>
+		<li>ROMexposed->laid bare</li>
+		<li>ROMexposed->brought to light</li>
+		
+		<li>ROMexposing->exposing</li>
+		<li>ROMexposing->revealing</li>
+		<li>ROMexposing->leaving</li>
+		<li>ROMexposing->divulging</li>
+		<li>ROMexposing->laying bare</li>
+		<li>ROMexposing->bringing to light</li>
+		
+		<li>ROMtheflesh->the flesh</li>
+		<li>ROMtheflesh->the gore</li>
+		<li>ROMtheflesh->the innards</li>
+		
+		<li>ROMunderneath->underneath</li>
+		<li>ROMunderneath->below</li>
+		<li>ROMunderneath->within</li>
+		
+		<li>ROMbloodoozing->blood oozing</li>
+		<li>ROMbloodoozing->blood gushing</li>
+		<li>ROMbloodoozing->blood spewing</li>
+		<li>ROMbloodoozing->blood pooling</li>
+		<li>ROMbloodoozing->blood drooling</li>
+		
+		<li>ROMgore->guts</li>
+		<li>ROMgore->entrails</li>
+		<li>ROMgore->viscera</li>
+		<li>ROMgore->gore</li>
+		<li>ROMgore->innards</li>
+		<li>ROMgore->internals</li>
+		<li>ROMgore->flesh</li>
+		
+		<li>ROMstrips->strips</li>
+		<li>ROMstrips->pieces</li>
+		<li>ROMstrips->ribbons</li>
+		<li>ROMstrips->shreds</li>
+		
+		<li>ROMgazing->gazing</li>
+		<li>ROMgazing->peering</li>
+		<li>ROMgazing->looming</li>
+		
+		<li>ROMfury->fury</li>
+		<li>ROMfury->hunger</li>
+		<li>ROMfury->desire</li>
+		<li>ROMfury->wrath</li>
+		<li>ROMfury->rage</li>
+		
+		<li>ROMtimeless->timeless</li>
+		<li>ROMtimeless->ancient</li>
+		<li>ROMtimeless->eldritch</li>
+		<li>ROMtimeless->eldritch</li>
+		
+		<li>ROMunspeakable->unspeakable</li>
+		<li>ROMunspeakable->unutterable</li>
+		<li>ROMunspeakable->nameless</li>
+		<li>ROMunspeakable->hellish</li>
+		<li>ROMunspeakable->inhuman</li>
+		
+		
+		<!-- CARRYING ITS EXPRESSION -->
+		<!-- carrying an expression of madness-->
+		<li>ROMcarryinganexpressionofmadness->[ROMcarrying] [ROManexpression] [ROMofmadness]</li>
+		
+		<li>ROMcarrying->carrying</li>
+		<li>ROMcarrying->freighted with</li>
+		<li>ROMcarrying->laden with</li>
+		<li>ROMcarrying->imbued with</li>
+		<li>ROMcarrying->wielding</li>
+		
+		<li>ROManexpression->an expression</li>
+		<li>ROManexpression->a visage</li>
+		<li>ROManexpression->a stare</li>
+		<li>ROManexpression->a gaze</li>
+		<li>ROManexpression->a look</li>
+		
+		<li>ROMofmadness->of [ROMmadness]</li>
+		<li>ROMofmadness->that is betwixt the real and unreal</li>
+		<li>ROMofmadness->that reminds [recipient_objective] of  [ROMthesmallnessoftheirexistence]</li>
+		<li>ROMmadness->madness</li>
+		<li>ROMmadness->insanity</li>
+		<li>ROMmadness->derangement</li>
+		<li>ROMthesmallnessoftheirexistence->the smallness of [recipient_possessive] existence</li>
+		<li>ROMthesmallnessoftheirexistence->[recipient_possessive] feeble mortality</li>
+		<li>ROMthesmallnessoftheirexistence->[recipient_possessive] candle before oblivion</li>
+		
+		<!-- CASTING ITS GAZE -->
+		<!-- gazing with eldritch eyes like lanterns from the deep abyss -->
+		<li>ROMgazingwithinhumaneyes->[ROMgazing] with [ROMtimeless] eyes like [ROMlanterns] from [ROMthedeepabyss]</li>
+		<li>ROMgazingwithinhumaneyes->[ROMgazing] with [ROMunspeakable] hideousness</li>
+		<li>ROMgazingwithinhumaneyes->[ROMgazing] with maniacal force and [ROMfury]</li>
+		<li>ROMgazingwithinhumaneyes->[ROMgazing] with luminous, expanded eyes</li>
+		<li>ROMgazingwithinhumaneyes->[ROMgazing] with a [ROMunspeakable], [ROMtimeless] [ROMfury]</li>
+		<li>ROMlanterns->hellish phosphorescence</li>
+		<li>ROMlanterns->lanterns</li>
+		<li>ROMthedeepabyss->the deep abyss</li>
+		<li>ROMthedeepabyss->beyond understanding</li>
+		<li>ROMthedeepabyss->outside known reality</li>
+		
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+    
+  <RulePackDef>
+    <defName>ElderThing_Maneuver_Psychic_Damage</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>damaged_inf(p=2)->psiblast</li>
+        <li>damaged_inf->psiburst</li>
+        <li>damaged_inf->psipulse</li>
+        <li>damaged_inf->psishock</li>
+
+        <li>damaged_past(p=2)->psiblasted</li>
+        <li>damaged_past->psiburst</li>
+        <li>damaged_past->psipulsed</li>
+        <li>damaged_past->psishocked</li>
+
+        <li>damaged_present->psiblasting</li>
+        <li>damaged_present->psibursting</li>
+        <li>damaged_present->psipulsing</li>
+        <li>damaged_present->psishocking</li>
+     
+    	<li>destroyed_past->psiblasted apart</li>
+        <li>destroyed_past->psiburst apart</li>
+        <li>destroyed_past->psishocked</li>
+        <li>destroyed_past->psipulsed</li>
+
+        <li>destroyed_present->psiblasting</li>
+        <li>destroyed_present->psibursting</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+    <RulePackDef>
+    <defName>ElderThing_Maneuver_Psychic</defName>
+    <include>
+	  <li>ROMET_ColorfulVocabulary</li>
+      <li>ElderThing_Maneuver_Psychic_Damage</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>woundname->wound</li>
+		<li>flavortext_situation(p=3)->while [ROMgazingwithinhumaneyes]</li>
+		<li>flavortext_situation(p=3)->while [ROMcarryinganexpressionofmadness]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)->with [ROMbloodoozing] from the [woundname]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)->with [ROMgore] [ROMexposed] from the [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] [ROMtheflesh] [ROMunderneath]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] a [ROMhorrible] [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh==Mechanoid)->and exposing the machinery underneath</li>
+        <li>destroyed_suffix(p=2,recipient_flesh!=Mechanoid)->[to] messy [ROMstrips]</li>
+        <li>destroyed_suffix(p=4)->[to] [ROMstrips]</li>
+        <li>destroyed_suffix->[to] pieces</li>
+        <li>destroyed_suffix->[to] fragments</li>
+        <li>destroyed_suffix(recipient_flesh!=Mechanoid)->[to] a pile of gore</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  
+  
+</Defs>

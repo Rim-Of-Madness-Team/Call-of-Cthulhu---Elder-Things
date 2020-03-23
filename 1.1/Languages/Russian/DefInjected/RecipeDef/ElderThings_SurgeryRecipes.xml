@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- natural -->
+
+  <ET_InstallNaturalHeartLung.label>Вживить кластер дыхательных клеток</ET_InstallNaturalHeartLung.label>
+  <ET_InstallNaturalHeartLung.description>Вживить кластер дыхательных клеток.</ET_InstallNaturalHeartLung.description>
+  <ET_InstallNaturalHeartLung.jobString>Вживляет кластер дыхательных клеток.</ET_InstallNaturalHeartLung.jobString>
+
+  <ET_InstallNaturalXylem.label>Вживить ксилемные трубки</ET_InstallNaturalXylem.label>
+  <ET_InstallNaturalXylem.description>Вживить ксилемные трубки.</ET_InstallNaturalXylem.description>
+  <ET_InstallNaturalXylem.jobString>Вживляет ксилемные трубки.</ET_InstallNaturalXylem.jobString>
+
+  <ET_InstallNaturalPhloem.label>Вживить флоэмные трубки</ET_InstallNaturalPhloem.label>
+  <ET_InstallNaturalPhloem.description>Вживить флоэмные трубки.</ET_InstallNaturalPhloem.description>
+  <ET_InstallNaturalPhloem.jobString>Вживляет флоэмные трубки.</ET_InstallNaturalPhloem.jobString>
+
+  <ET_InstallBionicWing.label>Вживить бионическое крыло</ET_InstallBionicWing.label>
+  <ET_InstallBionicWing.description>Вживить бионическое крыло.</ET_InstallBionicWing.description>
+  <ET_InstallBionicWing.jobString>Вживляет бионическое крыло.</ET_InstallBionicWing.jobString>
+
+  <ET_InstallBionicArm.label>Вживить бионическую руку</ET_InstallBionicArm.label>
+  <ET_InstallBionicArm.description>Вживить бионическую руку.</ET_InstallBionicArm.description>
+  <ET_InstallBionicArm.jobString>Вживляет бионическую руку.</ET_InstallBionicArm.jobString>
+
+  <ET_InstallPowerClaw.label>Вживить силовой коготь</ET_InstallPowerClaw.label>
+  <ET_InstallPowerClaw.description>Вживить силовой коготь.</ET_InstallPowerClaw.description>
+  <ET_InstallPowerClaw.jobString>Вживляет силовой коготь.</ET_InstallPowerClaw.jobString>
+
+  <ET_InstallScytherBlade.label>Вживить клинок жнеца</ET_InstallScytherBlade.label>
+  <ET_InstallScytherBlade.description>Вживить клинок жнеца.</ET_InstallScytherBlade.description>
+  <ET_InstallScytherBlade.jobString>Вживляет клинок жнеца.</ET_InstallScytherBlade.jobString>
+
+  <ET_InstallPegLeg.label>Вживить деревянную ногу</ET_InstallPegLeg.label>
+  <ET_InstallPegLeg.description>Вживить деревянную ногу.</ET_InstallPegLeg.description>
+  <ET_InstallPegLeg.jobString>Вживляет деревянную ногу.</ET_InstallPegLeg.jobString>
+
+  <ET_InstallBionicLeg.label>Вживить бионическую ногу</ET_InstallBionicLeg.label>
+  <ET_InstallBionicLeg.description>Вживить бионическую ногу.</ET_InstallBionicLeg.description>
+  <ET_InstallBionicLeg.jobString>Вживляет бионическую ногу.</ET_InstallBionicLeg.jobString>
+
+
+</LanguageData>

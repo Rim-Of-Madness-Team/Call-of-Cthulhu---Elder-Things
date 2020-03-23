@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+<!--
+  <WorkGiverDef>
+    <defName>ET_DoBillsMakeFormula</defName>
+    <label>make formula</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>90</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ET_BiogenesisVat</li>
+    </fixedBillGiverDefs>
+    <verb>make formula</verb>
+    <gerund>making formula at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+-->
+
+</WorkGivers>

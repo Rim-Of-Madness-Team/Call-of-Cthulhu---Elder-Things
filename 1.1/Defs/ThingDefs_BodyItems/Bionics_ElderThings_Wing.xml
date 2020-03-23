@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ET_Hediff_BionicWing</defName>
+    <label>bionic wing</label>
+    <labelNoun>a bionic wing</labelNoun>
+    <description>An installed bionic wing.</description>
+    <descriptionHyperlinks><ThingDef>ET_Item_BionicWing</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>ET_Item_BionicWing</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>ET_Item_BionicWing</defName>
+    <label>bionic wing (elder thing)</label>
+    <description>Bionic wing uses cutting-edge technology to give its owner extreme comfort and speed. This object is limited to the skeletal structure of the race of Elder Things.</description>
+    <descriptionHyperlinks><RecipeDef>ET_InstallBionicWing</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>8</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+	  <tradeTags Inherit="False">
+	    <li>ElderThingsBionics</li>
+	  </tradeTags>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="SurgeryFlesh">
+		<defName>ET_InstallBionicWing</defName>
+		<label>install bionic wing</label>
+		<description>Installs bionic wing.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic wing.</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ET_Item_BionicWing</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+			<thingDefs>
+				<li>ET_Item_BionicWing</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ElderThing_WingFirst</li>
+			<li>ElderThing_WingSecond</li>
+			<li>ElderThing_WingThird</li>
+			<li>ElderThing_WingFourth</li>
+			<li>ElderThing_WingFifth</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ET_BionicWing</addsHediff>
+	</RecipeDef>	
+	
+
+</Defs>

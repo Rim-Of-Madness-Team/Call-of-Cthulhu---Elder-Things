@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- CARAVANS -->
+
+  <Caravan_ElderThing_ArtDealer.label>торговец произведениями искусства</Caravan_ElderThing_ArtDealer.label>
+  <Caravan_ElderThing_PetDealer.label>торговец животными</Caravan_ElderThing_PetDealer.label>
+
+
+  <!-- ELDER THING VISITOR -->
+
+  <Visitor_ElderThing_Standard.label>торговец</Visitor_ElderThing_Standard.label>
+
+
+</LanguageData>

@@ -7,6 +7,11 @@ namespace ElderThingFaction
     {
         private bool elderThingPowersInitialized = false;
 
+        //We had a previous error where the Elder Things
+        // mod accidentally gave powers to all characters.
+        //This redundant check ensures that Elder Things'
+        // abilities are removed.
+        private bool elderThingPowersInitializedRedundant = false;
 
         private ElderThingData elderThingData = null;
 
@@ -33,12 +38,21 @@ namespace ElderThingFaction
             {
                 if (AbilityUser.Spawned)
                 {
-                    if (Find.TickManager.TicksGame > 200)
+
+                    if (elderThingPowersInitializedRedundant == false)
                     {
-                        if (elderThingPowersInitialized == false)
+                        elderThingPowersInitializedRedundant = true;
+                        CleanupUnusedAbilities();
+                    }
+
+                    if (Find.TickManager.TicksGame > 200 && IsElderThing)
+                    {
+
+                            if (elderThingPowersInitialized == false)
                         {
                             PostInitializeTick();
                         }
+
                             foreach (var power in this.AbilityData.AllPowers)
                             {
                                 if (power.CooldownTicksLeft > -1)
@@ -68,6 +82,26 @@ namespace ElderThingFaction
             }
         }
 
+
+        private void CleanupUnusedAbilities()
+        {
+            if (this.AbilityUser != null)
+            {
+                if (this.AbilityUser.Spawned)
+                {
+                    if (this.AbilityUser.story != null)
+                    {
+                        if (!IsElderThing)
+                        {
+                            RemovePawnAbility(DefDatabase<AbilityDef>.GetNamed("ElderThing_ShortFlight"));
+                            RemovePawnAbility(DefDatabase<AbilityDef>.GetNamed("ElderThing_PsionicBlast"));
+                        }
+                    }
+                }
+            }
+        }
+
+
         private void ResolvePowers()
         {
             AddPawnAbility(DefDatabase<AbilityDef>.GetNamed("ElderThing_ShortFlight"));
@@ -78,6 +112,7 @@ namespace ElderThingFaction
         {
             base.PostExposeData();
             Scribe_Values.Look(ref this.elderThingPowersInitialized, "elderThingPowersInitialized", false);
+            Scribe_Values.Look(ref this.elderThingPowersInitializedRedundant, "elderThingPowersInitializedRedundant", false);
             Scribe_Deep.Look<ElderThingData>(ref this.elderThingData, "elderThingData", new object[] { this });
         }
     }

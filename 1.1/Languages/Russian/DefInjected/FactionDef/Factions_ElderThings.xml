@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ElderThing_Faction.label>Сообщество Старцев</ElderThing_Faction.label>
+  <ElderThing_Faction.description>Это сообщество состоит из выживших пришельцев, которые потеряли свой родной мир, когда их рабы восстали. С тех пор они поднялись в небо в поисках новых миров, достойных колонизации. \n\n Старцы высоко ценят произведения искусства и просторные залы. Они торгуют различными товарами, в обмен на рабов, которые выполняют за них всю грязную работу. Они редко прибегают к использованию оружия, благодаря их толстой коже, отражающей большинство атак. Обычно Старцы быстро сближаются с врагом и перегружают их разум псионическими ударами.</ElderThing_Faction.description>
+  <ElderThing_Faction.fixedName>Сообщество Старцев</ElderThing_Faction.fixedName>
+  <ElderThing_Faction.pawnsPlural>Старцы</ElderThing_Faction.pawnsPlural>
+  <ElderThing_Faction.leaderTitle>archechinon</ElderThing_Faction.leaderTitle>
+
+  <PlayerElderThings.label>выжившие Старцы</PlayerElderThings.label>
+  <PlayerElderThings.description>Ваше сообщество.</PlayerElderThings.description>
+  <PlayerElderThings.pawnsPlural>колонисты</PlayerElderThings.pawnsPlural>
+
+
+</LanguageData>

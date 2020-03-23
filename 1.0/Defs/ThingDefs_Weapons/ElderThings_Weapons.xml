@@ -26,15 +26,15 @@
 		<StartFireChance>0.000</StartFireChance>				
 		<thingClass>JecsTools.Projectile_Laser</thingClass>
 	</JecsTools.ThingDef_LaserProjectile>
-	<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>ElderThing_LaserGun</defName>
 		<label>laser gun (elder things)</label>
 		<drawOffscreen>true</drawOffscreen>
-		<description>A builky laser weapon designed for beings with at least five arms to support it. This is a race restricted weapon for The Elder Things.</description>
+		<description>A builky laser weapon designed for beings with at least five arms to support it. This is a race restricted weapon for The Elder Things. It can fire in five directions at five seperate targets at once.</description>
 		<graphicData>
 			<texPath>Weapon/ElderThing_LaserGun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>2.50</drawSize>			
+			<drawSize>2.60</drawSize>			
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<statBases>
@@ -45,7 +45,8 @@
 			<AccuracyMedium>0.86</AccuracyMedium>
 			<AccuracyLong>0.9</AccuracyLong>
 			<RangedWeapon_Cooldown>3.16</RangedWeapon_Cooldown>
-			
+      <MarketValue>1200</MarketValue>
+			<SellPriceFactor>0.2</SellPriceFactor>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>ElderThingLaserGun</researchPrerequisite>
@@ -81,7 +82,7 @@
 			<cooldownTime>1.6</cooldownTime>
 		  </li>
 		  <li>
-			<label>blast chamber</label>
+			<label>blast chambers</label>
 			<capacities>
 			  <li>Blunt</li>
 			  <li>Poke</li>

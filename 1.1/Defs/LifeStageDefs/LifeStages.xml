@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <LifeStageDef>
+    <defName>ElderThingPod</defName>
+    <label>pod</label>
+    <adjective>podlike</adjective>
+    <bodySizeFactor>0.2</bodySizeFactor>
+    <healthScaleFactor>0.2</healthScaleFactor>
+    <hungerRateFactor>0.0</hungerRateFactor>
+    <marketValueFactor>1.5</marketValueFactor>
+    <statFactors>
+      <MoveSpeed>0.0</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>ElderThingSprout</defName>
+    <label>sprout</label>
+    <adjective>sproutlike</adjective>
+    <bodySizeFactor>0.32</bodySizeFactor>
+    <healthScaleFactor>0.4</healthScaleFactor>
+    <hungerRateFactor>0.4</hungerRateFactor>
+    <marketValueFactor>0.7</marketValueFactor>
+    <statFactors>
+      <MoveSpeed>0.3</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>ElderThingJuvenile</defName>
+    <label>juvenile</label>
+    <bodySizeFactor>0.5</bodySizeFactor>
+    <healthScaleFactor>0.5</healthScaleFactor>
+    <hungerRateFactor>0.6</hungerRateFactor>
+    <marketValueFactor>0.9</marketValueFactor>
+    <statFactors>
+      <MoveSpeed>0.65</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>ElderThingReproductive</defName>
+    <label>reproductive</label>
+    <reproductive>true</reproductive>
+    <bodySizeFactor>0.85</bodySizeFactor>
+    <healthScaleFactor>0.90</healthScaleFactor>
+    <statFactors>
+      <MoveSpeed>0.95</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+  
+  <LifeStageDef>
+    <defName>ElderThingFullyFormed</defName>
+    <label>fully formed</label>
+    <visible>false</visible>
+    <reproductive>true</reproductive>
+  </LifeStageDef>
+  
+</Defs>

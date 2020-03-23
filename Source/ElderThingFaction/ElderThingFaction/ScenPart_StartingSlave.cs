@@ -82,7 +82,7 @@ namespace ElderThingFaction
         {
             PawnGenerationRequest request = new PawnGenerationRequest(
                 PawnKindDefOf.Slave, Faction.OfPlayer, PawnGenerationContext.PlayerStarter, -1, true, false, false, false, true,
-                false, 26f, false, true, true, false, false, false, false, (Pawn X) => !X.story.WorkTagIsDisabled(WorkTags.Hauling));
+                false, 26f, false, true, true, false, false, false, false, false, 0, null, 1, (Pawn X) => !X.story.DisabledWorkTagsBackstoryAndTraits.HasFlag(WorkTags.Hauling));
             Pawn pawn = null;
             try
             {

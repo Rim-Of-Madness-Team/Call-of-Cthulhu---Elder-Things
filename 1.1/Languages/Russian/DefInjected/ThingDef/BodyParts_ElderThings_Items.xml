@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- natural -->
+
+  <ET_Item_PsionicLobe.label>псионическая кора Старца</ET_Item_PsionicLobe.label>
+  <ET_Item_PsionicLobe.description>Пятая по счету доля мозга Старца. Позволяет использовать псионические атаки на близких расстояниях. Готова к имплантации.</ET_Item_PsionicLobe.description>
+
+  <ET_Item_HeartLung.label>кластер дыхательных клеток</ET_Item_HeartLung.label>
+  <ET_Item_HeartLung.description>Кластер дыхательных клеток снабжает организм Старца углекислым газом и обеспечивает движение крови. Готов к имплантации.</ET_Item_HeartLung.description>
+
+  <ET_Item_Xylem.label>ксилемные трубки</ET_Item_Xylem.label>
+  <ET_Item_Xylem.description>Ксилемные трубки переносят питательные вещества от пищеварительной системы Старца, ко всем остальным органам. Готовы к имплантации.</ET_Item_Xylem.description>
+
+  <ET_Item_Phloem.label>флоэмные трубки</ET_Item_Phloem.label>
+  <ET_Item_Phloem.description>Флоэмные трубки распределяют метаболические продукты от внешней оболочки по всему организму. Готовы к имплантации..</ET_Item_Phloem.description>
+
+
+  <!-- artificial -->
+
+  <ET_Item_BionicWing.label>бионическое крыло Старца</ET_Item_BionicWing.label>
+  <ET_Item_BionicWing.description>Бионическое крыло использует передовые технологии, предлагая его обладателю непревзойденние комфорт и скорость. Дизайн ограничивает использование крыла только со скелетной структурой Старцев.</ET_Item_BionicWing.description>
+
+
+</LanguageData>

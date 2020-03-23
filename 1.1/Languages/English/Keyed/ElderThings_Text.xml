@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Relationships -->
+  <ElderThingsParent>parent</ElderThingsParent>
+  <ElderThingsGrandParent>grandparent</ElderThingsGrandParent>
+  <ElderThingsGreatGrandparent>great grandparent</ElderThingsGreatGrandparent>
+  <ElderThingsGreatGrandchild>third-generation spawn</ElderThingsGreatGrandchild>
+  <ElderThingsGranduncleOrGrandaunt>grandparent's sibling</ElderThingsGranduncleOrGrandaunt>
+  <ElderThingsGrandnephewOrGrandniece>sibling's second-generation spawn</ElderThingsGrandnephewOrGrandniece>
+  <ElderThingsGrandchild>second-generation spawn</ElderThingsGrandchild>
+  <ElderThingsUncleOrAunt>parent's sibling</ElderThingsUncleOrAunt>
+  <ElderThingsCousin>brood</ElderThingsCousin>
+  <ElderThingsNephewOrNiece>sibling's spawn</ElderThingsNephewOrNiece>
+  <ElderThingsChild>spawn</ElderThingsChild>
+  <ElderThingsSibling>sibling</ElderThingsSibling>
+  <ElderThingsHalfSibling>partial sibling</ElderThingsHalfSibling>
+  <ElderThingsLover>tender</ElderThingsLover>
+  <ElderThingsExLover>ex-tender</ElderThingsExLover>
+  <ElderThingsBrood>family</ElderThingsBrood>
+
+  <ElderThingStartDialog>The Shoggoths had breached the compound only moments before you were ready to take off into the atmosphere. They had beheaded several of the ones you held closest and considered family before getting too close for comfort. \n\nCountless decades have passed since that time, and now you and several others from your commune land on this unknown rimworld.\n\nAs pieces of your companion supply ship fall around you, you start making plans to survive.</ElderThingStartDialog>
+  
+</LanguageData>

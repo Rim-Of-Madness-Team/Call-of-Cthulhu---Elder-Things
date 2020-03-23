@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ElderThing_EatingTube.label>пищевая трубка</ElderThing_EatingTube.label>
+  <ElderThing_Maw.label>пасть</ElderThing_Maw.label>
+  <ElderThing_Eye.label>глаз</ElderThing_Eye.label>
+  <ElderThing_HeartLungFirst.label>первый кластер дыхательных клеток</ElderThing_HeartLungFirst.label>
+  <ElderThing_HeartLungSecond.label>второй кластер дыхательных клеток</ElderThing_HeartLungSecond.label>
+  <ElderThing_HeartLungThird.label>третий кластер дыхательных клеток</ElderThing_HeartLungThird.label>
+  <ElderThing_HeartLungFourth.label>четвертый кластер дыхательных клеток</ElderThing_HeartLungFourth.label>
+  <ElderThing_HeartLungFifth.label>пятый кластер дыхательных клеток</ElderThing_HeartLungFifth.label>
+  <ElderThing_PsionicLobe.label>псионическая кора</ElderThing_PsionicLobe.label>
+  <ElderThing_FrontalLobe.label>лобная доля</ElderThing_FrontalLobe.label>
+  <ElderThing_ParietalLobe.label>теменная доля</ElderThing_ParietalLobe.label>
+  <ElderThing_OccipitalLobe.label>затылочная доля</ElderThing_OccipitalLobe.label>
+  <ElderThing_TemporalLobe.label>височная доля</ElderThing_TemporalLobe.label>
+  <ElderThing_BrainStem.label>мозговой ствол</ElderThing_BrainStem.label>
+  <ElderThing_HeadTentaclesFirst.label>первый головной отросток</ElderThing_HeadTentaclesFirst.label>
+  <ElderThing_HeadTentaclesSecond.label>второй головной отросток</ElderThing_HeadTentaclesSecond.label>
+  <ElderThing_HeadTentaclesThird.label>третий головной отросток</ElderThing_HeadTentaclesThird.label>
+  <ElderThing_HeadTentaclesFourth.label>четвертый головной отросток</ElderThing_HeadTentaclesFourth.label>
+  <ElderThing_HeadTentaclesFifth.label>пятый головной отросток</ElderThing_HeadTentaclesFifth.label>
+  <ElderThing_TopRing.label>верхнее кольцо</ElderThing_TopRing.label>
+  <ElderThing_WingFirst.label>первое крыло</ElderThing_WingFirst.label>
+  <ElderThing_WingSecond.label>второе крыло</ElderThing_WingSecond.label>
+  <ElderThing_WingThird.label>третье крыло</ElderThing_WingThird.label>
+  <ElderThing_WingFourth.label>четвертое крыло</ElderThing_WingFourth.label>
+  <ElderThing_WingFifth.label>пятое крыло</ElderThing_WingFifth.label>
+  <ElderThing_TentacleArmFirst.label>первое щупальце</ElderThing_TentacleArmFirst.label>
+  <ElderThing_TentacleArmSecond.label>второе щупальце</ElderThing_TentacleArmSecond.label>
+  <ElderThing_TentacleArmThird.label>третье щупальце</ElderThing_TentacleArmThird.label>
+  <ElderThing_TentacleArmFourth.label>четвертое щупальце</ElderThing_TentacleArmFourth.label>
+  <ElderThing_TentacleArmFifth.label>пятое щупальце</ElderThing_TentacleArmFifth.label>
+  <ElderThing_TentacleGrasperFirst.label>кончик первого щупальца</ElderThing_TentacleGrasperFirst.label>
+  <ElderThing_TentacleGrasperSecond.label>кончик второго щупальца</ElderThing_TentacleGrasperSecond.label>
+  <ElderThing_TentacleGrasperThird.label>кончик третьего щупальца</ElderThing_TentacleGrasperThird.label>
+  <ElderThing_TentacleGrasperFourth.label>кончик четвертого щупальца</ElderThing_TentacleGrasperFourth.label>
+  <ElderThing_TentacleGrasperFifth.label>кончик пятого щупальца</ElderThing_TentacleGrasperFifth.label>
+  <ElderThing_BottomRing.label>нижнее кольцо</ElderThing_BottomRing.label>
+  <ElderThing_TentacleLegFirst.label>первая ложноножка</ElderThing_TentacleLegFirst.label>
+  <ElderThing_TentacleLegSecond.label>вторая ложноножка</ElderThing_TentacleLegSecond.label>
+  <ElderThing_TentacleLegThird.label>третья ложноножка</ElderThing_TentacleLegThird.label>
+  <ElderThing_TentacleLegFourth.label>четвертая ложноножка</ElderThing_TentacleLegFourth.label>
+  <ElderThing_TentacleLegFifth.label>пятая ложноножка</ElderThing_TentacleLegFifth.label>
+  <ElderThing_Xylem.label>ксилемные трубки</ElderThing_Xylem.label>
+  <ElderThing_Phloem.label>флоэмные трубки</ElderThing_Phloem.label>
+
+
+</LanguageData>

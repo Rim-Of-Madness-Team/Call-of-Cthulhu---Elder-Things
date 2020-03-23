@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Laser Gun -->
+
+  <Bullet_ElderThingLaserGun.label>лазер</Bullet_ElderThingLaserGun.label>
+
+  <ElderThing_LaserGun.label>лазерное оружие Старцев</ElderThing_LaserGun.label>
+  <ElderThing_LaserGun.description>Громоздкое лазерное оружие, разработанное для существ с пятью щупальцами. Пользоваться им могут только представители расы Старцев.</ElderThing_LaserGun.description>
+
+
+</LanguageData>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <!-- Pawn Kind Defs -->
+  
+  <!-- Abstracts -->
+  
+  <PawnKindDef Name="ElderThing_KindBaseInit" Abstract="True">
+    <defaultFactionType>ElderThing_Faction</defaultFactionType>
+    <race>Alien_ElderThing_Race_Standard</race>
+    <backstoryCategories><li>ElderThing_Backstory</li></backstoryCategories>
+	<chemicalAddictionChance>0.001</chemicalAddictionChance>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="ElderThing_KindBase" ParentName="ElderThing_KindBaseInit" Abstract="True">
+    <label>Elder Thing</label>
+    <combatPower>80</combatPower>
+    <aiAvoidCover>true</aiAvoidCover>
+  </PawnKindDef>
+
+  <!-- Definitions -->
+  
+  <PawnKindDef ParentName="ElderThing_KindBase">
+    <defName>ElderThing_Kind</defName>
+  </PawnKindDef>
+  
+  
+  <PawnKindDef ParentName="ElderThing_KindBase">
+    <defName>ElderThing_Guard</defName>
+	<label>biothreat manager</label>
+    <weaponMoney>
+      <min>9900</min>
+      <max>9900</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>ElderThingGun</li>
+    </weaponTags>	
+  </PawnKindDef>  
+  
+  <PawnKindDef ParentName="ElderThing_KindBase">
+    <defName>ElderThing_Trader</defName>
+	<label>salesmonger</label>
+	<trader>true</trader>
+  </PawnKindDef>  
+  
+  <PawnKindDef ParentName="ElderThing_KindBase">
+    <defName>ElderThing_Leader</defName>
+	<factionLeader>true</factionLeader>
+    <weaponMoney>
+      <min>9900</min>
+      <max>9900</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>ElderThingGun</li>
+    </weaponTags>		
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="ElderThing_KindBase">
+	<defName>ElderThing_Colonist</defName>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ElderThing_KindBase">
+	<defName>ElderThing_Refugee</defName>
+  </PawnKindDef>
+  
+  
+</Defs>
