@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--
+  <RecipeDef>
+    <defName>ET_BiogenesisRecipe</defName>
+    <label>make biogenesis formula</label>
+    <description>Extract the ingredients for life from existing organisms.</description>
+    <jobString>Making formulae.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Cooking</workSkill>
+    <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+	<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <ET_Formula>1</ET_Formula>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+      </categories>
+	  <exceptedCategories>
+		<li>CorpsesMechanoid</li>
+	  </exceptedCategories>
+	  <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>CorpsesAnimal</li>
+		</categories>
+	</defaultIngredientFilter>
+  </RecipeDef>
+-->
+
+</Defs>

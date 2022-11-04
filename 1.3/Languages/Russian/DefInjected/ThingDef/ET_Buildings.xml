@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- FURNITURE -->
+  <ET_ChairPentagonal.label>пятиугольный стул Старцев</ET_ChairPentagonal.label>
+  <ET_ChairPentagonal.description>Это скорее пять плоскостей, поднятых над уровнем земли, а не стул. Позволяет комфортно расположить все свои щупальца и придатки. Из-за отсутствия спинки обеспечивает лучший обзор существам, у которых больше двух глаз.</ET_ChairPentagonal.description>
+  <ET_ChairPentagonal_Blueprint.label>пятиугольный стул Старцев (чертеж)</ET_ChairPentagonal_Blueprint.label>
+  <ET_ChairPentagonal_Blueprint_Install.label>пятиугольный стул Старцев (чертеж)</ET_ChairPentagonal_Blueprint_Install.label>
+  <ET_ChairPentagonal_Frame.label>пятиугольный стул Старцев (строится)</ET_ChairPentagonal_Frame.label>
+  <ET_ChairPentagonal_Frame.description>Это скорее пять плоскостей, поднятых над уровнем земли, а не стул. Позволяет комфортно расположить все свои щупальца и придатки. Из-за отсутствия спинки обеспечивает лучший обзор существам, у которых больше двух глаз.</ET_ChairPentagonal_Frame.description>
+  <ET_Chair.label>стул Старцев</ET_Chair.label>
+  <ET_Chair.description>Удобный и привлекательный стул для того, чтобы сидеть за столом.</ET_Chair.description>
+  <ET_Chair_Blueprint.label>стул Старцев (чертеж)</ET_Chair_Blueprint.label>
+  <ET_Chair_Blueprint_Install.label>стул Старцев (чертеж)</ET_Chair_Blueprint_Install.label>
+  <ET_Chair_Frame.label>пятиугольный стул Старцев (строится)</ET_Chair_Frame.label>
+  <ET_Chair_Frame.description>Удобный и привлекательный стул для того, чтобы сидеть за столом.</ET_Chair_Frame.description>
+  <ET_Bed.label>кровать Старцев</ET_Bed.label>
+  <ET_Bed.description>Пустой цилиндр с ремнями и крючьями, для удобного отдыха всех пяти щупалец.</ET_Bed.description>
+  <ET_Bed_Blueprint.label>кровать Старца (чертеж)</ET_Bed_Blueprint.label>
+  <ET_Bed_Blueprint_Install.label>кровать Старцев (чертеж)</ET_Bed_Blueprint_Install.label>
+  <ET_Bed_Frame.label>кровать Старцев (строится)</ET_Bed_Frame.label>
+  <ET_Bed_Frame.description>Пустой цилиндр с ремнями и крючьями, для удобного отдыха всех пяти щупалец.</ET_Bed_Frame.description>
+  <ET_Table.label>пятиугольный стол</ET_Table.label>
+  <ET_Table.description>Существа едят за столом, когда рядом есть стул повернутый к нему.</ET_Table.description>
+  <ET_Table_Blueprint.label>пятиугольный стол (чертеж)</ET_Table_Blueprint.label>
+  <ET_Table_Blueprint_Install.label>пятиугольный стол (чертеж)</ET_Table_Blueprint_Install.label>
+  <ET_Table_Frame.label>пятиугольный стол (строится)</ET_Table_Frame.label>
+  <ET_Table_Frame.description>Существа едят за столом, когда рядом есть стул повернутый к нему.</ET_Table_Frame.description>
+</LanguageData>

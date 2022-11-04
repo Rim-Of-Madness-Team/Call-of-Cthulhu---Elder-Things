@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef ParentName="BluntBase">
+    <defName>ElderThing_Psychic</defName>
+    <label>pscychic attack</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <canInterruptJobs>true</canInterruptJobs>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has died from psychic shock.</deathMessage>
+    <hediff>ElderThing_Psionic</hediff>
+    <armorCategory>Heat</armorCategory>
+    <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastFlame</explosionCellMote>
+    <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+    <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+    <soundExplosion>Explosion_Flame</soundExplosion>
+    <additionalHediffs>
+      <li>
+        <hediff>ElderThing_IntracranialPressureBuildup</hediff>
+        <severityPerDamageDealt>0.009</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  <ToolCapacityDef>
+    <defName>ElderThing_Psychic</defName>
+    <label>psionic</label>
+  </ToolCapacityDef>
+  <ManeuverDef>
+    <defName>ElderThing_Psychic</defName>
+    <requiredCapacity>ElderThing_Psychic</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>ElderThing_Psychic</meleeDamageDef>
+    </verb>
+    <combatLogRulesHit>ElderThing_Maneuver_Psychic_Damage</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Scratch_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Scratch_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Scratch_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  <RulePackDef>
+    <defName>ROMET_ColorfulVocabulary</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>ROMhorrible-&gt;horrible</li>
+        <li>ROMhorrible-&gt;hideous</li>
+        <li>ROMhorrible-&gt;heinous</li>
+        <li>ROMhorrible-&gt;horrendous</li>
+        <li>ROMhorrible-&gt;horrifying</li>
+        <li>ROMhorrible-&gt;repulsive</li>
+        <li>ROMhorrible-&gt;vile</li>
+        <li>ROMexposed-&gt;exposed</li>
+        <li>ROMexposed-&gt;revealed</li>
+        <li>ROMexposed-&gt;divulged</li>
+        <li>ROMexposed-&gt;laid bare</li>
+        <li>ROMexposed-&gt;brought to light</li>
+        <li>ROMexposing-&gt;exposing</li>
+        <li>ROMexposing-&gt;revealing</li>
+        <li>ROMexposing-&gt;leaving</li>
+        <li>ROMexposing-&gt;divulging</li>
+        <li>ROMexposing-&gt;laying bare</li>
+        <li>ROMexposing-&gt;bringing to light</li>
+        <li>ROMtheflesh-&gt;the flesh</li>
+        <li>ROMtheflesh-&gt;the gore</li>
+        <li>ROMtheflesh-&gt;the innards</li>
+        <li>ROMunderneath-&gt;underneath</li>
+        <li>ROMunderneath-&gt;below</li>
+        <li>ROMunderneath-&gt;within</li>
+        <li>ROMbloodoozing-&gt;blood oozing</li>
+        <li>ROMbloodoozing-&gt;blood gushing</li>
+        <li>ROMbloodoozing-&gt;blood spewing</li>
+        <li>ROMbloodoozing-&gt;blood pooling</li>
+        <li>ROMbloodoozing-&gt;blood drooling</li>
+        <li>ROMgore-&gt;guts</li>
+        <li>ROMgore-&gt;entrails</li>
+        <li>ROMgore-&gt;viscera</li>
+        <li>ROMgore-&gt;gore</li>
+        <li>ROMgore-&gt;innards</li>
+        <li>ROMgore-&gt;internals</li>
+        <li>ROMgore-&gt;flesh</li>
+        <li>ROMstrips-&gt;strips</li>
+        <li>ROMstrips-&gt;pieces</li>
+        <li>ROMstrips-&gt;ribbons</li>
+        <li>ROMstrips-&gt;shreds</li>
+        <li>ROMgazing-&gt;gazing</li>
+        <li>ROMgazing-&gt;peering</li>
+        <li>ROMgazing-&gt;looming</li>
+        <li>ROMfury-&gt;fury</li>
+        <li>ROMfury-&gt;hunger</li>
+        <li>ROMfury-&gt;desire</li>
+        <li>ROMfury-&gt;wrath</li>
+        <li>ROMfury-&gt;rage</li>
+        <li>ROMtimeless-&gt;timeless</li>
+        <li>ROMtimeless-&gt;ancient</li>
+        <li>ROMtimeless-&gt;eldritch</li>
+        <li>ROMtimeless-&gt;eldritch</li>
+        <li>ROMunspeakable-&gt;unspeakable</li>
+        <li>ROMunspeakable-&gt;unutterable</li>
+        <li>ROMunspeakable-&gt;nameless</li>
+        <li>ROMunspeakable-&gt;hellish</li>
+        <li>ROMunspeakable-&gt;inhuman</li>
+        <!-- CARRYING ITS EXPRESSION -->
+        <!-- carrying an expression of madness-->
+        <li>ROMcarryinganexpressionofmadness-&gt;[ROMcarrying] [ROManexpression] [ROMofmadness]</li>
+        <li>ROMcarrying-&gt;carrying</li>
+        <li>ROMcarrying-&gt;freighted with</li>
+        <li>ROMcarrying-&gt;laden with</li>
+        <li>ROMcarrying-&gt;imbued with</li>
+        <li>ROMcarrying-&gt;wielding</li>
+        <li>ROManexpression-&gt;an expression</li>
+        <li>ROManexpression-&gt;a visage</li>
+        <li>ROManexpression-&gt;a stare</li>
+        <li>ROManexpression-&gt;a gaze</li>
+        <li>ROManexpression-&gt;a look</li>
+        <li>ROMofmadness-&gt;of [ROMmadness]</li>
+        <li>ROMofmadness-&gt;that is betwixt the real and unreal</li>
+        <li>ROMofmadness-&gt;that reminds [recipient_objective] of  [ROMthesmallnessoftheirexistence]</li>
+        <li>ROMmadness-&gt;madness</li>
+        <li>ROMmadness-&gt;insanity</li>
+        <li>ROMmadness-&gt;derangement</li>
+        <li>ROMthesmallnessoftheirexistence-&gt;the smallness of [recipient_possessive] existence</li>
+        <li>ROMthesmallnessoftheirexistence-&gt;[recipient_possessive] feeble mortality</li>
+        <li>ROMthesmallnessoftheirexistence-&gt;[recipient_possessive] candle before oblivion</li>
+        <!-- CASTING ITS GAZE -->
+        <!-- gazing with eldritch eyes like lanterns from the deep abyss -->
+        <li>ROMgazingwithinhumaneyes-&gt;[ROMgazing] with [ROMtimeless] eyes like [ROMlanterns] from [ROMthedeepabyss]</li>
+        <li>ROMgazingwithinhumaneyes-&gt;[ROMgazing] with [ROMunspeakable] hideousness</li>
+        <li>ROMgazingwithinhumaneyes-&gt;[ROMgazing] with maniacal force and [ROMfury]</li>
+        <li>ROMgazingwithinhumaneyes-&gt;[ROMgazing] with luminous, expanded eyes</li>
+        <li>ROMgazingwithinhumaneyes-&gt;[ROMgazing] with a [ROMunspeakable], [ROMtimeless] [ROMfury]</li>
+        <li>ROMlanterns-&gt;hellish phosphorescence</li>
+        <li>ROMlanterns-&gt;lanterns</li>
+        <li>ROMthedeepabyss-&gt;the deep abyss</li>
+        <li>ROMthedeepabyss-&gt;beyond understanding</li>
+        <li>ROMthedeepabyss-&gt;outside known reality</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ElderThing_Maneuver_Psychic_Damage</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>damaged_inf(p=2)-&gt;psiblast</li>
+        <li>damaged_inf-&gt;psiburst</li>
+        <li>damaged_inf-&gt;psipulse</li>
+        <li>damaged_inf-&gt;psishock</li>
+        <li>damaged_past(p=2)-&gt;psiblasted</li>
+        <li>damaged_past-&gt;psiburst</li>
+        <li>damaged_past-&gt;psipulsed</li>
+        <li>damaged_past-&gt;psishocked</li>
+        <li>damaged_present-&gt;psiblasting</li>
+        <li>damaged_present-&gt;psibursting</li>
+        <li>damaged_present-&gt;psipulsing</li>
+        <li>damaged_present-&gt;psishocking</li>
+        <li>destroyed_past-&gt;psiblasted apart</li>
+        <li>destroyed_past-&gt;psiburst apart</li>
+        <li>destroyed_past-&gt;psishocked</li>
+        <li>destroyed_past-&gt;psipulsed</li>
+        <li>destroyed_present-&gt;psiblasting</li>
+        <li>destroyed_present-&gt;psibursting</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ElderThing_Maneuver_Psychic</defName>
+    <include>
+      <li>ROMET_ColorfulVocabulary</li>
+      <li>ElderThing_Maneuver_Psychic_Damage</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>woundname-&gt;wound</li>
+        <li>flavortext_situation(p=3)-&gt;while [ROMgazingwithinhumaneyes]</li>
+        <li>flavortext_situation(p=3)-&gt;while [ROMcarryinganexpressionofmadness]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;with [ROMbloodoozing] from the [woundname]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;with [ROMgore] [ROMexposed] from the [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;and [ROMexposing] [ROMtheflesh] [ROMunderneath]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;and [ROMexposing] a [ROMhorrible] [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh==Mechanoid)-&gt;and exposing the machinery underneath</li>
+        <li>destroyed_suffix(p=2,recipient_flesh!=Mechanoid)-&gt;[to] messy [ROMstrips]</li>
+        <li>destroyed_suffix(p=4)-&gt;[to] [ROMstrips]</li>
+        <li>destroyed_suffix-&gt;[to] pieces</li>
+        <li>destroyed_suffix-&gt;[to] fragments</li>
+        <li>destroyed_suffix(recipient_flesh!=Mechanoid)-&gt;[to] a pile of gore</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>
