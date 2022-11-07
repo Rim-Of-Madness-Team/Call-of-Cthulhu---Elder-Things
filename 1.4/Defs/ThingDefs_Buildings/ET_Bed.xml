@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <ThingDef ParentName="ElderThingFurniture" Name="ElderThingBedlikeBase" Abstract="True">
+    <thingClass>ElderThingFaction.Building_ElderThingBed</thingClass>
+    <tickerType>Normal</tickerType> <!-- Important for components -->
+    <drawerType>MapMeshAndRealTime</drawerType> <!-- Important for components -->
+    <altitudeLayer>Building</altitudeLayer>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+        <compClass>ElderThingFaction.CompAssignableToElder</compClass>
+      </li>
+    </comps>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <canOverlapZones>false</canOverlapZones>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <passability>PassThroughOnly</passability>
+    <!-- <defaultPlacingRot>South</defaultPlacingRot> -->
+    <rotatable>false</rotatable>
+    <uiOrder>2020</uiOrder>
+    <building>
+      <buildingTags>
+        <li>Bed</li>
+      </buildingTags>
+    </building>
+  </ThingDef>
+
+  <ThingDef Name="ElderThingBedWithQualityBase" ParentName="ElderThingBedlikeBase" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <uiOrder>2020</uiOrder>
+  </ThingDef>
+
+  <ThingDef Name="ElderThingArtableBedBase" ParentName="ElderThingBedWithQualityBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtFurniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef Name="ElderThingSansComfortBedBase" ParentName="ElderThingArtableBedBase" Abstract="True">
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+      <BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">2</BirthRitualQualityOffset>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <!-- <staticSunShadowHeight>0.17</staticSunShadowHeight> Too much shadow -->
+    <!-- <castEdgeShadows>True</castEdgeShadows> Makes the edges too dark -->
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+
+  <ThingDef Name="ElderThingBedBase" ParentName="ElderThingSansComfortBedBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+          <li>VitalsMonitor</li> <!-- Added to treat ET bed as hospital bed -->
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <Comfort>0.75</Comfort>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="ElderThingBedBase">
+    <defName>ET_Bed</defName>
+    <label>elder thing bed</label>
+    <description>A hallow cyllinder to allow for solitude equipped with hooks to rest weary appendages.</description>
+    <graphicData>
+      <texPath>Furniture/Bed/ET_BedRW14</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="ElderThingFaction.CompProperties_SecondLayer">
+        <graphicData>
+          <texPath>Furniture/Bed/ET_BedRW14Door</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2,2)</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.6, 0.3)</volume>
+          </shadowData>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Beauty>8</Beauty>
+      <WorkToBuild>870</WorkToBuild>
+      <Mass>40</Mass>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.75</Comfort>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <costStuffCount>60</costStuffCount>
+    <designationHotKey>Misc2</designationHotKey>
+    <uiOrder>2010</uiOrder>
+    <rotatable>false</rotatable>
+    <building>
+      <paintable>true</paintable>
+    </building>
+  </ThingDef>
+
+</Defs>
