@@ -380,6 +380,7 @@
       </li>
     </tools>
     <race>
+      <fleshType>ET_ElderThingFlesh</fleshType>
       <nameGenerator>NamerElderThings</nameGenerator>
       <hasGenders>false</hasGenders>
       <thinkTreeMain>Humanlike</thinkTreeMain>

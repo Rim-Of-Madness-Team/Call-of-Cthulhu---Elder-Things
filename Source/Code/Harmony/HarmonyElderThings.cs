@@ -90,19 +90,47 @@ namespace ElderThingFaction
                     name: "GenerateGenes"),
                 preFix: new HarmonyMethod(methodType: typeof(HarmonyElderThings),
                     methodName: nameof(GenerateGenes_PreFix)));
+            
+            //Elder things should sleep standing up
+            Patch(instance: harmony, original: AccessTools.Method(type: typeof(PawnRenderer),
+                    name: nameof(PawnRenderer.BodyAngle)),
+                postFix: new HarmonyMethod(methodType: typeof(HarmonyElderThings),
+                    methodName: nameof(BodyAngle_PostFix)));
+            
+            //Elder things start with abilities
+            
 
             DebugMessage(s: "HAR :: -===- EXIT Harmony Test -===- ");
         }
 
+        //Elder things should always stand unless downed or dead
+        public static void BodyAngle_PostFix(Pawn ___pawn, ref float __result)
+        {
+            if (___pawn.IsElderThing() && !___pawn.Dead && !___pawn.Downed &&
+                ___pawn.GetPosture() is
+                    PawnPosture.LayingOnGroundFaceUp or PawnPosture.LayingOnGroundNormal)
+            {
+                __result = 0f;
+            }
+        }
+
         public static bool GenerateGenes_PreFix(Pawn pawn)
         {
-            if (ModsConfig.BiotechActive && pawn.IsElderThing())
+            if (pawn.IsElderThing())
             {
-                pawn.genes.AddGene(DefDatabase<GeneDef>.GetNamed("ET_SporeReproduction"), false);
-                pawn.genes.AddGene(DefDatabase<GeneDef>.GetNamed("ET_LeatheryWings"), false);
-                pawn.genes.AddGene(DefDatabase<GeneDef>.GetNamed("ET_BarrelBody"), false);
-                pawn.genes.AddGene(DefDatabase<GeneDef>.GetNamed("ET_FiveFoldSymmetry"), false);
-                pawn.genes.AddGene(DefDatabase<GeneDef>.GetNamed("ET_TopAppendage"), false);
+                if (ModsConfig.BiotechActive)
+                {
+                    pawn.genes.AddGene(DefDatabase<GeneDef>.GetNamed("ET_SporeReproduction"), false);
+                    pawn.genes.AddGene(DefDatabase<GeneDef>.GetNamed("ET_LeatheryWings"), false);
+                    pawn.genes.AddGene(DefDatabase<GeneDef>.GetNamed("ET_BarrelBody"), false);
+                    pawn.genes.AddGene(DefDatabase<GeneDef>.GetNamed("ET_FiveFoldSymmetry"), false);
+                    pawn.genes.AddGene(DefDatabase<GeneDef>.GetNamed("ET_TopAppendage"), false);
+                    
+                    //Reproduction only available with Biotech
+                    pawn.abilities.GainAbility(DefDatabase<RimWorld.AbilityDef>.GetNamed("ET_SporeReproduction"));
+                }
+                pawn.abilities.GainAbility(DefDatabase<RimWorld.AbilityDef>.GetNamed("ET_PsionicBlast"));
+                pawn.abilities.GainAbility(DefDatabase<RimWorld.AbilityDef>.GetNamed("ET_ShortFlight"));
                 return false;
             }
             return true;
@@ -292,14 +320,14 @@ namespace ElderThingFaction
         // }
         
         //Pawn_IdeoTracker
-        public static bool get_CertaintyChangeFactor_PreFix(ref SimpleCurve ___curve, Pawn ___pawn, Pawn_IdeoTracker __instance, ref float __result)
+        public static bool get_CertaintyChangeFactor_PreFix(ref SimpleCurve ___pawnAgeCertaintyCurve, Pawn ___pawn, Pawn_IdeoTracker __instance, ref float __result)
         {
             DebugMessage(s: "446 :: -- Enter get_CertaintyChangeFactor_PreFix --");
             if (ModsConfig.BiotechActive && ___pawn.IsElderThing())
             {
-                if (___curve == null)
+                if (___pawnAgeCertaintyCurve == null)
                 {
-                    ___curve = new SimpleCurve
+                    ___pawnAgeCertaintyCurve = new SimpleCurve
                     {
                         {
                             new CurvePoint(___pawn.ageTracker.LifeStageMinAge(
@@ -313,7 +341,7 @@ namespace ElderThingFaction
                         }
                     };
                 }
-                __result = ___curve.Evaluate(___pawn.ageTracker
+                __result = ___pawnAgeCertaintyCurve.Evaluate(___pawn.ageTracker
                     .AgeBiologicalYearsFloat);
                 
                 DebugMessage(s: "446 :: -- Exit get_CertaintyChangeFactor_PreFix ((False)) --");

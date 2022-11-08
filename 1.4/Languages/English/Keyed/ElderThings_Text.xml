@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <!-- Relationships -->
+  <ET_AbilityFertileSoil>Must target fertile soil.</ET_AbilityFertileSoil>
   <ET_ETBedsForETs>Other races cannot be assigned to Elder Thing beds</ET_ETBedsForETs>
   <ET_Disabled>Disabled</ET_Disabled>
   <ET_NotAnAdult>To use spores, the entity must be at an age for reproduction</ET_NotAnAdult>

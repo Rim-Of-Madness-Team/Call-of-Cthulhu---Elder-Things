@@ -54,6 +54,7 @@
     </graphicData>
     <rotatable>true</rotatable>
     <altitudeLayer>Building</altitudeLayer>
+    <defaultPlacingRot>South</defaultPlacingRot>
     <statBases>
       <MaxHitPoints>170</MaxHitPoints>
       <WorkToBuild>6000</WorkToBuild>

@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Short Flight -->
+  <AbilityDef>
+    <defName>ET_ShortFlight</defName>
+    <label>short flight</label>
+    <description>Fly to a distant location using leathery wings.</description>
+    <iconPath>Icons/ET_IconFlight</iconPath>
+    <cooldownTicksRange>3600</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>fly</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.5</warmupTime>
+      <range>19.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>ElderThing_AbilityCastSound_Flight</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+  <!-- Psionic Blast -->
+  <AbilityDef>
+    <defName>ET_PsionicBlast</defName>
+    <label>psionic blast</label>
+    <description>A psyonic blast that physically strikes the target. If the target is made of flesh, the blast will cause disorientation, loss of balance, and extreme nauseousness.</description>
+    <iconPath>Icons/ET_IconPsionics</iconPath>
+    <cooldownTicksRange>3600</cooldownTicksRange>
+    <writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>false</showPsycastEffects>
+    <warmupStartSound>ElderThing_AbilityCastSound_PsionicBlast</warmupStartSound>
+    <hotKey>Misc9</hotKey>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>2.2</warmupTime>
+      <range>27.9</range>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+        <canTargetAnimals>True</canTargetAnimals>
+        <canTargetItems>True</canTargetItems>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class = "CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PsychicVertigo</hediffDef>
+        <durationMultiplier>PsychicSensitivity</durationMultiplier>
+        <goodwillImpact>-15</goodwillImpact>
+        <applyGoodwillImpactToLodgers>False</applyGoodwillImpactToLodgers>
+      </li>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>ET_PsionicBlast</projectileDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ET_PsionicBlast</defName>
+    <label>psionic blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Spark</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>ElderThing_PsionicBlastDamage</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  <DamageDef>
+    <defName>ElderThing_PsionicBlastDamage</defName>
+    <label>blast</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted to death.</deathMessage>
+    <hediff>ET_PsionicBlast</hediff>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal> <!-- Psionic can crush internal parts -->
+    <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+  </DamageDef>
+  <HediffDef ParentName="InjuryBase">
+    <defName>ET_PsionicBlast</defName>
+    <label>blast</label>
+    <labelNoun>a psionic wound</labelNoun>
+    <description>A psionic wound.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.15</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>mangled scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.01</bleedRate>
+      <canMerge>true</canMerge>
+      <destroyedLabel>Blasted off</destroyedLabel>
+    </injuryProps>
+  </HediffDef>
+
+  <!-- Spores -->
+  <AbilityDef>
+    <defName>ET_SporeReproduction</defName>
+    <label>spores</label>
+    <description>Spew forth generated spores to generate an elder thing pod, which will over the course of a few days, depending upon fertility, spawn another elder thing.</description>
+    <iconPath>Icons/ET_IconSpores</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <hotKey>Misc12</hotKey>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <soundCast>AcidSpray_Resolve</soundCast>
+      <warmupTime>1</warmupTime>
+      <range>24.9</range>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class = "CompProperties_AbilityEffect">
+        <compClass>ElderThingFaction.CompAbilityEffect_SpawnSpores</compClass>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>ET_Fleck_SporeCloud</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>ET_Fleck_SporeCloud</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.7</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.7</fadeOutTime>
+    <growthRate>0.8</growthRate>
+    <acceleration>(0, 0, 2)</acceleration>
+    <graphicData>
+      <texPath>Things/Gas/GasCloudThickA</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(180, 214, 24, 64)</color>
+      <drawSize>(4, 4)</drawSize>
+    </graphicData>
+  </FleckDef>
+  
+
+  <!-- Sounds -->
+  <SoundDef>
+    <defName>ElderThing_AbilityCastSound_Flight</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>UI/ElderThing_CastFlight</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>60</max>
+        </volumeRange>
+        <pitchRange>
+          <min>1</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ElderThing_AbilityCastSound_PsionicBlast</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>UI/ElderThing_CastPsionicBlast</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>65</min>
+          <max>65</max>
+        </volumeRange>
+        <pitchRange>
+          <min>1</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>
