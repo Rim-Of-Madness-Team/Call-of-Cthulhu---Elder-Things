@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- All Elder Thing Backgrounds have disabled
+  Manual dumb labor -->
+  <ET_BG_C_01.title>Зараженный паразитами</ET_BG_C_01.title>
+  <ET_BG_C_02.title>Мозг-близнец</ET_BG_C_02.title>
+  <ET_BG_C_03.title>Свидетель восстания Шогготов</ET_BG_C_03.title>
+  <ET_BG_C_04.title>Альфа</ET_BG_C_04.title>
+  <ET_BG_C_05.title>Помощник</ET_BG_C_05.title>
+  <ET_BG_C_06.title>Абстрактор геометрии</ET_BG_C_06.title>
+  <ET_BG_C_07.title>Отвратительное создание</ET_BG_C_07.title>
+  <!-- Adulthood -->
+  <ET_BG_A_01.title>Гипно-романист</ET_BG_A_01.title>
+  <ET_BG_A_02.title>Дрессировщик Шогготов</ET_BG_A_02.title>
+  <ET_BG_A_03.title>Ретро-био-скульптор</ET_BG_A_03.title>
+  <ET_BG_A_04.title>Наводчик лазерной пушки</ET_BG_A_04.title>
+  <ET_BG_A_05.title>Аква-ксено-ботаник</ET_BG_A_05.title>
+  <ET_BG_A_06.title>Менеджер био-угроз</ET_BG_A_06.title>
+  <ET_BG_A_07.title>Специалист мясного промысла</ET_BG_A_07.title>
+  <ET_BG_A_08.title>Ретроспективный аналитик</ET_BG_A_08.title>
+  <ET_BG_A_09.title>Надзиратель</ET_BG_A_09.title>
+  <ET_BG_A_10.title>Историк-монументалист</ET_BG_A_10.title>
+  <ET_BG_A_11.title>Эволюционный историк</ET_BG_A_11.title>
+  <ET_BG_A_12.title>Таксидермист круных животных</ET_BG_A_12.title>
+  <ET_BG_A_12.title>Гео-архитектор</ET_BG_A_12.title>
+  <ET_BG_A_13.title>Борец со скукой</ET_BG_A_13.title>
+  <ET_BG_A_14.title>Доктор-мучитель</ET_BG_A_14.title>
+</LanguageData>

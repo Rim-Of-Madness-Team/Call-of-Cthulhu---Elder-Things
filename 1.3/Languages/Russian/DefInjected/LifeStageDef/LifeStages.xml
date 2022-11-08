@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ElderThingPod.label>кокон</ElderThingPod.label>
+  <ElderThingPod.adjective>коконоподобный</ElderThingPod.adjective>
+  <ElderThingSprout.label>росток</ElderThingSprout.label>
+  <ElderThingSprout.adjective>росткоподобный</ElderThingSprout.adjective>
+  <ElderThingJuvenile.label>подросток</ElderThingJuvenile.label>
+  <ElderThingReproductive.label>репродуктивный</ElderThingReproductive.label>
+  <ElderThingFullyFormed.label>полностью сформированный</ElderThingFullyFormed.label>
+</LanguageData>

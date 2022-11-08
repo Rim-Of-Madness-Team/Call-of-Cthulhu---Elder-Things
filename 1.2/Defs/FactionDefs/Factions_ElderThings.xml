@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="HumanFactionBase">
+    <defName>ElderThing_Faction</defName>
+    <label>Society of the Elder Things</label>
+    <description>The Elder Things society consists of survivors who lost their entire world after their slave population revolted against them. They have arrived on this world after traveling through space in order to find new worlds to colonize.\n\nIn their society, the Elder Things thrive on beautiful works of art and spacious interiors. They also enjoy trading goods in exchange for slaves to perform their mundane tasks for them. They rarely need weapons to destroy foes due to their thick barrel bodies preventing most damage. During ranged exchanges, they are usually fast enough to close in on their enemies and overwhelm their minds with psionic powers.</description>
+    <descriptionHyperlinks>
+      <AlienRace.ThingDef_AlienRace>Alien_ElderThing_Race_Standard</AlienRace.ThingDef_AlienRace>
+    </descriptionHyperlinks>
+    <pawnsPlural>elder things</pawnsPlural>
+    <settlementGenerationWeight>0.025</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Society of the Elder Things</fixedName>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>ElderThing_Backstory</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <hairTags>
+      <li>NonExisting</li>
+    </hairTags>
+    <settlementNameMaker>NamerSettlementElderThings</settlementNameMaker>
+    <canMakeRandomly>true</canMakeRandomly>
+    <leaderTitle>archechinon</leaderTitle>
+    <factionIconPath>World/WorldObjects/Expanding/ElderThingBase</factionIconPath>
+    <humanlikeFaction>true</humanlikeFaction>
+    <hidden>false</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <techLevel>Neolithic</techLevel>
+    <earliestRaidDays>12</earliestRaidDays>
+    <startingGoodwill>
+      <min>10</min>
+      <max>30</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>10</min>
+      <max>30</max>
+    </naturalColonyGoodwill>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <ElderThing_Kind>100</ElderThing_Kind>
+          <ElderThing_Leader>8</ElderThing_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ElderThing_Kind>100</ElderThing_Kind>
+          <ElderThing_Leader>8</ElderThing_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ElderThing_Kind>100</ElderThing_Kind>
+          <ElderThing_Leader>8</ElderThing_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <ElderThing_Trader>1</ElderThing_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>1</Muffalo>
+          <Dromedary>1</Dromedary>
+        </carriers>
+        <guards>
+          <ElderThing_Guard>250</ElderThing_Guard>
+          <ElderThing_Kind>50</ElderThing_Kind>
+        </guards>
+      </li>
+    </pawnGroupMakers>
+    <caravanTraderKinds>
+      <li>Caravan_ElderThing_PetDealer</li>
+      <li>Caravan_ElderThing_ArtDealer</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_ElderThing_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>FactionBase_ElderThing_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-255</min>
+      <max>255</max>
+    </allowedArrivalTemperatureRange>
+    <settlementTexturePath>World/WorldObjects/Expanding/ElderThingZoomed</settlementTexturePath>
+  </FactionDef>
+</Defs>

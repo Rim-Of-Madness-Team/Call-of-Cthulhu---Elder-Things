@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Elder Thing Base -->
+  <Alien_ElderThing_Race_Standard.label>Старцы</Alien_ElderThing_Race_Standard.label>
+  <Alien_ElderThing_Race_Standard.description>Будучи отчасти грибком, отчасти амфибиями, отчасти растениями, эти пятигранные бочкообразные создания известны, как Старцы. Их невероятно выносливые тела могут выдерживать экстремальные температуры, впадать в спячку на неопределенное время и даже путешествовать в открытом космосе. Единственный способ убить их, это нанести им тяжелейшие повреждения. \n\nДополнительная информация: Старцы - бесполые существа и размножаются спорами, которые потом выращивают в питательных ваннах. Воспитанием занимается группа Старцев со схожими интересами, а не кровные родственники. Их культура основана на создании больших пространств, украшенных произведениями искусства и заполненных мебелью пятиугольной и цилиндрической формы. Благодаря успехам в генной инженерии, они создали разумную расу из протоплазмы - Шогготов, которых использовали в качестве рабов. Восстание, произошедшее несколько веков назад, едва не уничтожило всю их цивилизацию, но и по сей день они рассчитывают на рабский труд и отказываются выполнять работу, которую считают ниже своего достоинства.</Alien_ElderThing_Race_Standard.description>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.0.label>ElderThingsParent</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.0.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.1.label>ElderThingsChild</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.1.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.2.label>ElderThingsSibling</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.2.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.3.label>ElderThingsHalfSibling</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.3.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.4.label>ElderThingsGrandparent</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.4.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.5.label>ElderThingsGrandchild</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.5.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.6.label>ElderThingsNephewOrNiece</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.6.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.7.label>ElderThingsUncleOrAunt</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.7.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.8.label>ElderThingsCousin</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.8.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.9.label>ElderThingsGreatGrandparent</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.9.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.10.label>ElderThingsGreatGrandchild</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.10.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.11.label>ElderThingsGranduncleOrGrandaunt</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.11.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.12.label>ElderThingsGrandnephewOrGrandniece</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.12.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.13.label>ElderThingsBrood</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.13.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.14.label>ElderThingsBrood</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.14.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.15.label>ElderThingsBrood</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.15.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.16.label>ElderThingsBrood</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.16.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.17.label>ElderThingsLover</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.17.label>
+  <Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.18.label>ElderThingsExLover</Alien_ElderThing_Race_Standard.alienRace.relationSettings.renamer.18.label>
+</LanguageData>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<FleshTypeDef>
+    <defName>ET_ElderThingFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitFlesh</damageEffecter>
+     <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundA</texture>
+          <color>0, 155, 0</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundB</texture>
+          <color>0, 155, 0</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundC</texture>
+          <color>0, 155, 0</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+  </FleshTypeDef>
+</Defs>

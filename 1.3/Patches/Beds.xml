@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/JobDef[defName="CharmGuest"]</xpath>
+    <success>Always</success>
+    <nomatch Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef/comps/li[compClass="CompAssignableToPawn_Bed"]/compClass</xpath>
+      <value>
+        <compClass>ElderThingFaction.CompAssignableToElder</compClass>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>

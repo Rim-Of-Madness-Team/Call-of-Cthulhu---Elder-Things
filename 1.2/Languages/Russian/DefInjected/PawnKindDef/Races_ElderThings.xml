@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Definitions -->
+  <ElderThing_Kind.label>Старец</ElderThing_Kind.label>
+  <ElderThing_Kind.labelPlural>Старцы</ElderThing_Kind.labelPlural>
+  <ElderThing_Kind.labelMale>male Elder Thing</ElderThing_Kind.labelMale>
+  <ElderThing_Kind.labelMalePlural>male Elder Things</ElderThing_Kind.labelMalePlural>
+  <ElderThing_Kind.labelFemale>female Elder Thing</ElderThing_Kind.labelFemale>
+  <ElderThing_Kind.labelFemalePlural>female Elder Things</ElderThing_Kind.labelFemalePlural>
+  <ElderThing_Guard.label>менеджер био-угроз</ElderThing_Guard.label>
+  <ElderThing_Guard.labelPlural>менеджеры био-угроз</ElderThing_Guard.labelPlural>
+  <ElderThing_Guard.labelMale>male biothreat manager</ElderThing_Guard.labelMale>
+  <ElderThing_Guard.labelMalePlural>male biothreat managers</ElderThing_Guard.labelMalePlural>
+  <ElderThing_Guard.labelFemale>female biothreat manager</ElderThing_Guard.labelFemale>
+  <ElderThing_Guard.labelFemalePlural>female biothreat managers</ElderThing_Guard.labelFemalePlural>
+  <ElderThing_Trader.label>торговец</ElderThing_Trader.label>
+  <ElderThing_Trader.labelPlural>торговцы</ElderThing_Trader.labelPlural>
+  <ElderThing_Trader.labelMale>male salesmonger</ElderThing_Trader.labelMale>
+  <ElderThing_Trader.labelMalePlural>male salesmongers</ElderThing_Trader.labelMalePlural>
+  <ElderThing_Trader.labelFemale>female salesmonger</ElderThing_Trader.labelFemale>
+  <ElderThing_Trader.labelFemalePlural>female salesmongers</ElderThing_Trader.labelFemalePlural>
+  <ElderThing_Leader.label>Старец</ElderThing_Leader.label>
+  <ElderThing_Leader.labelPlural>Старцы</ElderThing_Leader.labelPlural>
+  <ElderThing_Leader.labelMale>male Elder Thing</ElderThing_Leader.labelMale>
+  <ElderThing_Leader.labelMalePlural>male Elder Things</ElderThing_Leader.labelMalePlural>
+  <ElderThing_Leader.labelFemale>female Elder Thing</ElderThing_Leader.labelFemale>
+  <ElderThing_Leader.labelFemalePlural>female Elder Things</ElderThing_Leader.labelFemalePlural>
+  <ElderThing_Colonist.label>Старец</ElderThing_Colonist.label>
+  <ElderThing_Colonist.labelPlural>Старцы</ElderThing_Colonist.labelPlural>
+  <ElderThing_Colonist.labelMale>male Elder Thing</ElderThing_Colonist.labelMale>
+  <ElderThing_Colonist.labelMalePlural>male Elder Things</ElderThing_Colonist.labelMalePlural>
+  <ElderThing_Colonist.labelFemale>female Elder Thing</ElderThing_Colonist.labelFemale>
+  <ElderThing_Colonist.labelFemalePlural>female Elder Things</ElderThing_Colonist.labelFemalePlural>
+  <ElderThing_Refugee.label>Старец</ElderThing_Refugee.label>
+  <ElderThing_Refugee.labelPlural>Старцы</ElderThing_Refugee.labelPlural>
+  <ElderThing_Refugee.labelMale>male Elder Thing</ElderThing_Refugee.labelMale>
+  <ElderThing_Refugee.labelMalePlural>male Elder Things</ElderThing_Refugee.labelMalePlural>
+  <ElderThing_Refugee.labelFemale>female Elder Thing</ElderThing_Refugee.labelFemale>
+  <ElderThing_Refugee.labelFemalePlural>female Elder Things</ElderThing_Refugee.labelFemalePlural>
+</LanguageData>

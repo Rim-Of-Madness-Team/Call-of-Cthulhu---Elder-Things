@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>ROMET_SporesReplicating</defName>
+    <label>spores regrowing</label>
+    <description>This entity's spores are growing. Once spores have grown, the elder thing will gain the ability to spawn spores and reproduce.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>4000000~6000000</disappearsAfterTicks><!-- 100~140 days -->
+        <showRemainingTime>true</showRemainingTime>
+        <canUseDecimalsShortForm>true</canUseDecimalsShortForm>
+        <messageOnDisappear>{PAWN_nameDef}'s spores have finished regrowing.</messageOnDisappear>
+      </li>
+    </comps>
+  </HediffDef>
+
+</Defs>

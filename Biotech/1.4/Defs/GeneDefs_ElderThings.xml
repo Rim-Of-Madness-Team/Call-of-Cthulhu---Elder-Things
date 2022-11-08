@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneCategoryDef>
+    <defName>ET_ElderThings</defName>
+    <label>elder things</label>
+    <displayPriorityInXenotype>10111</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneDef Name="ET_ElderThingGeneBase" Abstract="True">
+    <biostatCpx>0</biostatCpx>
+    <displayCategory>ET_ElderThings</displayCategory>
+    <iconColor>(1, 1, 1)</iconColor>
+  </GeneDef>
+
+  <GeneDef ParentName="ET_ElderThingGeneBase">
+    <defName>ET_TopAppendage</defName>
+    <label>elder thing head</label>
+    <labelShortAdj>elder thing head</labelShortAdj>
+    <description>Carriers of this gene possess a top appendage portruding from their torso with five eyes, five eating tubes, and cilia to for night sight.</description>
+    <iconPath>Genes/ET_Genehead</iconPath>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <!-- No hair, eye, or bear genetics-->
+    <exclusionTags>
+      <li>HairStyle</li>
+      <li>BeardStyle</li>
+      <li>EyeColor</li>
+    </exclusionTags>
+    <!-- No hair -->
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <!-- No beards -->
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>starfish-like</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>starfish</symbol></li>
+        <li><symbol>tubes</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+
+  <GeneDef ParentName="ET_ElderThingGeneBase">
+    <defName>ET_FiveFoldSymmetry</defName>
+    <label>radial symmetry</label>
+    <labelShortAdj>radial form</labelShortAdj>
+    <description>Carriers of this gene do not have a two-sided symmetry (two arms, two legs), but rather a radial five-sided symmetry (five arms, five legs).</description>
+    <iconPath>Genes/ET_GeneHands</iconPath>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <!-- Elder Thing hands -->
+    <endogeneCategory>Hands</endogeneCategory>
+    <exclusionTags>
+      <li>Hands</li>
+    </exclusionTags>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>pentagonal</symbol></li>
+        <li><symbol>five-sided</symbol></li>
+        <li><symbol>radial</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>symmetry</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+
+  <GeneDef ParentName="ET_ElderThingGeneBase">
+    <defName>ET_BarrelBody</defName>
+    <label>barrel-like</label>
+    <description>Carriers can have imposingly tall forms.</description>
+    <iconPath>Genes/ET_GeneBarrel</iconPath>
+    <displayOrderInCategory>30</displayOrderInCategory>
+    <endogeneCategory>BodyType</endogeneCategory>
+    <!-- The ELder Thing body-->
+    <exclusionTags>
+      <li>BodyType</li>
+    </exclusionTags>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>hulk</symbol></li>
+        <li><symbol>big</symbol></li>
+        <li><symbol>broad</symbol></li>
+        <li><symbol>hunk</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>hulk</symbol></li>
+        <li><symbol>chunk</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+
+  <GeneDef ParentName="ET_ElderThingGeneBase">
+    <defName>ET_LeatheryWings</defName>
+    <label>leathery wings</label>
+    <description>Carriers of this gene grow leathery wings.</description>
+    <iconPath>Genes/ET_GeneWings</iconPath>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+    <!-- No tails, but wings... -->
+    <exclusionTags>
+      <li>Tail</li>
+    </exclusionTags>
+  </GeneDef>
+
+
+  <GeneDef ParentName="ET_ElderThingGeneBase">
+    <defName>ET_SporeReproduction</defName>
+    <label>asexual spores</label>
+    <description>Carriers of this gene reproduce via spores instead of biological mating.</description>
+    <iconPath>Genes/ET_GeneSpores</iconPath>
+    <sterilize>true</sterilize>
+    <displayOrderInCategory>100</displayOrderInCategory>
+    <!-- Elder Things fertility method -->
+    <exclusionTags>
+      <li>Fertility</li>
+    </exclusionTags>
+    <statFactors>
+      <Fertility>0</Fertility>
+    </statFactors>
+  </GeneDef>
+
+</Defs>

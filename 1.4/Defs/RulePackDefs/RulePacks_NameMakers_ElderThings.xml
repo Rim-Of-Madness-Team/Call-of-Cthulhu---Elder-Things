@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerSettlementElderThings</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[basename]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>basename</keyword>
+          <path>NameBanks/NamesBases_ElderThings</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>NamerElderThings</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>NameBanks/Names_ElderThings</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+</Defs>

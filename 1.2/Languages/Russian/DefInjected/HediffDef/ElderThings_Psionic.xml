@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ElderThing_Psionic.label>псионический</ElderThing_Psionic.label>
+  <ElderThing_Psionic.comps.0.labelTendedWell>перевязано</ElderThing_Psionic.comps.0.labelTendedWell>
+  <ElderThing_Psionic.comps.0.labelTendedWellInner>зашито</ElderThing_Psionic.comps.0.labelTendedWellInner>
+  <ElderThing_Psionic.comps.0.labelSolidTendedWell>вправлено</ElderThing_Psionic.comps.0.labelSolidTendedWell>
+  <ElderThing_Psionic.injuryProps.destroyedLabel>взорвано</ElderThing_Psionic.injuryProps.destroyedLabel>
+  <ElderThing_IntracranialPressureBuildup.label>внутричерепное давление</ElderThing_IntracranialPressureBuildup.label>
+  <ElderThing_IntracranialPressureBuildup.stages.0.label>initial-hidden</ElderThing_IntracranialPressureBuildup.stages.0.label>
+  <ElderThing_IntracranialPressureBuildup.stages.1.label>незначительное</ElderThing_IntracranialPressureBuildup.stages.1.label>
+  <ElderThing_IntracranialPressureBuildup.stages.2.label>небольшое</ElderThing_IntracranialPressureBuildup.stages.2.label>
+  <ElderThing_IntracranialPressureBuildup.stages.3.label>среднее</ElderThing_IntracranialPressureBuildup.stages.3.label>
+  <ElderThing_IntracranialPressureBuildup.stages.4.label>высокое</ElderThing_IntracranialPressureBuildup.stages.4.label>
+  <ElderThing_IntracranialPressureBuildup.stages.5.label>экстремальное</ElderThing_IntracranialPressureBuildup.stages.5.label>
+</LanguageData>

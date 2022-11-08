@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>ElderThings_Call</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ElderThings/Call</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>20</min>
+          <max>20</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9311765</min>
+          <max>1.045882</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ElderThings_CallStart</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ElderThings/Call</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>20</min>
+          <max>20</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9311765</min>
+          <max>1.045882</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ElderThings_Death</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxVoices>1</maxVoices>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ElderThings/Death</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>20</min>
+          <max>20</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9311765</min>
+          <max>1.045882</max>
+        </pitchRange>
+        <repeatMode>NeverTwice</repeatMode>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ElderThings_Wounded</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ElderThings/Wounded</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>20</min>
+          <max>20</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9311765</min>
+          <max>1.045882</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!-- Weapons -->
+  <SoundDef>
+    <defName>ElderThings_LaserFire</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapons/FireLaserGun</clipFolderPath>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

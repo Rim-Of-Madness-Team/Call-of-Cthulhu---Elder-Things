@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ============================ Childhood ========================== -->
+  <!-- All Elder Thing Backgrounds have disabled
+  Manual dumb labor -->
+  <AlienRace.AlienBackstoryDef Name="ET_BG_Base" Abstract="True">
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+    <workDisables>
+      <li>ManualDumb</li>
+    </workDisables>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+    <disallowedTraits>
+        <Nudist/>
+        <Cannibal/>
+        <Gay/>
+        <DislikesMen/>
+        <DislikesWomen/>
+    </disallowedTraits>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_01</defName>
+    <title>Parasite ridden</title>
+    <titleShort>Parasite ridden</titleShort>
+    <baseDesc>As a larvae, [PAWN_nameDef] lived in an impoverished and isolated Elder Thing community. As a result, they suffered and survived through many parasites and diseases.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Medicine</key>
+        <value>4</value>
+      </li>
+      <li>
+        <key>Social</key>
+        <value>-3</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_02</defName>
+    <title>Twin brain</title>
+    <titleShort>Twin brain</titleShort>
+    <baseDesc>Born with a dual brain totalling 10 lobes, [PAWN_nameDef] spent much of its youth conversing with itself. Other Elder Things considered it a mad prodigy.</baseDesc>
+    <slot>Childhood</slot>
+    <workDisables>ManualDumb, Social</workDisables>
+    <forcedTraits>
+      <TooSmart/>
+    </forcedTraits>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_03</defName>
+    <title>Shoggoth rebellion survivor</title>
+    <titleShort>Shoggoth survivor</titleShort>
+    <baseDesc>[PAWN_nameDef] barely escaped being decapitated by revolting protoplasmic slaves. [PAWN_nameDef] learned from an early age to survive by any means, and has become wary of overzealous Intellectual.</baseDesc>
+    <slot>Childhood</slot>
+    <workDisables>ManualDumb, Intellectual</workDisables>
+    <skillGains>
+      <li>
+        <key>Shooting</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Cooking</key>
+        <value>2</value>
+      </li>
+      <li>
+        <key>Plants</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_04</defName>
+    <title>Alpha spawn</title>
+    <titleShort>Alpha spawn</titleShort>
+    <baseDesc>[PAWN_nameDef] grew faster and taller than the other spores by the spawning pools of its progenitors. [PAWN_nameDef] bullied weaker kin into following its orders throughout its youth using its superior strength and hideous insults.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_05</defName>
+    <title>Helpful spawn</title>
+    <titleShort>Helpful spawn</titleShort>
+    <baseDesc>[PAWN_nameDef] spent much of its childhood pruning others of knots and parasites, counselling wilting sprouts, and helping to prepare delicacies for its community.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Plants</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Cooking</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Medicine</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_06</defName>
+    <title>Geometric-abstractor</title>
+    <titleShort>Geometric-abstractor</titleShort>
+    <baseDesc>The Elder Things thrive on the five-pointed geometry that mirrors their forms. For [PAWN_nameDef]'s childhood, they spent many days learning to craft tasteful displays and centerpieces for clientele under the watchful stalks of an experienced master artisan.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Artistic</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Crafting</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_C_07</defName>
+    <title>Vile creature</title>
+    <titleShort>Vile creature</titleShort>
+    <baseDesc>Pulling the legs off starfish was one of the least horrible things [PAWN_nameDef] did during their formative years. [PAWN_nameDef] joined a commune of similar creatures and thrived on having openly loose morals.</baseDesc>
+    <slot>Childhood</slot>
+    <forcedTraits>
+      <Psychopath/>
+    </forcedTraits>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Crafting</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>ElderThing_Backstory</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  <!-- ============================ Adulthood ========================== -->
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_01</defName>
+    <title>Hypno-novelist</title>
+    <titleShort>Hypno-novelist</titleShort>
+    <baseDesc>[PAWN_nameDef] was renown for using hypnotic techniques on themselves to procure vivid descriptive pieces in their literary works.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Artistic</key>
+        <value>4</value>
+      </li>
+      <li>
+        <key>Intellectual</key>
+        <value>2</value>
+      </li>
+      <li>
+        <key>Social</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_02</defName>
+    <title>Shoggoth trainer</title>
+    <titleShort>Shoggoth trainer</titleShort>
+    <baseDesc>While the Shoggoth Rebellion had decimated the population of the Elder Things in the past, [PAWN_nameDef] is one of the last surviving Shoggoth Trainers to continue the fine art of maintaining perfect slave labor.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Animals</key>
+        <value>5</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_03</defName>
+    <title>Retrobiosculptor</title>
+    <titleShort>Retrobiosculptor</titleShort>
+    <baseDesc>Procured through both legal means and black markets, [PAWN_nameDef] utilizes "discarded" biological materials to create sculptures. The design process is intensive and focused highly on geometric patterns and requires a bit more thought than a purely aesthetic approach. This intensive design process has also left slightly weakened from prolonged exposure to hazardous materials.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Artistic</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Crafting</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Intellectual</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>-2</value>
+      </li>
+      <li>
+        <key>Shooting</key>
+        <value>-2</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_04</defName>
+    <title>Laser gun operator</title>
+    <titleShort>Laser gun operator</titleShort>
+    <baseDesc>[PAWN_nameDef] was a designated laser gun operator during a grand campaign against the MiGo. After taking heavy casualties, both sides withdrew from the campaign to recover and enlist more troops. [PAWN_nameDef] continues to serve in the reserve corps until their services are required once again.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Shooting</key>
+        <value>5</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_05</defName>
+    <title>Xenomarine-botanist</title>
+    <titleShort>Xenomarine-botanist</titleShort>
+    <baseDesc>Having lived their life in an underwater city among the society of the Elder Things, [PAWN_nameDef] sought to explore the waters of other worlds and formulate maps of their discoveries. Mapping xenosolar oceanic formations was a formidable challenge. Counter to their own expectations, [PAWN_nameDef] became far more interested in the properties of alien underwater plantlife and discovered a new passion for aquatic Intellectual.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Plants</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_06</defName>
+    <title>Bio-threat manager</title>
+    <titleShort>Bio-threat manager</titleShort>
+    <baseDesc>[PAWN_nameDef]'s purpose is simple. Extermination and containment of primitive biological lifeforms that threaten the Elder Thing collective.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Shooting</key>
+        <value>4</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>4</value>
+      </li>
+      <li>
+        <key>Crafting</key>
+        <value>-3</value>
+      </li>
+      <li>
+        <key>Artistic</key>
+        <value>-1</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_07</defName>
+    <title>Meatflock tender</title>
+    <titleShort>Meatflock tender</titleShort>
+    <baseDesc>Despite their ability to survive without food, Elder Things experience great pleasure from the consumption of meat. However, [PAWN_nameDef] was tasked with managing the flocks and herds of primitive livestock. Their role was harvesting and preparing the end-product to be used in meals to pleasure rather than satiate their kind.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Plants</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Animals</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_08</defName>
+    <title>Retrospective analyst</title>
+    <titleShort>Retrospective analyst</titleShort>
+    <baseDesc>A higher functioning individual in Elder Thing society, [PAWN_nameDef] provided the commune with accurate risk assessment data based on previous historical incidents.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>5</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_09</defName>
+    <title>Compliance officer</title>
+    <titleShort>Compliance officer</titleShort>
+    <baseDesc>[PAWN_nameDef] supervised a labor division that managed Shoggoth slave operations, and they ensured those operations and assets were up to regional government standards. This was, of course, before the great rebellion.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_10</defName>
+    <title>Muralist historian</title>
+    <titleShort>Muralist historian</titleShort>
+    <baseDesc>Before escaping into space, [PAWN_nameDef] worked among a circle of historians tasked to study the classical Elderian artists. [PAWN_nameDef] took great interest in the avant garde muralists that utilized non-pentamerous radial symmetry in their works.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Artistic</key>
+        <value>2</value>
+      </li>
+      <li>
+        <key>Intellectual</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_11</defName>
+    <title>Evolution historian</title>
+    <titleShort>Evolution historian</titleShort>
+    <baseDesc>[PAWN_nameDef] took up the role of studying, categorizing, recording, and storing evolutionary patterns in their species as well as indigent creatures of interest.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Medicine</key>
+        <value>2</value>
+      </li>
+      <li>
+        <key>Intellectual</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_12</defName>
+    <title>Big game taxidermist</title>
+    <titleShort>Big game taxidermist</titleShort>
+    <baseDesc>[PAWN_nameDef] used to hallow and combine once decomposable creatures into five-sided household fixtures that better suit the taste of an Elder Thing "family."</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Medicine</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Crafting</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_13</defName>
+    <title>Moho geo-architect</title>
+    <titleShort>Moho geo-architect</titleShort>
+    <baseDesc>[PAWN_nameDef] designed and constructed grand deepsea life support complexes for Elder Things between the crust and mantle of a planet.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Construction</key>
+        <value>5</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_14</defName>
+    <title>Ennui consoler</title>
+    <titleShort>Ennui consoler</titleShort>
+    <baseDesc>[PAWN_nameDef] provided listless Elder Things with meaningful tasks and entertaining activities to perpetuate positive communes.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>5</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ET_BG_Base">
+    <defName>ET_BG_A_15</defName>
+    <title>Torturous doctor</title>
+    <titleShort>Torturous doctor</titleShort>
+    <baseDesc>[PAWN_nameDef] maintained their position through great skill despite the patient's pain threshold often being unreasonably exceeded.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Medicine</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+</Defs>

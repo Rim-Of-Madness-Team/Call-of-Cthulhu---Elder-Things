@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>PlayerElderThings</defName>
+    <label>Elder Thing Survivors</label>
+    <description>Your own community.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>ElderThing_Colonist</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>ElderThing_Backstory</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <settlementNameMaker>NamerSettlementElderThings</settlementNameMaker>
+    <playerInitialSettlementNameMaker>NamerSettlementElderThings</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerSettlementOutlander</factionNameMaker>
+    <techLevel>Industrial</techLevel>
+    <factionIconPath>World/WorldObjects/Expanding/ElderThingBase</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/Expanding/ElderThingZoomed</settlementTexturePath>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <hairTags>
+      <li>Tribal</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+</Defs>

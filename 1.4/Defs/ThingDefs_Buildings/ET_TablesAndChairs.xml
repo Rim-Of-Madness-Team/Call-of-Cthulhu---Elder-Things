@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ElderThingFurniture">
+    <defName>ET_ChairPentagonal</defName>
+    <thingClass>Building</thingClass>
+    <label>elder thing chair (pentagonal)</label>
+    <graphicData>
+      <texPath>Furniture/ChairTwo/ET_ChairTwo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3.5,3.5)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Furniture/UI/ET_ChairTwo</uiIconPath>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>6500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>8</Beauty>
+      <Comfort>0.65</Comfort>
+    </statBases>
+    <description>This is not a chair. Rather, it is a raised five-sided surface that allows creatures with multiple appendages to rest their weary limbs. Without any high backs, this surface allows better viewing for creatures with more than just two eyes.</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <size>(1,1)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <pathCost>30</pathCost>
+    <designationHotKey>Misc7</designationHotKey>
+    <fillPercent>0.35</fillPercent>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="ElderThingFurniture">
+    <defName>ET_Chair</defName>
+    <thingClass>ElderThingFaction.Building_ElderThingChair</thingClass>
+    <label>elder thing chair</label>
+    <graphicData>
+      <texPath>Furniture/Chair/ElderThing_Chair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <statBases>
+      <MaxHitPoints>170</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>7</Beauty>
+      <Comfort>0.65</Comfort>
+    </statBases>
+    <description>A comfortable and attractive chair for sitting at a table.</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <size>(1,1)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <pathCost>30</pathCost>
+    <designationHotKey>Misc7</designationHotKey>
+    <fillPercent>0.35</fillPercent>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+  </ThingDef>
+
+  <ThingDef Name="ElderThingTable" ParentName="TableBase" Abstract="True">
+    <tradeTags>
+      <li>ElderThingFurniture</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ElderThingTable">
+    <defName>ET_Table</defName>
+    <label>table (pentagonal 2x2)</label>
+    <graphicData>
+      <texPath>Furniture/Table/ElderThing_2x2Table</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(1.6,0.5,1.25)</volume>
+        <offset>(0,0,-0.13)</offset>
+      </shadowData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>8</Beauty>
+    </statBases>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <fillPercent>0.75</fillPercent>
+    <size>(2,2)</size>
+    <costStuffCount>50</costStuffCount>
+    <rotatable>true</rotatable>
+  </ThingDef>
+</Defs>
