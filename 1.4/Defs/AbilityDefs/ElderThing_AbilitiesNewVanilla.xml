@@ -9,7 +9,7 @@
     <iconPath>Icons/ET_IconFlight</iconPath>
     <cooldownTicksRange>3600</cooldownTicksRange>
     <verbProperties>
-      <verbClass>Verb_CastAbilityJump</verbClass>
+      <verbClass>ElderThingFaction.Verb_CastAbilityShortFlight</verbClass>
       <label>fly</label>
       <violent>false</violent>
       <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
@@ -17,7 +17,7 @@
       <range>19.9</range>
       <requireLineOfSight>true</requireLineOfSight>
       <soundCast>ElderThing_AbilityCastSound_Flight</soundCast>
-      <soundLanding>Longjump_Land</soundLanding>
+      <soundLanding>ElderThing_ShortFlightLand</soundLanding>
       <targetParams>
         <canTargetLocations>true</canTargetLocations>
         <canTargetPawns>false</canTargetPawns>
@@ -25,6 +25,30 @@
       </targetParams>
     </verbProperties>
   </AbilityDef>
+  <SoundDef>
+    <defName>ElderThing_ShortFlightLand</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>5</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>UI/ElderThing_FlightLanding</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <ThingDef ParentName="PawnFlyerBase">
+    <defName>ET_ShortFlighter</defName>
+    <thingClass>ElderThingFaction.PawnShortFlighter</thingClass>
+    <pawnFlyer>
+      <flightDurationMin>0.5</flightDurationMin>
+      <flightSpeed>12</flightSpeed>
+    </pawnFlyer>
+  </ThingDef>
 
   <!-- Psionic Blast -->
   <AbilityDef>
@@ -50,7 +74,7 @@
     <comps>
       <li Class = "CompProperties_AbilityGiveHediff">
         <compClass>CompAbilityEffect_GiveHediff</compClass>
-        <hediffDef>PsychicVertigo</hediffDef>
+        <hediffDef>ET_PsychicVertigo</hediffDef>
         <durationMultiplier>PsychicSensitivity</durationMultiplier>
         <goodwillImpact>-15</goodwillImpact>
         <applyGoodwillImpactToLodgers>False</applyGoodwillImpactToLodgers>
@@ -117,6 +141,30 @@
       <destroyedLabel>Blasted off</destroyedLabel>
     </injuryProps>
   </HediffDef>
+  <HediffDef>
+    <defName>ET_PsychicVertigo</defName>
+    <label>psychic vertigo</label>
+    <description>Psychically-induced loss of spatial orientation. This will cause flesh creatures to vomit.</description>
+    <isBad>true</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <vomitMtbDays>0.00005787</vomitMtbDays>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disorientation">
+        <wanderMtbHours>0.05</wanderMtbHours>
+        <singleWanderDurationTicks>180</singleWanderDurationTicks>
+        <wanderRadius>3</wanderRadius>
+      </li>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+  </HediffDef>
+
 
   <!-- Spores -->
   <AbilityDef>
